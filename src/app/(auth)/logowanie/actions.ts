@@ -15,10 +15,27 @@ export async function login(_previousState: FormState, formData: FormData): Prom
   if (!parsed.success) return { error: parsed.error.issues[0].message };
   const supabase = await createClient();
   const { error } = await supabase.auth.signInWithPassword(parsed.data);
-  if (error)
+  if (error) {
+    console.error(
+      "Błąd logowania Supabase",
+      JSON.stringify({ code: error.code, name: error.name, status: error.status }),
+    );
+    if (error.code === "email_not_confirmed")
+      return {
+        error: "Adres e-mail nie został potwierdzony. Potwierdź adres przed zalogowaniem.",
+      };
+    if (error.code === "invalid_credentials")
+      return { error: "Nieprawidłowy adres e-mail lub hasło." };
+    if (error.status === 429)
+      return { error: "Zbyt wiele prób logowania. Odczekaj kilka minut i spróbuj ponownie." };
+    if (error.name === "AuthRetryableFetchError")
+      return {
+        error: "Nie udało się połączyć z usługą logowania. Spróbuj ponownie za chwilę.",
+      };
     return {
-      error: "Nie udało się zalogować. Sprawdź adres e-mail i hasło lub spróbuj ponownie później.",
+      error: "Usługa logowania zwróciła błąd. Spróbuj ponownie później.",
     };
+  }
   redirect("/panel");
 }
 

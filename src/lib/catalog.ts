@@ -23,8 +23,16 @@ export const getCatalog = cache(async (): Promise<Catalog> => {
       .order("created_at", { ascending: false })
       .returns<Artwork[]>(),
   ]);
-  if (artists.error || artworks.error)
+  if (artists.error || artworks.error) {
+    console.error(
+      "Błąd pobierania katalogu Supabase",
+      JSON.stringify({
+        artists: artists.error && { code: artists.error.code, status: artists.status },
+        artworks: artworks.error && { code: artworks.error.code, status: artworks.status },
+      }),
+    );
     throw new Error("Nie udało się pobrać katalogu z bazy danych.");
+  }
   const artistIds = new Set(artists.data.map((artist) => artist.id));
   return {
     artists: artists.data,

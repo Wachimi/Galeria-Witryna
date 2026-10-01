@@ -2,29 +2,32 @@
 
 Ten etap wymaga Twojego konta Supabase. Nie potrzebujemy klucza `service_role` w aplikacji. Publiczny klucz działa razem z uprawnieniami RLS w bazie.
 
+Jeśli projekt, migracja i seed są już gotowe, przejdź do kroku 6. Migracji `001_initial_schema.sql` nie uruchamiaj drugi raz. Konto do logowania musi być widoczne w **Authentication → Users**; konto właściciela w serwisie Supabase i hasło samej bazy nie są kontem redaktora strony.
+
 1. Zaloguj się na [supabase.com](https://supabase.com/) i utwórz projekt. Wybierz region w UE, nazwę i silne hasło bazy; zapisz hasło w swoim menedżerze haseł.
 2. W SQL Editor uruchom cały [001_initial_schema.sql](../supabase/migrations/001_initial_schema.sql). Migrację uruchamiamy raz. Jeśli coś się nie powiedzie, transakcja wycofa zmiany — sprawdź komunikat zamiast uruchamiać pojedyncze fragmenty.
 3. Opcjonalnie uruchom [seed.sql](../supabase/seed.sql), aby zachować obecne 3 profile i 5 prac. Bez seeda po podłączeniu baza będzie pusta; katalog startowy przestaje być używany.
 4. W ustawieniach Auth wyłącz **Allow new users to sign up**. Strona nie oferuje publicznej rejestracji.
 5. Utwórz pierwszą osobę w **Authentication → Users → Add user → Create new user**. Ustaw e-mail, hasło i potwierdzenie adresu. Hasło przekaż tej osobie bezpiecznie, poza repozytorium i czatem. Konto stworzone po migracji automatycznie dostaje profil z rolą `viewer`.
-6. W SQL Editor nadaj pierwszemu administratorowi rolę. Podstaw jego rzeczywisty adres:
+6. W SQL Editor nadaj pierwszemu administratorowi rolę. Otwórz [setup-admin.sql](../supabase/setup-admin.sql), wpisz e-mail utworzonego konta zamiast `WPISZ_SWÓJ_EMAIL` i uruchom skrypt. Wynik powinien zawierać jeden wiersz z rolą `admin`. Skrypt uzupełni także brakujący profil konta utworzonego przed migracją. Odpowiada temu SQL:
 
 ```sql
-update public.profiles
-set role = 'admin', display_name = 'Administrator galerii'
-where id = (
-  select id from auth.users where email = 'ADRES-ADMINISTRATORA'
-);
+insert into public.profiles (id, display_name, role)
+select id, 'Administrator galerii', 'admin'::public.user_role
+from auth.users where lower(email) = lower('WPISZ_SWÓJ_EMAIL')
+on conflict (id) do update
+set role = 'admin', display_name = excluded.display_name
+returning id, display_name, role;
 ```
 
-7. Analogicznie utwórz konto redaktora i przypisz mu `role = 'editor'`. Nie przyznawaj wszystkim kontom roli administratora. Jeśli utworzono konta przed migracją, trzeba uzupełnić ich profile — zgłoś to, przygotujemy właściwą operację dla konkretnej bazy.
+7. Analogicznie utwórz konto redaktora i przypisz mu `role = 'editor'`. Nie przyznawaj wszystkim kontom roli administratora.
 8. Skopiuj plik konfiguracyjny:
 
 ```powershell
-Copy-Item .env.example .env.local
+if (!(Test-Path .env.local)) { Copy-Item .env.example .env.local }
 ```
 
-9. Wpisz do `.env.local` **Project URL** i **Publishable key** z ustawień projektu:
+9. Wpisz do `.env.local` **Project URL** i **Publishable key** z okna **Connect** albo ustawień projektu (**API Keys** dla klucza):
 
 ```dotenv
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
@@ -33,6 +36,8 @@ NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=sb_publishable_TWOJ_KLUCZ
 ```
 
 10. Uruchom ponownie `npm run dev`, przejdź do `/logowanie` i użyj utworzonego konta. W ustawieniach URL Auth wpisz lokalny adres witryny. Przed publikacją zaktualizujemy go na docelową domenę; obsługa linków zaproszeń i odzyskiwania hasła będzie osobnym rozszerzeniem. Na razie używamy kont tworzonych z hasłem w konsoli.
+
+Ustawienie **Enable Data API** pozostaje włączone. Nasza migracja jawnie włącza RLS i ogranicza uprawnienia tabel `profiles`, `artists` i `artworks`, niezależnie od początkowego ustawienia automatycznego RLS w kreatorze. Dla przyszłych tabel zalecamy wyłączyć **Automatically expose new tables**, aby dostęp nadawać świadomie w kolejnych migracjach.
 
 ## Jak są chronione dane
 
@@ -56,4 +61,4 @@ Sprawdź z nami kolejno logowanie, brak dostępu bez konta, brak dostępu konta 
 
 Kod integracji jest przygotowany, ale rzeczywistego połączenia z Supabase nie da się sprawdzić przed utworzeniem i skonfigurowaniem projektu.
 
-Dokumentacja: [sesja Supabase w Next.js](https://supabase.com/docs/guides/auth/server-side/creating-a-client), [Row Level Security](https://supabase.com/docs/guides/database/postgres/row-level-security).
+Dokumentacja: [sesja Supabase w Next.js](https://supabase.com/docs/guides/auth/server-side/creating-a-client), [publiczne klucze i okno Connect](https://supabase.com/docs/guides/getting-started/api-keys), [Row Level Security](https://supabase.com/docs/guides/database/postgres/row-level-security).

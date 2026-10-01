@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { navigation, site } from "@/data/site";
+import { OpeningHours } from "@/components/opening-hours";
 
 export function SiteFooter() {
   return (
@@ -24,12 +25,16 @@ export function SiteFooter() {
         </nav>
         <div className="footer-contact">
           <span>
-            {site.address}, {site.city}
+            {site.address}, {site.postalCode} {site.city}
           </span>
           <a href={`tel:${site.phoneHref}`}>{site.phone}</a>
           <a href={`mailto:${site.email}`}>
             {site.email} <ArrowUpRight size={15} aria-hidden="true" />
           </a>
+          <div className="footer-hours">
+            <p className="eyebrow">GODZINY OTWARCIA</p>
+            <OpeningHours />
+          </div>
         </div>
       </div>
       <div className="container footer-bottom">

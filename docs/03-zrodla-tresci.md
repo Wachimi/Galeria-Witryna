@@ -35,7 +35,7 @@ Wszystkie ścieżki oryginałów są względem `https://galeria-witryna.pl`.
 - Dostępność prac: we wszystkich startowych rekordach jest `unknown`, czyli „Zapytaj o dostępność”. Obecność na starej stronie nie potwierdza, że praca nadal jest dostępna.
 - Wymiary, daty i przypisania zdjęć: przyjęto podpisy starego katalogu. Nie wyprowadzamy roku z daty przesłania pliku — te wartości czasem się różnią.
 - Zapis nazwiska Andała: lista artystów używa „Andala”, profil „ANDAŁA”. Przyjęto zapis z profilu.
-- Dane kontaktowe i godziny otwarcia: adres, telefon i e-mail pochodzą ze starej witryny. Godzin nie wymyślamy; do czasu potwierdzenia zachęcamy do telefonu przed wizytą.
+- Dane kontaktowe potwierdzono w rozmowie z użytkownikiem. Kod pocztowy i godziny pochodzą od użytkownika: 20-026; poniedziałek–piątek 10:00–17:00, sobota 11:00–14:00, niedziela zamknięte.
 - Okres działalności: stare podstrony podają różną liczbę lat wcześniejszej pracy właścicieli. Nowa wersja używa ogólnego „wieloletnie doświadczenie”.
 - Wystawy: pokazujemy archiwum. Nie dopisano dat ani nie przedstawiono dawnych wydarzeń jako bieżących.
 - Pełne biografie, zdjęcia portretowe, grafika i rzeźba: wymagają dalszej migracji. Te filtry są przygotowane, ale startowa próbka zawiera tylko malarstwo.

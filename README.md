@@ -24,7 +24,7 @@ Otwórz **http://localhost:3000**. Bez `.env.local` strona korzysta z 3 artystó
 | `/artysci` i `/artysci/[slug]` | Lista twórców i ich profile                         |
 | `/o-galerii`                   | Historia i charakter galerii                        |
 | `/wystawy`                     | Wybrane wystawy archiwalne                          |
-| `/kontakt`                     | Adres, telefon, e-mail i link do mapy               |
+| `/kontakt`                     | Adres, godziny, telefon, e-mail i mapa Google       |
 | `/logowanie`                   | Logowanie zespołu przez Supabase Auth               |
 | `/panel`                       | Przegląd katalogu                                   |
 | `/panel/artysci`               | Lista, dodawanie i edycja artystów                  |
@@ -82,8 +82,8 @@ Komponenty domyślnie wykonują się na serwerze. Pliki z `"use client"` obsług
 
 ## Następne etapy i potrzebne informacje
 
-1. **Układ i treści:** oceń pierwszy wygląd; potwierdź dane kontaktowe, godziny otwarcia i aktualną dostępność prac. Ustalmy, czy redaktor publikuje sam, czy publikację zatwierdza administrator. Teraz obie role mogą publikować.
-2. **Zaplecze:** utwórz projekt Supabase na swoim koncie, uruchom SQL i przekaż publiczny URL oraz publiczny klucz albo wpisz je lokalnie. Instrukcja: [docs/02-supabase.md](docs/02-supabase.md). Potrzebujemy adresów e-mail osób z dostępem i informacji, kto będzie administratorem. Haseł nie przesyłaj w czacie.
+1. **Układ i treści:** dane kontaktowe, kod pocztowy i godziny są potwierdzone. Oceń większe teksty i nowe tła sekcji; potwierdź aktualną dostępność prac. Ustalmy, czy redaktor publikuje sam, czy publikację zatwierdza administrator. Teraz obie role mogą publikować.
+2. **Zaplecze:** projekt Supabase, migracja i seed są już utworzone. Wpisz Project URL i Publishable key do `.env.local` oraz nadaj swojemu kontu rolę przez [setup-admin.sql](supabase/setup-admin.sql). Instrukcja: [docs/02-supabase.md](docs/02-supabase.md). Kolejny krok to test logowania i zapisu na rzeczywistej bazie. Haseł nie przesyłaj w czacie.
 3. **Przeniesienie katalogu:** potrzebny będzie eksport treści i mediów z WordPressa albo dostęp do kopii zapasowej. Na razie przeniesiono wybrane materiały, nie cały katalog. Uzgodnimy przekierowania starych adresów.
 4. **Publikacja:** wybierzemy hosting obsługujący Next.js. Możliwa jest Vercel; przed wyborem sprawdzimy plan dopuszczający komercyjną stronę galerii i koszty. Potrzebny będzie dostęp do DNS domeny. Stary WordPress pozostaje do momentu odbioru nowej strony.
 

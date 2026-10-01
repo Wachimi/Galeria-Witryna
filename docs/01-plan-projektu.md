@@ -4,18 +4,18 @@
 
 Przygotowano strukturę Next.js, responsywną stronę publiczną, katalog, szczegóły prac i artystów, archiwum wystaw, kontakt, integrację logowania i panelu, migrację PostgreSQL, reguły dostępu oraz instrukcje.
 
-To wersja startowa do wspólnej pracy. Nie przeniesiono wszystkich treści z WordPressa. Nie utworzono zewnętrznej bazy, kont użytkowników ani hostingu.
+To wersja startowa do wspólnej pracy. Nie przeniesiono wszystkich treści z WordPressa. Użytkownik utworzył projekt Supabase, uruchomił migrację i seed oraz utworzył swoje konto. Pozostało podłączenie aplikacji i nadanie roli administratora. Hosting będzie późniejszym etapem.
 
 ## Etap 2 — decyzje i podłączenie zaplecza
 
 Potrzebujemy:
 
 - Potwierdzenia kierunku wizualnego: logo, zieleń, granat, jasne tło i duże zdjęcia.
-- Danych kontaktowych i godzin otwarcia, które mają być publicznie widoczne.
+- Dane kontaktowe są potwierdzone: ul. Chopina 1, 20-026 Lublin. Godziny: poniedziałek–piątek 10:00–17:00, sobota 11:00–14:00, niedziela zamknięte.
 - Aktualnego katalogu prac, autorów, tytułów, technik, wymiarów oraz dostępności.
 - Adresów e-mail zespołu i wskazania pierwszego administratora.
 - Decyzji o publikacji: obecnie redaktor publikuje sam; ewentualne zatwierdzanie przez administratora wymaga zmiany reguł i interfejsu.
-- Projektu Supabase założonego na koncie właściciela projektu.
+- Project URL i publicznego klucza Publishable key z utworzonego projektu Supabase.
 
 Po konfiguracji sprawdzimy: logowanie i wylogowanie, odmowę dostępu osobom bez roli, brak dostępu redaktora do kont, dodanie i edycję artysty, szkic pracy, zdjęcie, publikację, zmianę dostępności i ukrywanie. Sprawdzimy też te same uprawnienia przy bezpośrednim dostępie do API Supabase.
 
@@ -29,7 +29,7 @@ Możliwe kolejne rozszerzenia po ustaleniu zakresu: panel wystaw i treści stron
 
 Wybierzemy hosting i plan dla działalności komercyjnej. Przygotujemy domenę, HTTPS, zmienne środowiskowe, kopie zapasowe, przekierowania ze starych adresów i testy na telefonach. Przed uruchomieniem właściciel galerii zatwierdzi treści i prawa do publikowanych materiałów. Informacje o prywatności dopasujemy do faktycznych funkcji strony.
 
-Strona nie ma obecnie analityki, śledzenia, formularza kontaktowego ani koszyka. Kontakt prowadzi do poczty i telefonu, a mapa jest zwykłym linkiem. Logowanie zespołu korzysta z ciasteczek sesyjnych Supabase. Fonty są przechowywane lokalnie i nie wymagają połączenia z Google Fonts.
+Strona nie ma własnej analityki, formularza kontaktowego ani koszyka. Kontakt prowadzi do poczty i telefonu. Strona kontaktu ma osadzoną mapę Google, która pobiera zawartość z Google, oraz link do wyznaczenia trasy. Logowanie zespołu korzysta z ciasteczek sesyjnych Supabase. Fonty są przechowywane lokalnie i nie wymagają połączenia z Google Fonts.
 
 ## Role
 
