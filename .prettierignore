@@ -1,4 +1,6 @@
 node_modules
+# Zewnętrzne instrukcje narzędzi zachowują format dostawcy.
+.agents/skills/
 .next
 package-lock.json
 public/images
