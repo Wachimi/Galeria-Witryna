@@ -35,7 +35,12 @@ export const metadata: Metadata = {
     locale: "pl_PL",
     siteName: "Galeria Sztuki Witryna",
     images: [
-      { url: "/images/gallery-wall.jpg", width: 658, height: 498, alt: "Wnętrze Galerii Witryna" },
+      {
+        url: "/images/gallery-front.webp",
+        width: 1920,
+        height: 1280,
+        alt: "Witryna i wejście do Galerii Witryna w Lublinie",
+      },
     ],
   },
 };

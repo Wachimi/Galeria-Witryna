@@ -30,6 +30,21 @@ Oryginalne pliki w repozytorium:
 
 Wszystkie ścieżki oryginałów są względem `https://galeria-witryna.pl`.
 
+## Zdjęcia przekazane przez użytkownika
+
+2 października 2026 użytkownik przekazał sześć zdjęć z folderu materiałów galerii. Przygotowano wersje WebP o maksymalnym boku 1920 px, z uwzględnieniem orientacji zdjęć i bez metadanych EXIF. Oryginały pozostają w folderze użytkownika. Łączna wielkość plików do strony wynosi około 0,88 MB zamiast 17,61 MB oryginałów; Next.js dodatkowo dobiera rozmiar do urządzenia.
+
+| Oryginał           | Plik w `public/images`           | Wykorzystanie                                               |
+| ------------------ | -------------------------------- | ----------------------------------------------------------- |
+| `glebiakolory.jpg` | `gallery-sculpture.webp`         | Sekcja „Galeria z historią” na stronie głównej.             |
+| `IMG_6057.JPG`     | `gallery-front.webp`             | Główne zdjęcie landing page i podgląd udostępnianego linku. |
+| `IMG_6069.JPG`     | `gallery-window-detail.webp`     | Sekcja „Witryna z bliska”: detal ekspozycji.                |
+| `galeria W.JPG`    | `gallery-sign-sky.webp`          | Sekcja „Witryna z bliska”: szyld na tle nieba.              |
+| `IMG_6060.JPG`     | `gallery-sign-close.webp`        | Zdjęcie na podstronie „O galerii”.                          |
+| `IMG_6059.JPG`     | `gallery-entrance-portrait.webp` | Pionowe zdjęcie wejścia na podstronie „Kontakt”.            |
+
+Zdjęcia pokazują miejsce i jego atmosferę. Nie przypisano widocznych na nich dzieł do autorów ani nie dodano ich jako pozycji katalogu. Godziny na drukach widocznych na zdjęciach mogą pochodzić z wcześniejszego okresu; tekst strony korzysta z godzin potwierdzonych przez użytkownika.
+
 ## Do potwierdzenia przez galerię
 
 - Dostępność prac: we wszystkich startowych rekordach jest `unknown`, czyli „Zapytaj o dostępność”. Obecność na starej stronie nie potwierdza, że praca nadal jest dostępna.
@@ -42,4 +57,4 @@ Wszystkie ścieżki oryginałów są względem `https://galeria-witryna.pl`.
 
 Paleta zachowuje granat `#000c30`, zieleń `#5fa031` i limonkowy akcent logo. Jasne tło i oszczędniejszy układ są propozycją nowej oprawy wizualnej.
 
-Fonty DM Sans i Playfair Display pochodzą z Google Fonts i są przechowywane lokalnie w `src/assets/fonts`. W tym folderze są też ich licencje SIL Open Font License. Ikona przeglądarki jest prostym wariantem znaku przygotowanym w SVG; przed publikacją można zastąpić ją oryginalnym plikiem favicon galerii.
+Fonty DM Sans i Playfair Display pochodzą z Google Fonts i są przechowywane lokalnie w `src/assets/fonts`. W tym folderze są też ich licencje SIL Open Font License. Ikony przeglądarki i Apple powstają z pliku `public/images/favicon-source.png` przekazanego i edytowanego przez użytkownika.

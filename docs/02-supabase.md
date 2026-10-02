@@ -59,6 +59,6 @@ Fotografie są publiczne także wtedy, gdy opis pracy jest szkicem. Nie przesył
 
 Sprawdź z nami kolejno logowanie, brak dostępu bez konta, brak dostępu konta `viewer`, dodanie szkicu artysty i pracy, publikację, edycję, zdjęcie oraz wylogowanie. W osobnej sesji przeglądarki sprawdź, czy publicznie nie widać szkiców. Redaktor nie powinien widzieć `/panel/uzytkownicy` ani móc nadać sobie roli administratora.
 
-Kod integracji jest przygotowany, ale rzeczywistego połączenia z Supabase nie da się sprawdzić przed utworzeniem i skonfigurowaniem projektu.
+Połączenie zostało sprawdzone 2 października 2026: publiczny katalog zwraca 3 artystów i 5 prac, profile kont są niedostępne bez zalogowania, a usługa Auth odpowiada na formularz logowania. Szczegóły i zakres dalszych testów: [przegląd projektu](04-przeglad-projektu.md).
 
 Dokumentacja: [sesja Supabase w Next.js](https://supabase.com/docs/guides/auth/server-side/creating-a-client), [publiczne klucze i okno Connect](https://supabase.com/docs/guides/getting-started/api-keys), [Row Level Security](https://supabase.com/docs/guides/database/postgres/row-level-security).

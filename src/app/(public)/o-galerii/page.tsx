@@ -32,10 +32,11 @@ export default function AboutPage() {
         </div>
         <div className="about-page-photo">
           <Image
-            src="/images/gallery-wall.jpg"
-            alt="Ekspozycja obrazów w Galerii Witryna"
+            src="/images/gallery-sign-close.webp"
+            alt="Szyld i oznaczenie Galerii Witryna nad witryną przy ul. Chopina 1"
             fill
             sizes="(max-width: 800px) 100vw, 50vw"
+            loading="eager"
           />
         </div>
       </div>

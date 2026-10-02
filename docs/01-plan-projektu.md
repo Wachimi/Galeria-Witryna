@@ -4,7 +4,7 @@
 
 Przygotowano strukturę Next.js, responsywną stronę publiczną, katalog, szczegóły prac i artystów, archiwum wystaw, kontakt, integrację logowania i panelu, migrację PostgreSQL, reguły dostępu oraz instrukcje.
 
-To wersja startowa do wspólnej pracy. Nie przeniesiono wszystkich treści z WordPressa. Użytkownik utworzył projekt Supabase, uruchomił migrację i seed oraz utworzył swoje konto. Pozostało podłączenie aplikacji i nadanie roli administratora. Hosting będzie późniejszym etapem.
+To wersja startowa do wspólnej pracy. Nie przeniesiono wszystkich treści z WordPressa. Użytkownik utworzył projekt Supabase, uruchomił migrację i seed oraz utworzył konta administratora i redaktora. Aplikacja jest podłączona do Supabase; odczyt katalogu i odpowiedzi usługi logowania zostały sprawdzone. Pozostał pełny test zapisu treści i zdjęć na tych kontach. Hosting będzie późniejszym etapem.
 
 ## Etap 2 — decyzje i podłączenie zaplecza
 
@@ -15,7 +15,7 @@ Potrzebujemy:
 - Aktualnego katalogu prac, autorów, tytułów, technik, wymiarów oraz dostępności.
 - Adresów e-mail zespołu i wskazania pierwszego administratora.
 - Decyzji o publikacji: obecnie redaktor publikuje sam; ewentualne zatwierdzanie przez administratora wymaga zmiany reguł i interfejsu.
-- Project URL i publicznego klucza Publishable key z utworzonego projektu Supabase.
+- Project URL i publiczny klucz Publishable key są już wpisane w lokalnej konfiguracji.
 
 Po konfiguracji sprawdzimy: logowanie i wylogowanie, odmowę dostępu osobom bez roli, brak dostępu redaktora do kont, dodanie i edycję artysty, szkic pracy, zdjęcie, publikację, zmianę dostępności i ukrywanie. Sprawdzimy też te same uprawnienia przy bezpośrednim dostępie do API Supabase.
 

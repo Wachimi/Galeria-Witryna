@@ -62,8 +62,8 @@ export default function ContactPage() {
           </section>
           <div className="contact-photo">
             <Image
-              src="/images/gallery-entrance.jpg"
-              alt="Wejście do Galerii Witryna w Lublinie"
+              src="/images/gallery-entrance-portrait.webp"
+              alt="Witryna, zielony szyld i wejście do Galerii Witryna przy ul. Chopina 1"
               fill
               sizes="(max-width: 800px) 100vw, 50vw"
             />

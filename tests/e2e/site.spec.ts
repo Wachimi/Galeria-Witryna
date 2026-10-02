@@ -48,6 +48,17 @@ test("nieznana praca zwraca stronę 404", async ({ page }) => {
   await expect(page.getByRole("heading", { name: "Tej strony tu nie ma." })).toBeVisible();
 });
 
+test("logo prowadzi na samą górę strony głównej", async ({ page }) => {
+  for (const path of ["/kolekcja", "/artysci", "/kontakt", "/"]) {
+    await page.goto(path);
+    await page.evaluate(() => window.scrollTo({ top: 400, behavior: "instant" }));
+    await expect.poll(() => page.evaluate(() => window.scrollY)).toBeGreaterThan(0);
+    await page.getByRole("link", { name: "Galeria Witryna — strona główna", exact: true }).click();
+    await expect(page).toHaveURL(/\/(?:#top)?$/);
+    await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(0);
+  }
+});
+
 test("menu mobilne otwiera się i zamyka po przejściu", async ({ page }, testInfo) => {
   test.skip(testInfo.project.name !== "mobile");
   await page.goto("/");

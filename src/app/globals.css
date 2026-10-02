@@ -163,6 +163,9 @@ em {
   border-color: var(--green);
 }
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
   background: var(--background);
   border-bottom: 1px solid var(--line);
 }
@@ -232,7 +235,8 @@ em {
   padding-bottom: 62px;
   align-items: center;
 }
-.hero-band {
+.hero-band,
+.about-band {
   background: linear-gradient(115deg, #e4ebd6 0%, #f2f2e8 60%, #e9ebdf 100%);
 }
 .hero-copy {
@@ -296,6 +300,7 @@ em {
 }
 .hero-image img {
   object-fit: cover;
+  object-position: 30% center;
 }
 .hero-image-caption {
   display: flex;
@@ -416,12 +421,7 @@ em {
   margin-top: 5px;
 }
 .about-band {
-  background: var(--ink);
-  color: #f6f7ee;
   padding-block: 60px;
-}
-.about-band .eyebrow {
-  color: #b4d788;
 }
 .about-band-inner {
   display: grid;
@@ -443,13 +443,34 @@ em {
   margin-block: 18px 24px;
 }
 .about-band-copy > p:not(.eyebrow) {
-  color: #c4cbd5;
+  color: var(--muted);
   font-size: 16px;
   margin-bottom: 13px;
 }
 .about-band-copy .text-link {
   margin-top: 10px;
-  border-color: #bbc5d5;
+}
+.gallery-glimpses-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+}
+.gallery-glimpse {
+  margin: 0;
+  min-width: 0;
+}
+.gallery-glimpse-image {
+  position: relative;
+  aspect-ratio: 3 / 2;
+  background: var(--surface);
+}
+.gallery-glimpse-image img {
+  object-fit: cover;
+}
+.gallery-glimpse figcaption {
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 15px;
 }
 .visit-band {
   background: #e3e9d6;
@@ -771,7 +792,8 @@ em {
 }
 .about-page-photo {
   position: relative;
-  min-height: 430px;
+  aspect-ratio: 3 / 2;
+  align-self: center;
 }
 .about-page-photo img {
   object-fit: cover;
@@ -836,10 +858,11 @@ em {
 }
 .contact-photo {
   position: relative;
-  aspect-ratio: 2.2;
+  aspect-ratio: 4 / 5;
 }
 .contact-photo img {
   object-fit: cover;
+  object-position: center 40%;
 }
 .exhibition-feature {
   display: grid;
@@ -1294,6 +1317,10 @@ em {
   .about-band-copy {
     max-width: 500px;
   }
+  .gallery-glimpses-grid {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
   .visit-section {
     padding-block: 50px;
   }
@@ -1329,9 +1356,6 @@ em {
   .contact-grid {
     grid-template-columns: 1fr;
     gap: 35px;
-  }
-  .about-page-photo {
-    min-height: 320px;
   }
   .exhibition-feature {
     grid-template-columns: 1fr;

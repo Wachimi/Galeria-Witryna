@@ -45,17 +45,18 @@ export default async function HomePage() {
           <div className="hero-visual">
             <div className="hero-image">
               <Image
-                src="/images/gallery-wall.jpg"
-                alt="Obrazy i grafiki we wnętrzu Galerii Witryna w Lublinie"
+                src="/images/gallery-front.webp"
+                alt="Witryna i wejście do Galerii Witryna przy ul. Chopina 1 w Lublinie"
                 fill
                 sizes="(max-width: 900px) 100vw, 52vw"
-                priority
+                loading="eager"
+                fetchPriority="high"
               />
             </div>
             <div className="hero-image-caption">
               <span>GALERIA WITRYNA</span>
               <span>
-                Niepowtarzalny klimat i jakość <ArrowUpRight size={16} aria-hidden="true" />
+                Rzeźba, malarstwo, spotkania <ArrowUpRight size={16} aria-hidden="true" />
               </span>
             </div>
             <span className="hero-vertical">SZTUKA MA SWOJE MIEJSCE</span>
@@ -105,8 +106,8 @@ export default async function HomePage() {
         <div className="container about-band-inner">
           <div className="about-photo">
             <Image
-              src="/images/gallery-entrance.jpg"
-              alt="Wejście do Galerii Witryna przy ul. Chopina 1 w Lublinie"
+              src="/images/gallery-sculpture.webp"
+              alt="Rzeźba głowy konia na tle obrazów we wnętrzu Galerii Witryna"
               fill
               sizes="(max-width: 900px) 100vw, 45vw"
             />
@@ -130,6 +131,47 @@ export default async function HomePage() {
               Poznaj nas bliżej <ArrowUpRight size={18} aria-hidden="true" />
             </Link>
           </div>
+        </div>
+      </section>
+      <section
+        className="container section gallery-glimpses"
+        aria-labelledby="gallery-glimpses-heading"
+      >
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">WITRYNA Z BLISKA</p>
+            <h2 id="gallery-glimpses-heading">
+              Zajrzyj do <em>Witryny.</em>
+            </h2>
+          </div>
+          <p className="section-heading-aside">
+            Od szyldu przy ul. Chopina po detale ekspozycji — poznaj galerię, zanim przekroczysz jej
+            próg.
+          </p>
+        </div>
+        <div className="gallery-glimpses-grid">
+          <figure className="gallery-glimpse">
+            <div className="gallery-glimpse-image">
+              <Image
+                src="/images/gallery-window-detail.webp"
+                alt="Obrazy w złoconych ramach i dekoracje w witrynie galerii"
+                fill
+                sizes="(max-width: 900px) 100vw, 50vw"
+              />
+            </div>
+            <figcaption>Detale, które przyciągają spojrzenie.</figcaption>
+          </figure>
+          <figure className="gallery-glimpse">
+            <div className="gallery-glimpse-image">
+              <Image
+                src="/images/gallery-sign-sky.webp"
+                alt="Zielony szyld Galerii Witryna na tle błękitnego nieba"
+                fill
+                sizes="(max-width: 900px) 100vw, 50vw"
+              />
+            </div>
+            <figcaption>Nasz znak przy ul. Chopina 1.</figcaption>
+          </figure>
         </div>
       </section>
       <div className="visit-band">

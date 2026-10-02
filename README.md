@@ -83,7 +83,7 @@ Komponenty domyślnie wykonują się na serwerze. Pliki z `"use client"` obsług
 ## Następne etapy i potrzebne informacje
 
 1. **Układ i treści:** dane kontaktowe, kod pocztowy i godziny są potwierdzone. Oceń większe teksty i nowe tła sekcji; potwierdź aktualną dostępność prac. Ustalmy, czy redaktor publikuje sam, czy publikację zatwierdza administrator. Teraz obie role mogą publikować.
-2. **Zaplecze:** projekt Supabase, migracja i seed są już utworzone. Wpisz Project URL i Publishable key do `.env.local` oraz nadaj swojemu kontu rolę przez [setup-admin.sql](supabase/setup-admin.sql). Instrukcja: [docs/02-supabase.md](docs/02-supabase.md). Kolejny krok to test logowania i zapisu na rzeczywistej bazie. Haseł nie przesyłaj w czacie.
+2. **Zaplecze:** projekt Supabase, migracja i seed są już utworzone. Aplikacja ma lokalną konfigurację i poprawnie odczytuje katalog z bazy. Utworzono konta administratora i redaktora; kolejny krok to pełny test logowania, zapisu i zdjęć na tych kontach. Instrukcja: [docs/02-supabase.md](docs/02-supabase.md). Haseł nie przesyłaj w czacie.
 3. **Przeniesienie katalogu:** potrzebny będzie eksport treści i mediów z WordPressa albo dostęp do kopii zapasowej. Na razie przeniesiono wybrane materiały, nie cały katalog. Uzgodnimy przekierowania starych adresów.
 4. **Publikacja:** wybierzemy hosting obsługujący Next.js. Możliwa jest Vercel; przed wyborem sprawdzimy plan dopuszczający komercyjną stronę galerii i koszty. Potrzebny będzie dostęp do DNS domeny. Stary WordPress pozostaje do momentu odbioru nowej strony.
 
@@ -116,6 +116,8 @@ npx playwright install chromium
 npm run test:e2e
 ```
 
-Testy E2E uruchamiaj bez konfiguracji Supabase — sprawdzają deterministyczny katalog startowy. Testy bazy uruchamiają tę samą migrację na PostgreSQL w pamięci (PGlite), z minimalnym modelem usług Auth i Storage, i sprawdzają uprawnienia. To nie zastępuje testu rzeczywistej usługi Supabase; pełną integrację logowania, zapisu i Storage sprawdzimy na osobnym projekcie po jego utworzeniu. Build nie uruchamia ESLinta automatycznie.
+Testy E2E uruchamiaj bez konfiguracji Supabase — sprawdzają deterministyczny katalog startowy. Przy podłączonej bazie zawierającej niezmieniony seed można sprawdzić publiczne widoki poleceniem `npx playwright test --grep-invert "bez konfiguracji"`; testy wyszukiwarki zakładają obecność konkretnych 5 prac. Testy bazy uruchamiają tę samą migrację na PostgreSQL w pamięci (PGlite), z minimalnym modelem usług Auth i Storage, i sprawdzają uprawnienia. Pełna integracja zapisu oraz przesyłania zdjęć wymaga osobnego sprawdzenia na rzeczywistym Supabase z kontami zespołu. Build nie uruchamia ESLinta automatycznie.
+
+Wyniki ostatniej kontroli i zakres sprawdzonych funkcji: [przegląd projektu](docs/04-przeglad-projektu.md).
 
 W produkcji: `npm run build`, następnie `npm start`. `NEXT_PUBLIC_SITE_URL` musi wskazywać prawdziwą domenę, aby mapa strony i adresy SEO były poprawne.
