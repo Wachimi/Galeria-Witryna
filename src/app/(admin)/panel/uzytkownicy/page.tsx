@@ -1,6 +1,7 @@
 import { requireAdmin } from "@/lib/auth";
 import { createClient } from "@/lib/supabase/server";
 import type { Profile } from "@/types/catalog";
+import { formatPolishText } from "@/lib/typography";
 
 export default async function UsersPage() {
   await requireAdmin();
@@ -16,13 +17,13 @@ export default async function UsersPage() {
       <div className="panel-heading">
         <div>
           <h1>Użytkownicy</h1>
-          <p>Konta i uprawnienia zespołu galerii.</p>
+          <p>Konta i&nbsp;uprawnienia zespołu galerii.</p>
         </div>
       </div>
       <div className="notice">
-        W pierwszym etapie konta i role nadajemy w konsoli Supabase. Administrator zarządza
-        zespołem; redaktor dodaje i publikuje treści. Konto bez nadanej roli redaktora nie ma
-        dostępu do panelu.
+        W&nbsp;pierwszym etapie konta i&nbsp;role nadajemy w&nbsp;konsoli Supabase. Administrator
+        zarządza zespołem; redaktor dodaje i&nbsp;publikuje treści. Konto bez nadanej roli redaktora
+        nie ma dostępu do panelu.
       </div>
       <div className="panel-table-wrap">
         <table className="panel-table">
@@ -36,7 +37,7 @@ export default async function UsersPage() {
           <tbody>
             {data.map((profile) => (
               <tr key={profile.id}>
-                <td>{profile.display_name || "Bez nazwy"}</td>
+                <td>{formatPolishText(profile.display_name || "Bez nazwy")}</td>
                 <td>
                   {profile.role === "admin"
                     ? "Administrator"

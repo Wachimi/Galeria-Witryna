@@ -5,6 +5,7 @@ import Link from "next/link";
 import { saveArtist, saveArtwork } from "@/app/(admin)/panel/actions";
 import { initialFormState } from "@/lib/validation";
 import { availabilityLabels, categoryLabels, type Artist, type Artwork } from "@/types/catalog";
+import { formatPolishText } from "@/lib/typography";
 
 export function ArtistForm({ artist }: { artist?: Artist }) {
   const [state, action, pending] = useActionState(saveArtist, initialFormState);
@@ -13,12 +14,12 @@ export function ArtistForm({ artist }: { artist?: Artist }) {
       <input type="hidden" name="id" value={artist?.id ?? ""} />
       {state.error && (
         <p role="alert" className="notice error">
-          {state.error}
+          {formatPolishText(state.error)}
         </p>
       )}
       <div className="form-grid">
         <label className="form-field">
-          Imię i nazwisko
+          Imię i&nbsp;nazwisko
           <input name="name" required minLength={2} maxLength={160} defaultValue={artist?.name} />
         </label>
         <label className="form-field">
@@ -32,7 +33,7 @@ export function ArtistForm({ artist }: { artist?: Artist }) {
             placeholder="jan-kowalski"
             defaultValue={artist?.slug}
           />
-          <small>Małe litery bez polskich znaków i spacji. Adres: /artysci/wybrany-slug</small>
+          <small>Małe litery bez polskich znaków i&nbsp;spacji. Adres: /artysci/wybrany-slug</small>
         </label>
         <label className="form-field full-width">
           Biografia / opis
@@ -82,7 +83,7 @@ export function ArtworkForm({ artists, artwork }: { artists: Artist[]; artwork?:
       <input type="hidden" name="id" value={artwork?.id ?? ""} />
       {state.error && (
         <p role="alert" className="notice error">
-          {state.error}
+          {formatPolishText(state.error)}
         </p>
       )}
       <div className="form-grid">
@@ -111,7 +112,7 @@ export function ArtworkForm({ artists, artwork }: { artists: Artist[]; artwork?:
             </option>
             {artists.map((artist) => (
               <option key={artist.id} value={artist.id}>
-                {artist.name}
+                {formatPolishText(artist.name)}
                 {artist.status === "draft" ? " (szkic)" : ""}
               </option>
             ))}
@@ -122,7 +123,7 @@ export function ArtworkForm({ artists, artwork }: { artists: Artist[]; artwork?:
           <select name="category" defaultValue={artwork?.category ?? "malarstwo"}>
             {Object.entries(categoryLabels).map(([value, label]) => (
               <option key={value} value={value}>
-                {label}
+                {formatPolishText(label)}
               </option>
             ))}
           </select>
@@ -164,7 +165,7 @@ export function ArtworkForm({ artists, artwork }: { artists: Artist[]; artwork?:
           <select name="availability" defaultValue={artwork?.availability ?? "unknown"}>
             {Object.entries(availabilityLabels).map(([value, label]) => (
               <option key={value} value={value}>
-                {label}
+                {formatPolishText(label)}
               </option>
             ))}
           </select>
@@ -203,7 +204,7 @@ export function ArtworkForm({ artists, artwork }: { artists: Artist[]; artwork?:
             placeholder="np. Pejzaż z drzewami nad rzeką"
             defaultValue={artwork?.image_alt}
           />
-          <small>Krótki opis dla osób korzystających z czytnika ekranu.</small>
+          <small>Krótki opis dla osób korzystających z&nbsp;czytnika ekranu.</small>
         </label>
         <label className="form-field">
           Publikacja

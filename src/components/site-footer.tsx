@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Facebook } from "lucide-react";
 import { navigation, site } from "@/data/site";
 import { OpeningHours } from "@/components/opening-hours";
+import { formatPolishText } from "@/lib/typography";
 
 export function SiteFooter() {
   return (
@@ -11,25 +12,34 @@ export function SiteFooter() {
         <div>
           <Image src="/images/witryna-logo.png" alt="Galeria Witryna" width={187} height={37} />
           <p>
-            Sztuka, która zostaje z Tobą.
+            Sztuka, która zostaje z&nbsp;Tobą.
             <br />
-            Zapraszamy do naszej galerii w Lublinie.
+            Zapraszamy do naszej galerii w&nbsp;Lublinie.
           </p>
         </div>
         <nav aria-label="Menu w stopce">
           {navigation.map((item) => (
             <Link href={item.href} key={item.href}>
-              {item.label}
+              {formatPolishText(item.label)}
             </Link>
           ))}
         </nav>
         <div className="footer-contact">
           <span>
-            {site.address}, {site.postalCode} {site.city}
+            {formatPolishText(site.address)}, {site.postalCode} {formatPolishText(site.city)}
           </span>
           <a href={`tel:${site.phoneHref}`}>{site.phone}</a>
           <a href={`mailto:${site.email}`}>
             {site.email} <ArrowUpRight size={15} aria-hidden="true" />
+          </a>
+          <a
+            href={site.facebookUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-link"
+          >
+            <Facebook size={18} aria-hidden="true" />
+            Facebook <ArrowUpRight size={15} aria-hidden="true" />
           </a>
           <div className="footer-hours">
             <p className="eyebrow">GODZINY OTWARCIA</p>

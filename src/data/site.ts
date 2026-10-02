@@ -7,6 +7,7 @@ export const site = {
   postalCode: "20-026",
   city: "Lublin",
   sourceUrl: "https://galeria-witryna.pl/",
+  facebookUrl: "https://www.facebook.com/galeriawitryna/",
   mapUrl: "https://www.google.com/maps/search/?api=1&query=Galeria+Witryna+Chopina+1+Lublin",
   mapEmbedUrl:
     "https://www.google.com/maps?q=Galeria+Witryna,+Chopina+1,+20-026+Lublin&z=16&output=embed&hl=pl",

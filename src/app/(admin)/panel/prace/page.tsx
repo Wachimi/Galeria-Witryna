@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getEditorCatalog } from "@/lib/panel";
 import { availabilityLabels } from "@/types/catalog";
+import { formatPolishText } from "@/lib/typography";
 
 export default async function PanelArtworksPage() {
   const { artists, artworks } = await getEditorCatalog();
@@ -9,7 +10,7 @@ export default async function PanelArtworksPage() {
       <div className="panel-heading">
         <div>
           <h1>Prace</h1>
-          <p>Zdjęcia, opisy i dostępność prac.</p>
+          <p>Zdjęcia, opisy i&nbsp;dostępność prac.</p>
         </div>
         <Link className="button button-dark" href="/panel/prace/nowa">
           Dodaj pracę ↗
@@ -29,9 +30,11 @@ export default async function PanelArtworksPage() {
           <tbody>
             {artworks.map((work) => (
               <tr key={work.id}>
-                <td>{work.title}</td>
-                <td>{artists.find((artist) => artist.id === work.artist_id)?.name}</td>
-                <td>{availabilityLabels[work.availability]}</td>
+                <td>{formatPolishText(work.title)}</td>
+                <td>
+                  {formatPolishText(artists.find((artist) => artist.id === work.artist_id)?.name)}
+                </td>
+                <td>{formatPolishText(availabilityLabels[work.availability])}</td>
                 <td>
                   <span className={`badge ${work.status}`}>
                     {work.status === "published" ? "Opublikowana" : "Szkic"}
@@ -47,7 +50,7 @@ export default async function PanelArtworksPage() {
       </div>
       {!artworks.length && (
         <p className="empty-state">
-          Katalog jest pusty. Dodaj artystę, a następnie pierwszą pracę.
+          Katalog jest pusty. Dodaj artystę, a&nbsp;następnie pierwszą pracę.
         </p>
       )}
     </>

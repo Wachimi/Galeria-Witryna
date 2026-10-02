@@ -5,6 +5,7 @@ import { ArtworkCard } from "@/components/artwork-card";
 import { getCatalog } from "@/lib/catalog";
 import { site } from "@/data/site";
 import { OpeningHours } from "@/components/opening-hours";
+import { formatPolishText } from "@/lib/typography";
 
 export default async function HomePage() {
   const { artists, artworks } = await getCatalog();
@@ -22,8 +23,12 @@ export default async function HomePage() {
               <em>Blisko Ciebie.</em>
             </h1>
             <p className="hero-description">
-              Różne spojrzenia. Wyjątkowi twórcy. Odkryj sztukę współczesną w kameralnej galerii w
-              sercu Lublina.
+              Różne spojrzenia. Wyjątkowi twórcy. Odkryj sztukę współczesną w&nbsp;kameralnej
+              galerii w&nbsp;sercu Lublina.
+            </p>
+            <p className="hero-description">
+              Gwarantujemy profesjonalną obsługę, fachowe doradztwo, oraz niebanalne spojrzenie na
+              twórców i&nbsp;ich dzieła, także w&nbsp;odniesieniu do historii sztuki.
             </p>
             <div className="hero-actions">
               <Link className="button button-dark" href="/kolekcja">
@@ -36,7 +41,7 @@ export default async function HomePage() {
             <div className="hero-location">
               <MapPin size={17} aria-hidden="true" />
               <span>
-                {site.address}, {site.city}
+                {formatPolishText(site.address)}, {formatPolishText(site.city)}
               </span>
               <span className="location-divider" />
               <span>Malarstwo · Grafika · Rzeźba</span>
@@ -67,13 +72,13 @@ export default async function HomePage() {
           <a href="#wybrane-prace" aria-label="Przejdź do wybranych prac">
             <ArrowDown size={18} />
           </a>
-          <span>01 / ODKRYWAJ</span>
+          <span>ODKRYWAJ</span>
         </div>
       </div>
       <section id="wybrane-prace" className="container section selected-works">
         <div className="section-heading">
           <div>
-            <p className="eyebrow">Z KOLEKCJI GALERII</p>
+            <p className="eyebrow">Z&nbsp;KOLEKCJI GALERII</p>
             <h2>
               Każda praca.
               <br />
@@ -81,7 +86,10 @@ export default async function HomePage() {
             </h2>
           </div>
           <div className="section-heading-aside">
-            <p>Odkryj różnorodność form, kolorów i wrażliwości artystów związanych z Witryną.</p>
+            <p>
+              Odkryj różnorodność form, kolorów i&nbsp;wrażliwości artystów związanych
+              z&nbsp;Witryną.
+            </p>
             <Link className="text-link" href="/kolekcja">
               Zobacz całą kolekcję <ArrowUpRight size={18} aria-hidden="true" />
             </Link>
@@ -113,19 +121,18 @@ export default async function HomePage() {
             />
           </div>
           <div className="about-band-copy">
-            <p className="eyebrow">GALERIA Z HISTORIĄ</p>
+            <p className="eyebrow">GALERIA Z&nbsp;HISTORIĄ</p>
             <h2>
               Łączy nas
               <br />
               <em>pasja do sztuki.</em>
             </h2>
             <p>
-              Witrynę tworzą Agnieszka i Artur Kuśnierzowie — historycy sztuki, którzy od lat
-              przybliżają twórczość artystów z Lublina i całej Polski.
-            </p>
-            <p>
-              Pomagamy odkrywać, rozumieć i wybierać sztukę. Z uważnością na jej twórców i na
-              Ciebie.
+              GALERIA SZTUKI WITRYNA została założona i&nbsp;prowadzona jest przez historyków sztuki
+              Agnieszkę i&nbsp;Artura Kuśnierzów, którzy przez niemal 30 lat z&nbsp;pasją
+              i&nbsp;sukcesem kierowali promocją i&nbsp;sprzedażą dzieł sztuki w&nbsp;Galerii Art
+              Związku Polskich Artystów Plastyków w&nbsp;Lublinie, tworząc jej niepowtarzalny klimat
+              i&nbsp;jakość.
             </p>
             <Link href="/o-galerii" className="text-link">
               Poznaj nas bliżej <ArrowUpRight size={18} aria-hidden="true" />
@@ -139,7 +146,7 @@ export default async function HomePage() {
       >
         <div className="section-heading">
           <div>
-            <p className="eyebrow">WITRYNA Z BLISKA</p>
+            <p className="eyebrow">WITRYNA Z&nbsp;BLISKA</p>
             <h2 id="gallery-glimpses-heading">
               Zajrzyj do <em>Witryny.</em>
             </h2>
@@ -159,7 +166,6 @@ export default async function HomePage() {
                 sizes="(max-width: 900px) 100vw, 50vw"
               />
             </div>
-            <figcaption>Detale, które przyciągają spojrzenie.</figcaption>
           </figure>
           <figure className="gallery-glimpse">
             <div className="gallery-glimpse-image">
@@ -170,8 +176,21 @@ export default async function HomePage() {
                 sizes="(max-width: 900px) 100vw, 50vw"
               />
             </div>
-            <figcaption>Nasz znak przy ul. Chopina 1.</figcaption>
           </figure>
+        </div>
+        <div className="gallery-description">
+          <p>
+            Galeria Witryna z&nbsp;siedzibą przy ulicy Chopina 1 w&nbsp;Lublinie, podtrzymując
+            i&nbsp;kontynuując tradycję prezentuje, promuje i&nbsp;sprzedaje sztukę współczesną
+            artystów lubelskich, jak i&nbsp;z&nbsp;całej Polski. Prezentowane prace, zróżnicowane
+            tematycznie i&nbsp;stylistycznie, łączy jedno - wysoki poziom artystyczny
+            i&nbsp;warsztatowy.
+          </p>
+          <p>
+            Artyści związani z&nbsp;Galerią Witryna reprezentują różne pokolenia twórców, oraz
+            różnorodne dziedziny sztuki, od malarstwa poprzez grafikę, rysunek i&nbsp;rzeźbę do
+            ceramiki, szkła, czy biżuterii.
+          </p>
         </div>
       </section>
       <div className="visit-band">
@@ -188,7 +207,7 @@ export default async function HomePage() {
             <p>
               Nie trzeba znać się na sztuce, żeby ją poczuć.
               <br />
-              Odwiedź nas, obejrzyj prace i porozmawiajmy.
+              Odwiedź nas, obejrzyj prace i&nbsp;porozmawiajmy.
             </p>
             <Link href="/kontakt" className="button button-dark">
               Zaplanuj wizytę <ArrowUpRight size={18} aria-hidden="true" />

@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Facebook } from "lucide-react";
 import { PageHeading } from "@/components/page-heading";
 import { OpeningHours } from "@/components/opening-hours";
 import { site } from "@/data/site";
+import { formatPolishText } from "@/lib/typography";
 
 export const metadata: Metadata = { title: "Kontakt" };
 
@@ -20,9 +21,9 @@ export default function ContactPage() {
           <div className="contact-item">
             <p className="eyebrow">ODWIEDŹ NAS</p>
             <p>
-              {site.address}
+              {formatPolishText(site.address)}
               <br />
-              {site.postalCode} {site.city}
+              {site.postalCode} {formatPolishText(site.city)}
             </p>
           </div>
           <section className="contact-item" aria-labelledby="opening-hours-heading">
@@ -39,12 +40,24 @@ export default function ContactPage() {
             <p className="eyebrow">NAPISZ</p>
             <a href={`mailto:${site.email}`}>{site.email}</a>
           </div>
+          <div className="contact-item">
+            <p className="eyebrow">OBSERWUJ NAS</p>
+            <a
+              href={site.facebookUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-link"
+            >
+              <Facebook size={22} aria-hidden="true" />
+              Facebook <ArrowUpRight size={17} aria-hidden="true" />
+            </a>
+          </div>
           <p className="contact-note">
-            Zapraszamy do odwiedzin w godzinach otwarcia. Jeśli masz pytania o konkretną pracę,
-            zadzwoń lub napisz.
+            Zapraszamy do odwiedzin w&nbsp;godzinach otwarcia. Jeśli masz pytania o&nbsp;konkretną
+            pracę, zadzwoń lub napisz.
           </p>
           <a href={site.mapUrl} target="_blank" rel="noopener noreferrer" className="text-link">
-            Wyznacz trasę w Google Maps <ArrowUpRight size={17} aria-hidden="true" />
+            Wyznacz trasę w&nbsp;Google Maps <ArrowUpRight size={17} aria-hidden="true" />
           </a>
         </div>
         <div className="contact-location">
@@ -57,7 +70,7 @@ export default function ContactPage() {
               allowFullScreen
             />
             <p>
-              {site.address} · {site.postalCode} {site.city}
+              {formatPolishText(site.address)} · {site.postalCode} {formatPolishText(site.city)}
             </p>
           </section>
           <div className="contact-photo">

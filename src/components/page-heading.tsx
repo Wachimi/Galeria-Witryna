@@ -1,3 +1,5 @@
+import { formatPolishText } from "@/lib/typography";
+
 export function PageHeading({
   eyebrow,
   title,
@@ -9,9 +11,9 @@ export function PageHeading({
 }) {
   return (
     <div className="page-heading">
-      <p className="eyebrow">{eyebrow}</p>
-      <h1>{title}</h1>
-      {description && <p className="page-description">{description}</p>}
+      <p className="eyebrow">{formatPolishText(eyebrow)}</p>
+      <h1>{formatPolishText(title)}</h1>
+      {description && <p className="page-description">{formatPolishText(description)}</p>}
     </div>
   );
 }

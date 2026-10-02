@@ -8,7 +8,7 @@ export default async function PanelPage() {
       <div className="panel-heading">
         <div>
           <h1>Twoja galeria.</h1>
-          <p>Zarządzaj artystami i pracami prezentowanymi na stronie.</p>
+          <p>Zarządzaj artystami i&nbsp;pracami prezentowanymi na stronie.</p>
         </div>
       </div>
       <div className="panel-stats">
@@ -18,7 +18,7 @@ export default async function PanelPage() {
         </div>
         <div className="panel-stat">
           <strong>{artworks.length}</strong>
-          <span>Prace w katalogu</span>
+          <span>Prace w&nbsp;katalogu</span>
         </div>
         <div className="panel-stat">
           <strong>{artworks.filter((work) => work.status === "draft").length}</strong>

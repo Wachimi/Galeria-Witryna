@@ -6,7 +6,7 @@ export default function NewArtistPage() {
       <div className="panel-heading">
         <div>
           <h1>Nowy artysta</h1>
-          <p>Uzupełnij profil i zdecyduj, kiedy go opublikować.</p>
+          <p>Uzupełnij profil i&nbsp;zdecyduj, kiedy go opublikować.</p>
         </div>
       </div>
       <ArtistForm />

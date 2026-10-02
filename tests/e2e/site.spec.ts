@@ -20,6 +20,20 @@ test("strona główna i podstrony publiczne działają", async ({ page }) => {
       () => document.documentElement.scrollWidth > window.innerWidth,
     );
     expect(overflow, `Poziome przewijanie: ${path}`).toBe(false);
+    const unboundWords = await page.evaluate(() => {
+      const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+      const found: string[] = [];
+      while (walker.nextNode()) {
+        const node = walker.currentNode;
+        const parent = node.parentElement;
+        if (!parent || parent.closest("script, style, textarea, code, pre")) continue;
+        if (!parent.getClientRects().length) continue;
+        const text = node.textContent ?? "";
+        if (/(?<![\p{L}\p{N}_])[aiouwz][ \t\r\n]+(?=\S)/iu.test(text)) found.push(text.trim());
+      }
+      return found;
+    });
+    expect(unboundWords, `Jednoliterowe słowa bez twardej spacji: ${path}`).toEqual([]);
   }
   expect(errors).toEqual([]);
 });
@@ -49,12 +63,12 @@ test("nieznana praca zwraca stronę 404", async ({ page }) => {
 });
 
 test("logo prowadzi na samą górę strony głównej", async ({ page }) => {
-  for (const path of ["/kolekcja", "/artysci", "/kontakt", "/"]) {
+  for (const path of ["/kolekcja", "/artysci", "/kontakt", "/", "/#wybrane-prace", "/#top"]) {
     await page.goto(path);
     await page.evaluate(() => window.scrollTo({ top: 400, behavior: "instant" }));
     await expect.poll(() => page.evaluate(() => window.scrollY)).toBeGreaterThan(0);
     await page.getByRole("link", { name: "Galeria Witryna — strona główna", exact: true }).click();
-    await expect(page).toHaveURL(/\/(?:#top)?$/);
+    await expect(page).toHaveURL(new URL("/", test.info().project.use.baseURL).href);
     await expect.poll(() => page.evaluate(() => window.scrollY)).toBe(0);
   }
 });

@@ -5,6 +5,7 @@ import { ArrowUpRight } from "lucide-react";
 import { PageHeading } from "@/components/page-heading";
 import { getCatalog } from "@/lib/catalog";
 import { artworkImageUrl } from "@/lib/images";
+import { formatPolishText } from "@/lib/typography";
 
 export const metadata: Metadata = { title: "Artyści" };
 
@@ -42,8 +43,8 @@ export default async function ArtistsPage() {
                     .join("")}
                 </div>
               )}
-              <h2>{artist.name}</h2>
-              <p>{artist.biography}</p>
+              <h2>{formatPolishText(artist.name)}</h2>
+              <p>{formatPolishText(artist.biography)}</p>
               <Link href={`/artysci/${artist.slug}`} className="text-link">
                 Poznaj artystę <ArrowUpRight size={16} aria-hidden="true" />
               </Link>

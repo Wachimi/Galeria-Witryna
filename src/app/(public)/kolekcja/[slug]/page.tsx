@@ -7,6 +7,7 @@ import { getCatalog } from "@/lib/catalog";
 import { artworkImageUrl } from "@/lib/images";
 import { availabilityLabels, categoryLabels } from "@/types/catalog";
 import { site } from "@/data/site";
+import { formatPolishText } from "@/lib/typography";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -32,7 +33,7 @@ export default async function ArtworkPage({ params }: Props) {
       <nav className="breadcrumb" aria-label="Ścieżka nawigacji">
         <Link href="/kolekcja">Kolekcja</Link>
         <span>/</span>
-        <span>{artwork.title}</span>
+        <span>{formatPolishText(artwork.title)}</span>
       </nav>
       <section className="artwork-detail">
         <div className="artwork-detail-image">
@@ -46,21 +47,21 @@ export default async function ArtworkPage({ params }: Props) {
           />
         </div>
         <div className="artwork-detail-copy">
-          <p className="eyebrow">{categoryLabels[artwork.category]}</p>
-          <h1>{artwork.title}</h1>
+          <p className="eyebrow">{formatPolishText(categoryLabels[artwork.category])}</p>
+          <h1>{formatPolishText(artwork.title)}</h1>
           {artist && (
             <Link className="artist-link" href={`/artysci/${artist.slug}`}>
-              {artist.name}
+              {formatPolishText(artist.name)}
             </Link>
           )}
           <dl className="artwork-specs">
             <div>
               <dt>Technika</dt>
-              <dd>{artwork.technique}</dd>
+              <dd>{formatPolishText(artwork.technique)}</dd>
             </div>
             <div>
               <dt>Wymiary</dt>
-              <dd>{artwork.dimensions}</dd>
+              <dd>{formatPolishText(artwork.dimensions)}</dd>
             </div>
             <div>
               <dt>Rok powstania</dt>
@@ -68,15 +69,15 @@ export default async function ArtworkPage({ params }: Props) {
             </div>
             <div>
               <dt>Dostępność</dt>
-              <dd>{availabilityLabels[artwork.availability]}</dd>
+              <dd>{formatPolishText(availabilityLabels[artwork.availability])}</dd>
             </div>
           </dl>
-          <p>{artwork.description}</p>
+          <p>{formatPolishText(artwork.description)}</p>
           <a className="button button-dark" href={`mailto:${site.email}?subject=${subject}`}>
-            Zapytaj o tę pracę <ArrowUpRight size={18} aria-hidden="true" />
+            Zapytaj o&nbsp;tę pracę <ArrowUpRight size={18} aria-hidden="true" />
           </a>
           <span className="availability">
-            Z przyjemnością opowiemy więcej i potwierdzimy dostępność.
+            Z&nbsp;przyjemnością opowiemy więcej i&nbsp;potwierdzimy dostępność.
           </span>
         </div>
       </section>

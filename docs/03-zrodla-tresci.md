@@ -51,7 +51,7 @@ Zdjęcia pokazują miejsce i jego atmosferę. Nie przypisano widocznych na nich 
 - Wymiary, daty i przypisania zdjęć: przyjęto podpisy starego katalogu. Nie wyprowadzamy roku z daty przesłania pliku — te wartości czasem się różnią.
 - Zapis nazwiska Andała: lista artystów używa „Andala”, profil „ANDAŁA”. Przyjęto zapis z profilu.
 - Dane kontaktowe potwierdzono w rozmowie z użytkownikiem. Kod pocztowy i godziny pochodzą od użytkownika: 20-026; poniedziałek–piątek 10:00–17:00, sobota 11:00–14:00, niedziela zamknięte.
-- Okres działalności: stare podstrony podają różną liczbę lat wcześniejszej pracy właścicieli. Nowa wersja używa ogólnego „wieloletnie doświadczenie”.
+- Okres działalności: stare podstrony podają różną liczbę lat wcześniejszej pracy właścicieli. Użytkownik przekazał dokładny opis na landing page z określeniem „przez niemal 30 lat”; przyjęto jego tekst. Dotyczy on wcześniejszej pracy w Galerii Art, a nie wieku Galerii Witryna.
 - Wystawy: pokazujemy archiwum. Nie dopisano dat ani nie przedstawiono dawnych wydarzeń jako bieżących.
 - Pełne biografie, zdjęcia portretowe, grafika i rzeźba: wymagają dalszej migracji. Te filtry są przygotowane, ale startowa próbka zawiera tylko malarstwo.
 

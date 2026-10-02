@@ -80,6 +80,8 @@ Foldery w nawiasach porządkują kod, ale nie pojawiają się w adresie strony. 
 
 Komponenty domyślnie wykonują się na serwerze. Pliki z `"use client"` obsługują interakcje w przeglądarce, np. filtr katalogu. Operacje z `"use server"` sprawdzają uprawnienia i zapisują dane w bazie.
 
+W tekstach JSX stosujemy `&nbsp;` po polskich jednoliterowych słowach (`a`, `i`, `o`, `u`, `w`, `z`). Teksty zmienne, np. biografie i opisy prac, wyświetlamy przez `formatPolishText` z `src/lib/typography.ts`. Funkcja dodaje spacje nierozdzielające podczas renderowania; dane w bazie, wartości formularzy i wyszukiwanie zachowują oryginalny tekst.
+
 ## Następne etapy i potrzebne informacje
 
 1. **Układ i treści:** dane kontaktowe, kod pocztowy i godziny są potwierdzone. Oceń większe teksty i nowe tła sekcji; potwierdź aktualną dostępność prac. Ustalmy, czy redaktor publikuje sam, czy publikację zatwierdza administrator. Teraz obie role mogą publikować.

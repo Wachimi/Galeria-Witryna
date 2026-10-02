@@ -8,7 +8,7 @@ export default async function NewArtworkPage() {
       <div className="panel-heading">
         <div>
           <h1>Nowa praca</h1>
-          <p>Dodaj zdjęcie, podpis i informacje o pracy.</p>
+          <p>Dodaj zdjęcie, podpis i&nbsp;informacje o&nbsp;pracy.</p>
         </div>
       </div>
       <ArtworkForm artists={artists} />

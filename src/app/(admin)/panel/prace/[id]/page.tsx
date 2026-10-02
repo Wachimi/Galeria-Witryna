@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { ArtworkForm } from "@/components/editor-forms";
 import { getEditorCatalog } from "@/lib/panel";
+import { formatPolishText } from "@/lib/typography";
 
 export default async function EditArtworkPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
@@ -12,7 +13,7 @@ export default async function EditArtworkPage({ params }: { params: Promise<{ id
       <div className="panel-heading">
         <div>
           <h1>Edytuj pracę</h1>
-          <p>{artwork.title}</p>
+          <p>{formatPolishText(artwork.title)}</p>
         </div>
       </div>
       <ArtworkForm artwork={artwork} artists={artists} />

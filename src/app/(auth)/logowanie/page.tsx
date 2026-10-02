@@ -27,7 +27,7 @@ export default async function LoginPage() {
             <br />
             <em>naszej galerii.</em>
           </h1>
-          <p>Zarządzaj artystami i pracami. Dziel się sztuką z odwiedzającymi Witrynę.</p>
+          <p>Zarządzaj artystami i&nbsp;pracami. Dziel się sztuką z&nbsp;odwiedzającymi Witrynę.</p>
         </div>
         <Link href="/" className="text-link">
           Wróć do strony galerii <ArrowUpRight size={17} aria-hidden="true" />
@@ -41,8 +41,8 @@ export default async function LoginPage() {
           {profile ? (
             <>
               <p className="notice error" role="alert">
-                Twoje konto nie ma jeszcze uprawnień redaktora. Skontaktuj się z administratorem
-                galerii.
+                Twoje konto nie ma jeszcze uprawnień redaktora. Skontaktuj się
+                z&nbsp;administratorem galerii.
               </p>
               <form action={logout}>
                 <button className="button button-outline" type="submit">
@@ -54,8 +54,8 @@ export default async function LoginPage() {
             <LoginForm configured={configured} />
           )}
           <p className="auth-help">
-            Dostęp przeznaczony dla zespołu galerii. Jeśli nie pamiętasz hasła, skontaktuj się z
-            administratorem.
+            Dostęp przeznaczony dla zespołu galerii. Jeśli nie pamiętasz hasła, skontaktuj się
+            z&nbsp;administratorem.
           </p>
           {!configured && (
             <Link className="text-link" href="/panel">

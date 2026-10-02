@@ -13,18 +13,24 @@ export default function AboutPage() {
       <div className="about-page">
         <div className="prose">
           <p>
-            Galerię Witryna założyli i prowadzą Agnieszka i Artur Kuśnierzowie, historycy sztuki z
-            wieloletnim doświadczeniem w Galerii Art Związku Polskich Artystów Plastyków w Lublinie.
+            Galerię Witryna założyli i&nbsp;prowadzą Agnieszka i&nbsp;Artur Kuśnierzowie, historycy
+            sztuki z&nbsp;wieloletnim doświadczeniem w&nbsp;Galerii Art Związku Polskich Artystów
+            Plastyków w&nbsp;Lublinie.
           </p>
           <p>
-            Przy ulicy Chopina 1 prezentujemy twórczość artystów z regionu i całej Polski. Spotykają
-            się tutaj różne pokolenia, techniki i sposoby patrzenia na świat.
+            <em>
+              Przy ulicy Chopina 1 prezentujemy twórczość artystów z&nbsp;regionu i&nbsp;całej
+              Polski. Spotykają się tutaj różne pokolenia, techniki i&nbsp;sposoby patrzenia na
+              świat.
+            </em>
           </p>
           <h2>Przestrzeń do odkrywania.</h2>
           <p>
-            Od malarstwa i grafiki, przez rysunek i rzeźbę, po ceramikę, szkło i biżuterię —
-            pomagamy znaleźć prace bliskie Twojej wrażliwości. Dzielimy się wiedzą o twórcach i ich
-            dziełach, doradzamy i zapraszamy do rozmowy.
+            <em>
+              Od malarstwa i&nbsp;grafiki, przez rysunek i&nbsp;rzeźbę, po ceramikę, szkło
+              i&nbsp;biżuterię — pomagamy znaleźć prace bliskie Twojej wrażliwości. Dzielimy się
+              wiedzą o&nbsp;twórcach i&nbsp;ich dziełach, doradzamy i&nbsp;zapraszamy do rozmowy.
+            </em>
           </p>
           <Link className="text-link" href="/kontakt">
             Odwiedź galerię <ArrowUpRight size={18} aria-hidden="true" />

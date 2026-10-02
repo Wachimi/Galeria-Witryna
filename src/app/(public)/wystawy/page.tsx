@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { PageHeading } from "@/components/page-heading";
+import { formatPolishText } from "@/lib/typography";
 
 export const metadata: Metadata = { title: "Wystawy" };
 
@@ -30,7 +31,7 @@ export default function ExhibitionsPage() {
           />
         </div>
         <div>
-          <p className="eyebrow">Z ARCHIWUM GALERII</p>
+          <p className="eyebrow">Z&nbsp;ARCHIWUM GALERII</p>
           <h2>Pod niebem Południa</h2>
           <p>Zbigniew Pieczyński · malarstwo</p>
         </div>
@@ -38,8 +39,8 @@ export default function ExhibitionsPage() {
       <div className="exhibition-list">
         {archive.map((exhibition) => (
           <article className="exhibition-row" key={exhibition.artist}>
-            <h3>{exhibition.artist}</h3>
-            <span>{exhibition.title}</span>
+            <h3>{formatPolishText(exhibition.artist)}</h3>
+            <span>{formatPolishText(exhibition.title)}</span>
           </article>
         ))}
       </div>

@@ -196,6 +196,7 @@ em {
   gap: 29px;
   font-size: 15px;
   font-weight: 500;
+  margin-left: auto;
 }
 .main-nav > a {
   position: relative;
@@ -227,6 +228,24 @@ em {
   color: var(--ink);
   padding: 10px;
 }
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.header-facebook {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--line);
+}
+.header-facebook:hover {
+  color: var(--green);
+  border-color: var(--green);
+}
 .hero {
   display: grid;
   grid-template-columns: 1fr 1.02fr;
@@ -254,6 +273,9 @@ em {
   margin-top: 24px;
   font-size: 17px;
   line-height: 1.9;
+}
+.hero-description + .hero-description {
+  margin-top: 14px;
 }
 .hero-actions {
   display: flex;
@@ -467,10 +489,17 @@ em {
 .gallery-glimpse-image img {
   object-fit: cover;
 }
-.gallery-glimpse figcaption {
-  margin-top: 14px;
+.gallery-description {
+  max-width: 900px;
+  margin-top: 32px;
+  margin-inline: auto;
+  text-align: center;
   color: var(--muted);
-  font-size: 15px;
+  font-size: 17px;
+  line-height: 1.9;
+}
+.gallery-description p + p {
+  margin-top: 18px;
 }
 .visit-band {
   background: #e3e9d6;
@@ -532,6 +561,11 @@ em {
 .footer-hours {
   border-top: 1px solid #323b41;
   padding-top: 8px;
+}
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
 }
 .footer-hours .eyebrow {
   color: #b4d788;
@@ -802,7 +836,7 @@ em {
   display: grid;
   grid-template-columns: 1fr 1.1fr;
   gap: 40px;
-  align-items: start;
+  align-items: stretch;
 }
 .contact-details {
   background: #ecefe0;
@@ -812,6 +846,7 @@ em {
 }
 .contact-location {
   display: grid;
+  grid-template-rows: auto 1fr;
   gap: 24px;
   min-width: 0;
 }
@@ -858,11 +893,11 @@ em {
 }
 .contact-photo {
   position: relative;
-  aspect-ratio: 4 / 5;
+  min-height: 240px;
 }
 .contact-photo img {
   object-fit: cover;
-  object-position: center 40%;
+  object-position: center 20%;
 }
 .exhibition-feature {
   display: grid;
@@ -1235,6 +1270,7 @@ em {
   }
   .header-inner {
     min-height: 88px;
+    gap: 12px;
   }
   .brand img {
     width: 164px;
@@ -1356,6 +1392,10 @@ em {
   .contact-grid {
     grid-template-columns: 1fr;
     gap: 35px;
+  }
+  .contact-photo {
+    aspect-ratio: 3 / 2;
+    min-height: 0;
   }
   .exhibition-feature {
     grid-template-columns: 1fr;

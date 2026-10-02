@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Search } from "lucide-react";
 import { ArtworkCard } from "@/components/artwork-card";
 import { categoryLabels, type ArtworkCategory, type Catalog } from "@/types/catalog";
+import { formatPolishText } from "@/lib/typography";
 
 export function CatalogBrowser({ catalog }: { catalog: Catalog }) {
   const [category, setCategory] = useState<ArtworkCategory | "all">("all");
@@ -36,7 +37,7 @@ export function CatalogBrowser({ catalog }: { catalog: Catalog }) {
               aria-pressed={category === key}
               onClick={() => setCategory(key as ArtworkCategory)}
             >
-              {label}
+              {formatPolishText(label)}
             </button>
           ))}
         </div>

@@ -4,6 +4,7 @@ import { useActionState } from "react";
 import { ArrowUpRight } from "lucide-react";
 import { login } from "@/app/(auth)/logowanie/actions";
 import { initialFormState } from "@/lib/validation";
+import { formatPolishText } from "@/lib/typography";
 
 export function LoginForm({ configured }: { configured: boolean }) {
   const [state, action, pending] = useActionState(login, initialFormState);
@@ -11,13 +12,13 @@ export function LoginForm({ configured }: { configured: boolean }) {
     <form action={action} className="auth-form">
       {!configured && (
         <p className="notice">
-          Logowanie uruchomimy po podłączeniu Supabase. Instrukcja konfiguracji znajduje się w
-          README projektu.
+          Logowanie uruchomimy po podłączeniu Supabase. Instrukcja konfiguracji znajduje się
+          w&nbsp;README projektu.
         </p>
       )}
       {state.error && (
         <p className="notice error" role="alert">
-          {state.error}
+          {formatPolishText(state.error)}
         </p>
       )}
       <label className="form-field">

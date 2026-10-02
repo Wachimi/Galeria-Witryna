@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getEditorCatalog } from "@/lib/panel";
+import { formatPolishText } from "@/lib/typography";
 
 export default async function PanelArtistsPage() {
   const { artists, artworks } = await getEditorCatalog();
@@ -8,7 +9,7 @@ export default async function PanelArtistsPage() {
       <div className="panel-heading">
         <div>
           <h1>Artyści</h1>
-          <p>Biografie i profile twórców galerii.</p>
+          <p>Biografie i&nbsp;profile twórców galerii.</p>
         </div>
         <Link className="button button-dark" href="/panel/artysci/nowy">
           Dodaj artystę ↗
@@ -27,7 +28,7 @@ export default async function PanelArtistsPage() {
           <tbody>
             {artists.map((artist) => (
               <tr key={artist.id}>
-                <td>{artist.name}</td>
+                <td>{formatPolishText(artist.name)}</td>
                 <td>{artworks.filter((work) => work.artist_id === artist.id).length}</td>
                 <td>
                   <span className={`badge ${artist.status}`}>

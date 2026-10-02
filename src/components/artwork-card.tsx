@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { artworkImageUrl } from "@/lib/images";
 import type { Artist, Artwork } from "@/types/catalog";
+import { formatPolishText } from "@/lib/typography";
 
 export function ArtworkCard({ artwork, artist }: { artwork: Artwork; artist?: Artist }) {
   const src = artworkImageUrl(artwork.image_path);
@@ -21,10 +22,10 @@ export function ArtworkCard({ artwork, artist }: { artwork: Artwork; artist?: Ar
         </span>
       </div>
       <div className="artwork-card-caption">
-        <p>{artist?.name ?? "Artysta galerii"}</p>
-        <h3>{artwork.title}</h3>
+        <p>{formatPolishText(artist?.name ?? "Artysta galerii")}</p>
+        <h3>{formatPolishText(artwork.title)}</h3>
         <span>
-          {artwork.technique} · {artwork.dimensions}
+          {formatPolishText(artwork.technique)} · {formatPolishText(artwork.dimensions)}
         </span>
       </div>
     </Link>

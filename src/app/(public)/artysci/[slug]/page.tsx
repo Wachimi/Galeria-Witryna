@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { PageHeading } from "@/components/page-heading";
 import { ArtworkCard } from "@/components/artwork-card";
 import { getCatalog } from "@/lib/catalog";
+import { formatPolishText } from "@/lib/typography";
 
 type Props = { params: Promise<{ slug: string }> };
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -25,12 +26,12 @@ export default async function ArtistPage({ params }: Props) {
       <nav className="breadcrumb" aria-label="Ścieżka nawigacji">
         <Link href="/artysci">Artyści</Link>
         <span>/</span>
-        <span>{artist.name}</span>
+        <span>{formatPolishText(artist.name)}</span>
       </nav>
       <PageHeading eyebrow="ARTYSTA GALERII WITRYNA" title={artist.name} />
-      <p className="artist-biography">{artist.biography}</p>
+      <p className="artist-biography">{formatPolishText(artist.biography)}</p>
       <div className="section-heading">
-        <h2>Prace w galerii</h2>
+        <h2>Prace w&nbsp;galerii</h2>
       </div>
       {selected.length ? (
         <div className="artwork-grid">
@@ -39,7 +40,7 @@ export default async function ArtistPage({ params }: Props) {
           ))}
         </div>
       ) : (
-        <p className="empty-state">Zapraszamy do kontaktu w sprawie prac tego artysty.</p>
+        <p className="empty-state">Zapraszamy do kontaktu w&nbsp;sprawie prac tego artysty.</p>
       )}
     </div>
   );

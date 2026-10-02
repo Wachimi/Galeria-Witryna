@@ -5,6 +5,7 @@ import { ArrowUpRight } from "lucide-react";
 import { isSupabaseConfigured } from "@/lib/env";
 import { requireEditor } from "@/lib/auth";
 import { logout } from "@/app/(auth)/logowanie/actions";
+import { formatPolishText } from "@/lib/typography";
 
 export const metadata: Metadata = {
   title: "Panel redakcyjny",
@@ -19,21 +20,21 @@ export default async function PanelLayout({ children }: { children: React.ReactN
           <p className="eyebrow">PANEL REDAKCYJNY · KONFIGURACJA</p>
           <h1>Przygotowany do połączenia.</h1>
           <p>
-            Strona działa z katalogiem startowym. Prawdziwe logowanie i zapis treści wymagają
-            podłączenia Supabase.
+            Strona działa z&nbsp;katalogiem startowym. Prawdziwe logowanie i&nbsp;zapis treści
+            wymagają podłączenia Supabase.
           </p>
           <ol>
             <li>
-              Utwórz projekt Supabase i uzupełnij <code>.env.local</code> zgodnie z{" "}
+              Utwórz projekt Supabase i&nbsp;uzupełnij <code>.env.local</code> zgodnie z&nbsp;
               <code>.env.example</code>.
             </li>
             <li>
-              Uruchom migrację <code>supabase/migrations/001_initial_schema.sql</code> i opcjonalny{" "}
-              <code>supabase/seed.sql</code>.
+              Uruchom migrację <code>supabase/migrations/001_initial_schema.sql</code>{" "}
+              i&nbsp;opcjonalny <code>supabase/seed.sql</code>.
             </li>
-            <li>Utwórz konto administratora, przypisz rolę i wyłącz publiczną rejestrację.</li>
+            <li>Utwórz konto administratora, przypisz rolę i&nbsp;wyłącz publiczną rejestrację.</li>
             <li>
-              Uruchom ponownie serwer. Szczegóły znajdziesz w <code>docs/02-supabase.md</code>.
+              Uruchom ponownie serwer. Szczegóły znajdziesz w&nbsp;<code>docs/02-supabase.md</code>.
             </li>
           </ol>
           <Link className="button button-dark" href="/">
@@ -57,7 +58,7 @@ export default async function PanelLayout({ children }: { children: React.ReactN
         </nav>
         <div className="panel-user">
           <div>
-            {profile.display_name || "Zespół galerii"}
+            {formatPolishText(profile.display_name || "Zespół galerii")}
             <small>{profile.role === "admin" ? "Administrator" : "Redaktor"}</small>
           </div>
           <form action={logout}>
