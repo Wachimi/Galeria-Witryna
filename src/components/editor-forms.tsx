@@ -6,6 +6,8 @@ import { saveArtist, saveArtwork } from "@/app/(admin)/panel/actions";
 import { initialFormState } from "@/lib/validation";
 import { availabilityLabels, categoryLabels, type Artist, type Artwork } from "@/types/catalog";
 import { formatPolishText } from "@/lib/typography";
+import { ArtistPortraitField } from "@/components/artist-portrait-field";
+import { artistPortraitUrl } from "@/lib/images";
 
 export function ArtistForm({ artist }: { artist?: Artist }) {
   const [state, action, pending] = useActionState(saveArtist, initialFormState);
@@ -35,6 +37,11 @@ export function ArtistForm({ artist }: { artist?: Artist }) {
           />
           <small>Małe litery bez polskich znaków i&nbsp;spacji. Adres: /artysci/wybrany-slug</small>
         </label>
+        <ArtistPortraitField
+          currentSrc={artistPortraitUrl(artist?.portrait_path)}
+          name={artist?.name ?? "Podgląd zdjęcia profilowego"}
+          disabled={pending}
+        />
         <label className="form-field full-width">
           Biografia / opis
           <textarea

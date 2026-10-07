@@ -6,6 +6,7 @@ import sharp from "sharp";
 import { requireEditor } from "@/lib/auth";
 import { createClient } from "@/lib/supabase/server";
 import { artistSchema, artworkSchema, type FormState } from "@/lib/validation";
+import { optimizePortrait } from "@/lib/portrait-upload";
 
 function saveError(code?: string) {
   return code === "23505"
@@ -22,12 +23,80 @@ export async function saveArtist(
   if (!parsed.success) return { error: parsed.error.issues[0].message };
   const { id, ...record } = parsed.data;
   const supabase = await createClient();
+  const artistId = id || crypto.randomUUID();
+  let previousPortrait: string | null = null;
+  if (id) {
+    const current = await supabase.from("artists").select("portrait_path").eq("id", id).single();
+    if (current.error || !current.data)
+      return {
+        error:
+          "Nie udało się odczytać profilu artysty. Sprawdź, czy migracja portretów została uruchomiona.",
+      };
+    previousPortrait = current.data.portrait_path;
+  }
+  const file = formData.get("portrait");
+  const removePortrait = formData.get("remove_portrait") === "on";
+  const hasNewPortrait = file instanceof File && file.size > 0;
+  if (file && !(file instanceof File)) return { error: "Wybierz zdjęcie profilowe z komputera." };
+  let nextPortrait = removePortrait ? null : previousPortrait;
+  let uploadedPortrait: string | null = null;
+  if (hasNewPortrait) {
+    let optimized: Buffer;
+    try {
+      optimized = await optimizePortrait(file);
+    } catch (error) {
+      return { error: error instanceof Error ? error.message : "Nie udało się odczytać portretu." };
+    }
+    uploadedPortrait = `${artistId}/${crypto.randomUUID()}.jpg`;
+    const upload = await supabase.storage
+      .from("artist-portraits")
+      .upload(uploadedPortrait, optimized, { contentType: "image/jpeg", upsert: false });
+    if (upload.error)
+      return {
+        error:
+          "Nie udało się przesłać portretu. Sprawdź połączenie i konfigurację magazynu zdjęć profilowych.",
+      };
+    nextPortrait = uploadedPortrait;
+  }
+  const portraitChanged = hasNewPortrait || removePortrait;
+  const payload = portraitChanged ? { ...record, portrait_path: nextPortrait } : record;
+  let update = supabase.from("artists").update(payload).eq("id", artistId);
+  if (portraitChanged) {
+    // Nie nadpisujemy portretu wymienionego równocześnie przez drugiego redaktora.
+    update =
+      previousPortrait === null
+        ? update.is("portrait_path", null)
+        : update.eq("portrait_path", previousPortrait);
+  }
   const result = id
-    ? await supabase.from("artists").update(record).eq("id", id).select("id").single()
-    : await supabase.from("artists").insert(record).select("id").single();
-  if (result.error) return { error: saveError(result.error.code) };
+    ? await update.select("id").single()
+    : await supabase
+        .from("artists")
+        .insert({ ...payload, id: artistId })
+        .select("id")
+        .single();
+  if (result.error) {
+    if (uploadedPortrait) await removeUnusedPortrait(supabase, uploadedPortrait);
+    return {
+      error:
+        result.error.code === "PGRST116"
+          ? "Profil zmienił się podczas zapisywania. Odśwież stronę i spróbuj ponownie."
+          : saveError(result.error.code),
+    };
+  }
+  if (portraitChanged && previousPortrait && previousPortrait !== nextPortrait) {
+    await removeUnusedPortrait(supabase, previousPortrait);
+  }
   revalidatePath("/", "layout");
   redirect("/panel/artysci");
+}
+
+async function removeUnusedPortrait(
+  supabase: Awaited<ReturnType<typeof createClient>>,
+  path: string,
+) {
+  const { error } = await supabase.storage.from("artist-portraits").remove([path]);
+  if (error) console.error("Nie udało się usunąć nieużywanego portretu", { code: error.name });
 }
 
 export async function saveArtwork(

@@ -29,6 +29,12 @@ test("migracja, seed i RLS chronią szkice oraz role zespołu", async (context) 
       "utf8",
     ),
   );
+  const portraits = await readFile(
+    new URL("../supabase/migrations/20261007065759_artist_portraits.sql", import.meta.url),
+    "utf8",
+  );
+  await db.exec(portraits);
+  await db.exec(portraits);
   const seed = await readFile(new URL("../supabase/seed.sql", import.meta.url), "utf8");
   await db.exec(seed);
   await db.exec(seed);
@@ -146,5 +152,54 @@ test("migracja, seed i RLS chronią szkice oraz role zespołu", async (context) 
       asUser(null, (tx) => tx.query(sql, ["artworks", name])),
       /permission denied/,
     );
+  });
+
+  await context.test("portret należy do artysty, a używanego pliku nie można usunąć", async () => {
+    await db.query("update public.profiles set role = 'viewer' where id = $1", [viewerId]);
+    const artistId = "10000000-0000-4000-8000-000000000001";
+    const path = `${artistId}/40000000-0000-4000-8000-000000000010.jpg`;
+    const insert = "insert into storage.objects (bucket_id, name) values ('artist-portraits', $1)";
+    await assert.rejects(
+      asUser(viewerId, (tx) => tx.query(insert, [path])),
+      /row-level security/,
+    );
+    await assert.rejects(
+      asUser(null, (tx) => tx.query(insert, [path])),
+      /permission denied/,
+    );
+    await assert.rejects(
+      asUser(editorId, (tx) => tx.query(insert, ["../obcy.svg"])),
+      /row-level security/,
+    );
+    await asUser(editorId, (tx) => tx.query(insert, [path]));
+    await asUser(editorId, (tx) =>
+      tx.query("update public.artists set portrait_path = $1 where id = $2", [path, artistId]),
+    );
+    await assert.rejects(
+      asUser(editorId, (tx) =>
+        tx.query("update public.artists set portrait_path = $1 where slug = 'jerzy-tyburski'", [
+          path,
+        ]),
+      ),
+      /check constraint/,
+    );
+    const publicRows = await asUser(null, (tx) =>
+      tx.query<{ portrait_path: string }>(
+        "select portrait_path from public.artists where id = $1",
+        [artistId],
+      ),
+    );
+    assert.equal(publicRows.rows[0].portrait_path, path);
+    const inUse = await asUser(editorId, (tx) =>
+      tx.query("delete from storage.objects where name = $1 returning id", [path]),
+    );
+    assert.equal(inUse.rows.length, 0);
+    await asUser(editorId, (tx) =>
+      tx.query("update public.artists set portrait_path = null where id = $1", [artistId]),
+    );
+    const removed = await asUser(editorId, (tx) =>
+      tx.query("delete from storage.objects where name = $1 returning id", [path]),
+    );
+    assert.equal(removed.rows.length, 1);
   });
 });

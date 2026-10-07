@@ -1,0 +1,914 @@
+{
+  "version": 1,
+  "fetchedAt": "2026-10-07",
+  "sources": [
+    "https://galeria-witryna.pl/malarstwo/",
+    "https://galeria-witryna.pl/grafika-i-rzezba/",
+    "https://galeria-witryna.pl/wp-json/wc/store/v1/products/categories?per_page=100&hide_empty=false"
+  ],
+  "totalSourceArtists": 96,
+  "heldOut": {
+    "name": "Robert Żybura",
+    "slug": "robert-zybura",
+    "biography": "Urodził się w 1964 roku w Tarnowie.\nAbsolwent Państwowej Wyższej Szkoły Sztuk Plastycznych we Wrocławiu – wydział malarstwo, grafika, rzeźba.\nDyplom z malarstwa w 1992 roku (wyróżnienie) w pracowni Wandy Gołkowskiej, z grafiki w pracowni Romana Kowalika.\nZajmuje się malarstwem, grafiką i rysunkiem.",
+    "status": "published",
+    "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/robert-zybura/",
+    "hasBiography": true,
+    "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/robert-zybura/"]
+  },
+  "seedBiographies": {
+    "marek-andala": "Artysta prezentowany w Galerii Witryna. W katalogu galerii znajduje się jego pastelowy pejzaż „Tatary”.",
+    "piotr-fafrowicz": "Artysta związany z Galerią Witryna. Prezentowane prace obejmują malarstwo olejne i temperę na papierze.",
+    "jerzy-tyburski": "Artysta prezentowany w Galerii Witryna. Wśród jego prac w katalogu znajdują się obrazy olejne „Afternoon” i „Burza”."
+  },
+  "artists": [
+    {
+      "name": "Agnieszka Kotela",
+      "slug": "agnieszka-kotela",
+      "biography": "Artysta prezentowany w Galerii Witryna.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/agnieszka-kotela/",
+      "hasBiography": false,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/agnieszka-kotela/"]
+    },
+    {
+      "name": "Agnieszka Mitura",
+      "slug": "agnieszka-mitura",
+      "biography": "Urodzona w 1970 roku. Ukończyła Państwowe Liceum Sztuk Plastycznych w Lublinie, następnie podjęła studia w Instytucie Wychowania Artystycznego UMCS w W 1997 roku obroniła dyplom z malarstwa. Od 2001 roku członek Związku Polskich Artystów Plastyków i Kazimierskiej Konfraterni Sztuki. W Kazimierzu Dolnym prowadzi swoją galerię.\n\nAgnieszka Mitura pracuje głównie w technice olejnej. Podstawową tematyką jej obrazów jest szeroko pojęty pejzaż i martwa natura. Prace tej artystki są studiami natury, tworzonymi językiem malarskich środków. Jej obrazy zbudowane są na wzajemnej relacji koloru i światła. Zjawiskowe widoki w szkicowych pociągnięciach pędzlem mówią o zmienności natury. Zapamiętany obraz rzeczywistości w pracowni artystki podlega zmianie kolejnej, podyktowanej indywidualną wrażliwością i wynikającymi z niej właściwościami malarskiego warsztatu. Okolice Kazimierza i jego architektura jest ciągłą inspiracją dla twórczości tej malarki.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/agnieszka-mitura/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/agnieszka-mitura/"]
+    },
+    {
+      "name": "Alicja Słaboń-Urbaniak",
+      "slug": "alicja-slabon-urbaniak",
+      "biography": "Urodziła się w Krakowie. Obecnie mieszka i pracuje w podkrakowskiej wsi Modlnica. W 1988 ukończyła Krakowską Akademię Sztuk Pięknych. Za pracę dyplomową otrzymała wyróżnienie i medal. Od chwili ukończenia studiów, stale zajmuje się pracą artystyczną. Uprawiając malarstwo sztalugowe, wypracowała swój rozpoznawalny styl, polegający na uproszczeniu i spłaszczaniu przestrzeni, czasem przywodzącym na myśl malarstwo naiwne lub sztukę prymitywną, zawsze wypełnione bogactwem koloru i faktur. Jednak swoboda operowania warsztatem, mistrzowskie wyczucie koloru, nie pozostawia złudzeń, że mamy do czynienia z profesjonalnym artystą. Jej bogaty dorobek artystyczny był prezentowany na wielu wystawach indywidualnych i zbiorowych. Stale współpracuje z galeriami w Polsce i za granicą. Prace artystki znajdują się w kolekcjach muzealnych i prywatnych w Japonii, USA, Skandynawii, Niemczech, Francji i Konsulacie RP w Berlinie.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/alicja-slabon-urbaniak/",
+      "hasBiography": true,
+      "sourceUrls": [
+        "https://galeria-witryna.pl/kategoria-produktu/malastwo/alicja-slabon-urbaniak/"
+      ]
+    },
+    {
+      "name": "Alina Sibera",
+      "slug": "alina-sibera",
+      "biography": "Alina Sibera studiowała w Krakowskiej Akademii Sztuk Pięknych na Wydziale Grafiki w Katowicach. Dyplom obroniła w 1977 r. Jest autorką ponad 20 wystaw indywidualnych. Była również uczestniczką blisko 50 wystaw zbiorowych organizowanych zarówno w kraju, jak i za granicą (m.in. w Niemczech, Holandii, Włoszech, Słowacji i Rosji). Brała też udział w cyklu wystaw „Kobiety malują kobiety” i „Magical dreams”, a także licznych plenerach malarskich i wystawach poplenerowych. Sibera jest członkinią Stowarzyszenia Pastelistów Polskich, Związku Artystów Plastyków oraz stowarzyszenia Artystyczna Kreacja Wspólnej Europy. Uprawia malarstwo i projektowanie graficzne.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/alina-sibera/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/alina-sibera/"]
+    },
+    {
+      "name": "Anatol Martyniuk",
+      "slug": "anatol-martyniuk",
+      "biography": "Artysta prezentowany w Galerii Witryna.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/anatol-martyniuk/",
+      "hasBiography": false,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/anatol-martyniuk/"]
+    },
+    {
+      "name": "Andrzej Dudek",
+      "slug": "andrzej-dudek",
+      "biography": "Urodzony w 1958r. Absolwent Państwowego Liceum Sztuk Plastycznych w Zamościu. Od 1994r należy do Związku Polskich Artystów Plastyków o/Lublin. Przygoda z ikoną rozpoczęła się w Pracowni Konserwacji Zabytków w Zamościu. Tam bierze udział w pracach nad XIX w. ikonami. Pojawiły się pierwsze zamówienia. Technika to tempera jajowa (VIw.), grunt kredowo klejowy. Jego ikony znajdują się w kilku galeriach w Polsce. W roku 2003 prowadził warsztaty pisania ikon na Festiwalu Trzech Kultur we Włodawie. Rozwijanie talentów pisania i wiedzy na ten temat to nie jedyne zainteresowanie. Zajmuje się malarstwem o charakterze abstrakcyjnym. Brał udział w licznych wystawach zbiorowych oraz indywidualnych w kraju i za granicą. Mieszka i pracuje w Zamościu.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/andrzej-dudek/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/andrzej-dudek/"]
+    },
+    {
+      "name": "Anna Hałat",
+      "slug": "anna-halat",
+      "biography": "Anna Hałat Absolwentka Państwowego Liceum Sztuk Plastycznych w Bielsku-Białej. W Instytucie Sztuki Akademii Pedagogicznej w Krakowie ukończyła studia magisterskie na kierunku: Edukacja Artystyczna w Zakresie Sztuk Plastycznych, o specjalności: Rzeźba. W 2008 roku obroniła dyplom pod kierunkiem dr hab. Janiny Jeleńskiej-Papp\nOd 2005 roku zajmuje się projektowaniem i tworzeniem ceramiki artystycznej w pracowni Ars Nova. Tworzy rzeźby ceramiczne. W swoich pracach stara się podkreślić charakter materiału w którym pracuje często zachowując jego kolor i fakturę. Wprowadza ażury, cięcia, pęknięcia lub przesunięcia , które nie zaburzają harmonii tylko uświadamiają widzowi obecność artysty. W dekoracji często stosuje technikę pozłotniczą wykorzystując szlagmetal lub szlagaluminium.\nMoje prace znajdują się się w kolekcjach prywatnych między innymi w Polsce, Niemczech, Dubaju i Stanach Zjednoczonych.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/rzezba/anna-halat/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/rzezba/anna-halat/"]
+    },
+    {
+      "name": "Anna Trochim",
+      "slug": "anna-trochim",
+      "biography": "Absolwentka Akademii Sztuk Pięknych w Warszawie. Dyplom z wyróżnieniem otrzymała w Pracowni Malarstwa prof. Stefana Gierowskiego, aneks z malarstwa ściennego u prof. Ryszarda Wojciechowskiego, aneks ze struktur wizualnych u prof. Romana Owidzkiego. Jest laureatką wielu nagród m.in. Talens Company Award I II nagrody na Festiwalu Sztuki Młodych Środowiska Warszawskiego w 1979 r. Była współorganizatorem wielu akcji charytatywnych m.in. aukcji na rzecz Hospicjum Onkologicznego w Warszawie i ogólnopolskiej aukcji „Żywioł” w stołecznym Muzeum Narodowym. Jest współzałożycielką Galerii Delfiny w Warszawie oraz współtwórczynią warszawskiej grupy „Via Varsovia”. Swoje prace prezentowała na ponad 40 wystawach indywidualnych m.in. w Warszawie, Sztokholmie, Wilnie, Paryżu, Budapeszcie, Moskwie oraz Berlinie, mają one również swoje stałe miejsce w kolekcjach muzealnych i prywatnych w kraju i za granicą m.in. w zbiorach Królowej Holandii – Beatrix.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/anna-trochim/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/anna-trochim/"]
+    },
+    {
+      "name": "Artur Kardamasz",
+      "slug": "artur-kardamasz",
+      "biography": "Artur Kardamasz. Urodzony w 1968 roku w Przemyślu. Studia w Państwowej Wyzszej Szkole Sztuk Plastycznych (aktualnie ASP) we Wrocławiu w latach 1989-1994. Dyplom uzyskał w 1995 roku w pracowni prof. Stanisława Kortyki. W 1999 roku otrzymał wyróżnienie w polskiej edycji światowego Konkursu Malarskiego Firmy WINSOR&NEWTON pt. Mój Kraj w 2000 Roku. Autor malarstwa ściennego: Pasaż Pod Błękitnym Słońcem, Wrocław rynek Muzeum Antropologiczne, Wrocław. Bierze aktywny udział w plenerach malarskich min.: Pstrągowa, Kazimierz Dolny, Nałęczowska Sierpniówka. Uprawia malarstwo i rysunek.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/artur-kardamasz/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/artur-kardamasz/"]
+    },
+    {
+      "name": "Artur Przybysz",
+      "slug": "artur-przybysz",
+      "biography": "Urodziłem się i mieszkam w Lublinie. Ukończyłem Liceum Sztuk Plastycznych w Lublinie, a następnie Instytut Wychowania Artystycznego UMCS również w Lublinie.\n\nOd 2011 roku członkiem Związku Polskich Artystów Plastyków, a od 2018 roku Stowarzyszenia Akwarelistów Polskich.\n\nMoja przygoda z malarstwem zaczęła się dawno temu. Początkowo malowałem wyłącznie techniką olejną. Później spróbowałem swych sił w akwareli, której jestem wierny do dzisiaj. Zafascynowała mnie jej lekkość, szybkość i nieprzewidywalność.\n\nCzęstym motywem przewodnim jest architektura rodzinnego miasta Lublina, zarówno w dzień jak i nocą, gdy miasto nabiera tajemniczości i możemy przenieść się w czas przeszły, nie stronię również od innych motywów takich jak pejzaż, kwiaty, martwa natura itp.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/artur-przybysz/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/artur-przybysz/"]
+    },
+    {
+      "name": "Barbara Drelich",
+      "slug": "barbara-drelich",
+      "biography": "Artysta prezentowany w Galerii Witryna.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/barbara-drelich/",
+      "hasBiography": false,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/barbara-drelich/"]
+    },
+    {
+      "name": "Barbara Kasza",
+      "slug": "barbara-kasza",
+      "biography": "Artysta prezentowany w Galerii Witryna.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/barbara-kasza/",
+      "hasBiography": false,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/barbara-kasza/"]
+    },
+    {
+      "name": "Barbara Rosiak",
+      "slug": "barbara-rosiak",
+      "biography": "Studia na Wydziale Malarstwa i Grafiki Państwowej Wyższej Szkoły Sztuk Plastycznych (PWSSP) (dziś Akademia Sztuk Pięknych im. Władysława Strzemińskiego w Łodzi) w Łodzi w latach 1974-1979. Specjalizacja w zakresie grafiki warsztatowej. Dyplom z wyróżnieniem w pracowni wklęsłodruku prof. Leszka Rózgi i aneks z malarstwa w pracowni prof. Stanisława Fijałkowskiego w 1979 roku.\nArtystka tworzy kompozycje graficzne w klasycznych technikach metalowych, często wielobarwne. Głównym wątkiem jej twórczości są rozbudowane, symboliczne i fantastyczne pejzaże i weduty, w których kumuluje motywy architektoniczne, cytaty figuralne ze starego malarstwa (np. Madonny, akty itp.), detale zdobnicze i ornamenty z różnych epok historycznych (renesans, barok, secesja) ujęte w nierealne perspektywy.\nUprawia głównie grafikę artystyczną w technice wklęsłodruku ze szczególnym umiłowaniem akwaforty barwnej łączonej czasem z akwatintą, miękkim werniksem. Zajmuje się też małą formą ekslibrisu, ilustracją książkową i rysunkiem. Maluje fantazyjne akwarele i pastele.\nMiała 30 wystaw indywidualnych i brała udział w ponad 100 wystawach zbiorowych i konkursach na świecie. Mieszka i pracuje w Łodzi.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/grafika/barbara-rosiak/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/grafika/barbara-rosiak/"]
+    },
+    {
+      "name": "Bartłomiej Michałowski",
+      "slug": "bartlomiej-michalowski",
+      "biography": "Urodzony 10 czerwca 1964 r. w Lublinie. Członek Stowarzyszenia Akwarelistów Polskich, członek Związku Polskich Artystów Plastyków – Polska Sztuka Użytkowa – Okręg Warszawski. Współzałożyciel ”Kazimierskiej Konfraterni Sztuki” oraz Stowarzyszenia „Festiwal Brunona Schulza”. Absolwent Uniwersytetu Marii Curie-Skłodowskiej w Lublinie (1991). Jego domeną jest malarstwo, głównie akwarelowe. Uczestnik kilkudziesięciu wystaw indywidualnych i zbiorowych w Polsce i zagranicą. Najbardziej twórczy i aktywny okres jego działalności rozpoczęły cykle malarskie związane z tematyką sztetl, realizowane od 2000 roku. Obrazy z kolejnych cykli „Sztetl” prezentowane były między innymi w Kazimierzu Dolnym, Lublinie, Kielcach, synagogach w Łęcznej i Włodawie podczas Festiwalu Trzech Kultur, w synagodze im. Nożyków w Warszawie podczas Dni Książki Żydowskiej, dwukrotnie w Berlinie, w Belgradzie i Nowym Sadzie podczas Spotkań z Kulturą Polską, na indywidualnej wystawie w Parlamencie Europejskim w Brukseli, siedmiokrotnie podczas Międzynarodowego Festiwalu Brunona Schulza w Drohobyczu, gdzie zrealizował w 2008, 2010, 2012 i 2014 roku cztery autorskie wystawy w tamtejszej Wielkiej Synagodze Chóralnej.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/bartlomiej-michalowski/",
+      "hasBiography": true,
+      "sourceUrls": [
+        "https://galeria-witryna.pl/kategoria-produktu/malastwo/bartlomiej-michalowski/"
+      ]
+    },
+    {
+      "name": "Bartos Saro",
+      "slug": "bartos-saro",
+      "biography": "Studiował architekturę na Politechnice Warszawskiej i na University of Detroit w USA oraz uzyskał tytuł magistra sztuki na Warszawskiej Akademii Sztuk Pięknych. Malarstwo studiował w pracowniach Franciszka Maśluszczaka, Andrzeja Bieńkowskiego oraz Jacka Sempolińskiego.\nUprawia malarstwo akwarelowe oraz sztalugowe. Prace realizuje cyklami. Fascynacja architekturą i pejzażem szczególnie widoczna jest w seriach akwareli.\nPrace eksponował na kilkudziesięciu wystawach w Polsce, Francji, Hiszpanii, Belgii, Luksemburgu. Brał udział w salonach sztuki w Paryżu, Antwerpii, Luksemburgu, Tuluzie.\nJest wyznawcą radości życia we wszystkich jego przejawach. Wielbiciel podróży, win i regionalnej kuchni. Mieszka i tworzy w Izabelinie w Puszczy Kampinoskiej oraz w andaluzyjskim Jerez de la Frontera. Oba miejsca są jego codziennym, podsycającym kreatywność, natchnieniem.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/bartos-saro/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/bartos-saro/"]
+    },
+    {
+      "name": "Bartosz Frączek",
+      "slug": "bartosz-fraczek",
+      "biography": "Bartosz Frączek urodził się w 1974 w Częstochowie. Studia ukończył z wyróżnieniem i dyplomem z malarstwa w pracowni prof. Wincentego Maszkowskiego. W roku 2009 uzyskał stopień doktora na Wydziale Malarstwa krakowskiej ASP. Jest adiunktem na Wydziale Sztuki Akademii im. Jana Długosza w Częstochowie. Ma na swoim koncie kilkadziesiąt wystaw indywidualnych – m. in. w Holandii, Szwecji, Danii, Stanach Zjednoczonych, Niemczech, Belgii i na Węgrzech oraz ponad 170 zbiorowych na całym świecie. Jego prace znajdują się w wielu prywatnych kolekcjach w kraju i za granicą, pokazywane były także na targach sztuki Hanse Art (Lubeka, Oldenburg, Brema, Hamburg), Artevent expo (Antwerpia, Arnhem) czy Artistes Contemporaines (Lozanna, Geneva). Zajmuje się głównie malarstwem oraz upowszechnianiem kultury plastycznej. Jest pomysłodawcą Międzynarodowego Biennale Miniatury oraz kuratorem wielu międzynarodowych wystaw.\n\nOstatnie realizacje to szereg wystaw w Azji. W Chiang Mai oraz Bangkoku w Tajlandii, Taipei na Tajwanie, w chińskich Pekinie, Nankinie, Quingdao, oraz Dafen. Jako nauczyciel akademicki prowadził zajęcia i wykłady na Akademii Sztuk Pięknych w Rijece (Chorwacja), Uniwersytecie w Ostrawie (Czechy), Akademii Sztuk Pięknych w Bratysławie (Słowacja), Uniwersytecie w Chiang Mai (Tajlandia) oraz Uniwersytecie w Quingdao w Chinach.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/bartosz-fraczek-malastwo/",
+      "hasBiography": true,
+      "sourceUrls": [
+        "https://galeria-witryna.pl/kategoria-produktu/malastwo/bartosz-fraczek-malastwo/"
+      ]
+    },
+    {
+      "name": "Beata Krystek-Borkowska",
+      "slug": "beata-krystek-borkowska",
+      "biography": "Urodziła się w Cieszynie w 1968 roku. Przygodę ze sztuką rozpoczęła w Liceum Sztuk Plastycznych w Bielsku-Białej. Jest absolwentką Akademii Sztuk Pięknych w Krakowie, Wydziału Grafiki. Po ukończeniu studiów zajmowała się grafiką projektową oraz ilustrowaniem książek dla dzieci i młodzieży. Obecnie zajmuje się malarstwem, ceramiką, ilustracją oraz artystyczną renowacją starych mebli. Jej malarstwo, ceramika, ilustracje nawiązują do dekoracyjnej epoki secesji. To świat baśni i nieskrępowanej fantazji. Obiektem zainteresowań malarki są kobiety w nastrojowych i fantazyjnych kompozycjach. Oprócz postaci maluje pejzaże.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/beata-krystek-borkowska/",
+      "hasBiography": true,
+      "sourceUrls": [
+        "https://galeria-witryna.pl/kategoria-produktu/malastwo/beata-krystek-borkowska/"
+      ]
+    },
+    {
+      "name": "Bogdan Markowski",
+      "slug": "bogdan-markowski",
+      "biography": "Absolwent PWSSP w Gdańsku. Dyplom z rzeźby i projektowania rzeźbiarsko- architektonicznego w 1970r. Prace swoje realizuje w materiałach trwałych, takich jak granit pozyskiwany z głazów narzutowych, marmur, brąz, drewno. Uczestnik plenerów polskich i międzynarodowych. Laureat nagród i wyróżnień w konkursach i wystawach. Prace w zbiorach: Centrum Rzeźby Polskiej w Orońsku, Muzeum Sztuki Współczesnej w Łodzi,, Wojska Polskiego w Warszawie, Muzeum Miedzi w Legnicy, KUL w Lublinie, UMCS,",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/rzezba/bogdan-markowski/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/rzezba/bogdan-markowski/"]
+    },
+    {
+      "name": "Bohdan Piasecki",
+      "slug": "bohdan-piasecki",
+      "biography": "Bohdan Piasecki – warszawski malarz, pejzażysta. Studia na Akademii Sztuk Pięknych w Warszawie w latach 1956-1961 na wydziale malarstwa . Od roku 1968 do 1985 podróżował i wystawiał kolejno we Włoszech , Kanadzie i Francji.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/bohdan-piasecki/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/bohdan-piasecki/"]
+    },
+    {
+      "name": "Bożena Lesiak",
+      "slug": "bozena-lesiak",
+      "biography": "Urodzona w 1952 r. w Jarosławiu. W latach 1972 – 77 – studia w Akademii Sztuk Pięknych w Krakowie. Dyplom na Wydziale Malarstwa w 1977 r. 1977 – 79 Podyplomowe Studium Scenografii Teatralnej, Telewizyjnej i Filmowej w Krakowie.\n\nPrace Artystki znajdują się w zbiorach prywatnych w Polsce, Danii, RFN, Francji, Szwajcarii, Włoszech, Argentynie i Stanach Zjednoczonych.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/bozena-lesiak/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/bozena-lesiak/"]
+    },
+    {
+      "name": "Daniel Mączyński",
+      "slug": "daniel-maczynski",
+      "biography": "Urodzony w Tomaszowie Mazowieckim. W roku 2000 uzyskał dyplom z rysunku na częstochowskiej WSP. Malarstwem zajmuje się zawodowo, przede wszystkim pejzażem. Od dwóch lat rozwija i podejmuje tematykę współczesną. Artysta pracuje wyłącznie w technice olejnej.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/daniel-maczynski/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/daniel-maczynski/"]
+    },
+    {
+      "name": "Dariusz Piekut",
+      "slug": "dariusz-piekut",
+      "biography": "W 1979 roku ukończył Państwowe Liceum Sztuk Plastycznych w Zamościu. W latach 1980-1984 studiował w Instytucie Wychowania Artystycznego UMCS w Lublinie. Dyplom z grafiki w pracowni druku płaskiego(litografia) u prof. Danuty Kołwzan- Nowickiej. Obecnie zajmuje się rysunkiem i malarstwem. Prace w zbiorach prywatnych w kraju i za granicą (Anglia, USA, Niemcy, Bułgaria, Belgia, Australia),oraz w Muzeum w Lubaczowie, Nowohuckim Centrum Kultury w Krakowie, Hrubieszowskim Domu Kultury, BWA Galerii Zamojskiej i Muzeum w Bielsku-Białej.\nStypendysta Ministra Kultury i Sztuki w 1997 roku. Członek Stowarzyszenia Artystycznego Matt Roberts Arts w Londynie. Uczestnik kilkudziesięciu wystaw indywidualnych i zbiorowych rysunku i malarstwa w Polsce, Niemczech, Litwie, Włoszech, Czechach, Słowacji, Ukrainie i Tajlandii. W 2010r. laureat Certyfikatu Najwyższej Jakości /Honorary Certificate of the Highest Quality – Short List/ VII Międzynarodowego Biennale Rysunku w Pilznie /Czechy/. Otrzymał kilkanaście nagród i wyróżnień za twórczość w dziedzinie rysunku i malarstwa w konkursach ogólnopolskich i międzynarodowych.\nObrazy i rysunki artysty znajdują się w stałej ekspozycji Galerii Nankiera we Wrocławiu, Galerii Steel Forest w Konstancinie Jeziornej, Galerii „Pod Arkadami”, BWA Galerii Zamojskiej i w Galerii Corner Pub w Zamościu. Prace na portalach internetowych: www.londonart.co.uk, www.artmajeur.com/piekut5, www.galeriasart.pl",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/dariusz-piekut/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/dariusz-piekut/"]
+    },
+    {
+      "name": "Dariusz Żejmo",
+      "slug": "dariusz-zejmo",
+      "biography": "Urodził się w Kożuchowie w 1966 r. Studia na Wydziale Sztuk Pięknych (specjalizacja – malarstwo) Uniwersytetu Mikołaja Kopernika w Toruniu. Dyplom w 1993 r. Pod kierunkiem prof. Janusza Kaczmarskiego. Jest autorem ilustracji i okładek do kilkudziesięciu książek, projektantem grafik wydawniczych, okładek i ilustracji czasopism dziecięcych. Nagradzany w 2000r. i 2001r. Za ilustracje przez Fundację Dziecka – Nagrodą DONGA.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/dariusz-zejmo/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/dariusz-zejmo/"]
+    },
+    {
+      "name": "Dorota Otulska",
+      "slug": "dorota-otulska",
+      "biography": "Sztuka Doroty Otulskiej jest bardzo zmysłowa. Wiodącym tematem jest kobieta wrażliwa, delikatna, sentymentalna. Podejmująca osobisty dialog z odbiorcą. Inspiracji do portretów i świetlistych pejzaży poszukuje w realnym świecie. To źródło niewyczerpanych tematów i sposób, by zatrzymać chwilę i utrwalić nastrój. Ten owocny, twórczy dialog artystka z powodzeniem i pasją prowadzi od ponad trzydziestu lat.\nNależy do ZPAP. Swoje obrazy prezentowała na wielu wystawach indywidualnych i zbiorowych.\nPrace jej znajdują się w zbiorach prywatnych w kraju i zagranicą, m.in. w Austrii, Francji, Holandii, Japonii, Meksyku, Niemczech, Nowej Zelandii, Włoszech, USA.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/dorota-otulska/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/dorota-otulska/"]
+    },
+    {
+      "name": "Edyta Purzycka",
+      "slug": "edyta-purzycka",
+      "biography": "Absolwentka Akademii Sztuk Pięknych we Wrocławiu. Dyplom w 1996 roku z grafiki artystycznej pod kierunkiem profesor Haliny Pawlikowskiej, aneks z malarstwa i fotografii. W latach 1995-96 była stypendystką Ministra Kultury i Sztuki. Od 1997 roku należy do ZPAP.\n\nW swoich pracach wykorzystuje kilka technik wklęsłodrukowych(akwafortę, akwatintę, miękki werniks, odprysk atramentowy) Pozwala to na eksperymenty fakturalne, oraz na uzyskiwanie efektów malarskich.\nTworzyła szatę graficzną miesięcznika studenckiego „Maska”,a następnie kwartalnika artystycznego „Format”. Współpracowała z czasopismem literacko – artystycznym „Rita Baum” oraz Wydawnictwem Szkolnym PWN.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/grafika/edyta-purzycka/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/grafika/edyta-purzycka/"]
+    },
+    {
+      "name": "Elżbieta Bocianowska",
+      "slug": "elzbieta-bocianowska",
+      "biography": "Urodzona 18 czerwca 1954 roku w Wadlewie.\nStudia w Państwowej Wyższej Szkole Sztuk Plastycznych w Łodzi w latach 1976-1981.\nDyplom w 1981 roku na Wydziale Grafiki Projektowej.\nTwórczość w zakresie grafiki projektowej i warsztatowej.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/grafika/elzbieta-bocianowska/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/grafika/elzbieta-bocianowska/"]
+    },
+    {
+      "name": "Elżbieta Pazera",
+      "slug": "elzbieta-pazera",
+      "biography": "Absolwentka Akademii Ekonomicznej i Pedagogicznej (Instytut Plastyki) w Krakowie. Przyjęta do ZPAP na podstawie dorobku twórczego w 2004 roku. Uprawia malarstwo sztalugowe, także sakralne, zajmuje się pracą z młodzieżą prowadząc zajęcia w Autorskiej Pracowni Plastycznej Tarnowskiego Centrum Kultury.\n\nUczestniczyła w wielu wystawach zbiorowych, środowiskowych: (“Salony Jesienne”, “Spotkania” – Tarnów, “Moje spotkanie ze Zmartwychstałym – Pascha”). Ogólnopolskich i zagranicznych: “Pejzaż Polski” – Wrocław, “Bylismy, jesteśmy, będziemy” – Kraków, “Nowi członkowie ZPAP” – Galeria Pryzmat, Kraków, “Europa w Trenczynie” – Słowacja oraz plenerach i wystawach poplenerowych m. in.: Tarnów, Tuchów, Iwonicz Zdrój, Rymanów Zdrój, Krynica. “W kręgu Pogranicza” – Solina, Łańcut. W latach 2001 – 2004 wspólnie z mężem zrealizowała cykl wystaw rodzinnych – Pazerowie (Gorlice, Jarosław, Lesko, Ostrowiec Świętokrzyski, Tarnów, Krosno). Prezentowała swoje prace na kilkunastu wystawach indywidualnych (m. in. Brzesko, Gorlice, Tarnów, Kraków, Bissendorf – Niemcy).",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/elzbieta-pazera/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/elzbieta-pazera/"]
+    },
+    {
+      "name": "Elżbieta Polańska",
+      "slug": "elzbieta-polanska",
+      "biography": "Absolwentka ASP w Krakowie – dyplom na Wydziale Architektury Wnętrz. Zajmuje się malarstwem i fotografią. W swoich obrazach łączy świat ptaków i roślin z „cichym życiem”, czyli martwą naturą. W pracach malarskich wykorzystuje głównie farby wodne (akwarela, gwasz), wzbogacając je niekiedy innymi mediami.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/elzbieta-polanska/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/elzbieta-polanska/"]
+    },
+    {
+      "name": "Ewa Jędryk-Czarnota",
+      "slug": "ewa-jedryk-czarnota",
+      "biography": "Ewa Jędryk – Czarnota pochodzi z Sosnowca.Ukończyła katowicki Wydział Grafiki Akadademii Sztuk Pięknych w Krakowie. Dyplom uzyskała w 1987 roku z w pracowni prof. A.Romaniuka i dodatkowy z malarstwa w pracowni prof. J.Rykały.\nPo studiach zajmuje się tkaniną artystyczną. Należąc do grupy ,, Przekaz” brała udział w kilkunastu wspólnych wystawach. Zajmowała się projektowaniem graficznym, aranżacją wnętrz i scenografią w TVP Katowice. Prowadziła działalność dydaktyczną z dziećmi i młodzieżą w zakresie sztuki. Ostatnie 10 lat zajmowała się wyłącznie malarstwem. Uczestniczy w plenerach malarskich w kraju i za granicą.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/ewa-jedryk-czarnota/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/ewa-jedryk-czarnota/"]
+    },
+    {
+      "name": "Ewelina Maliborska",
+      "slug": "ewelina-maliborska",
+      "biography": "Ewelina Maliborska architekt, artysta pasjonat akwareli. Ukończyła studia na Wydz. Architektury Politechniki Krakowskiej. Oprócz pracy architekta jej główną domeną stała się akwarela. Od kilku lat tworzy prace w tej technice. Obrazy swoje prezentowała dotychczas na wystawie w galerii Kotłownia w Krakowie oraz w galerii „Przy Bramie” w Lublinie. Odnosi sukcesy zarówno na rynku krajowym jaki i zagranicznym. Jest laureatką w konkursie ” Lodi in pittura” – włoskiego Lodi w malarskie, organizowanego w Italii oraz dwukrotnie zajęła drugie miejsce w konkursie ” Lublin w Malarskie” . Ponadto na swoim koncie ma wiele wyróżnień. Prowadzi dodatkowo warsztaty z akwareli w Lublinie, które cieszą się dużym zainteresowaniem. Czynnie bierze udział w wystawach zbiorowych Towarzystwa Przyjaciół Sztuk Pięknych w Lublinie.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/ewelina-maliborska/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/ewelina-maliborska/"]
+    },
+    {
+      "name": "Gabriela Trynkler",
+      "slug": "gabriela-trynkler",
+      "biography": "Urodzona w Gdańsku. W latach 1979-82 studiowała grafikę na Wydziale Sztuk Pięknych Uniwersytetu Mikołaja Kopernika w Toruniu, a od 1982 roku malarstwo w PWSSP w Gdańsku. W 1985 roku uzyskała dyplom w pracowni malarstwa prof. Kiejstuta Bereźnickiego. W 1993 roku przebywała w Wielkiej Brytanii jako stypendystka rządu brytyjskiego.\n\nZajmuje się malarstwem i rysunkiem. Jej prace znajdują się w zbiorach prywatnych w Polsce, w wielu krajach europejskich, a także w Kanadzie, USA, Japonii, Chinach i Australii.\nBrała udział w kilkudziesięciu wystawach indywidualonych oraz grupowych a także w konkursach w Polsce i za granicą.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/gabriela-trynkler/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/gabriela-trynkler/"]
+    },
+    {
+      "name": "Grażyna Grabowska",
+      "slug": "grazyna-grabowska",
+      "biography": "Grażyna Grabowska\nUkończyła Państwowe Liceum Sztuk Plastycznych w Lublinie, uzyskując dyplom w zakresie reklamy wizualnej i wystawiennictwa.\nStudia w Instytucie Wychowania Artystycznego UMCS w Lublinie. Dyplom z wyróżnieniem w pracowni malarstwa prof. Mieczysława Hermana. Studia podyplomowe z zakresu „Sztuka” na tejże uczelni.\nW swojej działalności artystycznej zajmowała się reklamą wizualną, pracowała jako pedagog przedmiotów artystycznych, prowadziła prywatny kurs rysunku.\nTwórczo uprawia malarstwo sztalugowe (olej, akryl, akwarela). Bierze udział w wielu przeglądach i wystawach ogólnopolskich i międzynarodowych. Jest członkiem Związku Polskich Artystów Plastyków.\nMieszka i pracuje w Lublinie.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/grazyna-grabowska/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/grazyna-grabowska/"]
+    },
+    {
+      "name": "Hanna Korzeniowska",
+      "slug": "hanna-korzeniowska",
+      "biography": "Hanna Korzeniowska : Urodzona w 1966 r. w Lublinie. Ukończyła Państwowe Liceum Sztuk Plastycznych im. Józefa Chełmońskiego w Nałęczowie, Instytut Wychowania Artystycznego UMCS w Lublinie, dyplom z grafiki w pracowni prof. Stanisława Góreckiego w 1992 r. Tworzy akwarele i obrazy olejne.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/hanna-korzeniowska/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/hanna-korzeniowska/"]
+    },
+    {
+      "name": "Hanna Rojkowska",
+      "slug": "hanna-rojkowska",
+      "biography": "Hanna Rojkowska – Urodzona w 1955 roku w Krakowie.\nUkończyła krakowskie Liceum Sztuk Plastycznych w klasie prof. Stanisława Rodzińskiego.W 1981 roku dyplom na Wydziale Rzeźby w pracowni prof. Antoniego Hajdeckiego. Wiele wystaw indywidualnych, głównie w Krakowie.Uprawia malarstwo olejne, gwasz, temperę.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/hanna-rojkowska/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/hanna-rojkowska/"]
+    },
+    {
+      "name": "Iwona Kaus",
+      "slug": "iwona-kaus",
+      "biography": "Artysta prezentowany w Galerii Witryna.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/iwona-kaus/",
+      "hasBiography": false,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/iwona-kaus/"]
+    },
+    {
+      "name": "Jacek Kośmiński",
+      "slug": "jacek-kosminski",
+      "biography": "Urodził się w 1969 r. w Kazimierzu Dolnym – kazimierzak z krwi i kości. Członek Lubelskiego Towarzystwa Przyjaciół Sztuk Pięknych oraz Kazimierskiej Konfraterni Sztuki. Jego mistrzem był Jerzy Gnatowski. Kośmiński uprawia malarstwo plenerowe. Zorganizował 20 wystaw indywidualnych m.in.: Kazimierski Ośrodek Kultury, Galeria Łazorek, KUL, Iławskie Centrum Kultury. Brał udział w licznych wystawach zbiorowych w kraju i za granicą.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/jacek-kosminski/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/jacek-kosminski/"]
+    },
+    {
+      "name": "Jacek Kwiatkowski",
+      "slug": "jacek-kwiatkowski",
+      "biography": "Jacek Kwiatkowski urodził sie w 1968r. w Chełmie. Obecnie mieszka w Lublinie. Malarstwo uprawia od początku lat dziewięćdziesiątych. Do ulubionych technik zalicza rysunek, akwarelę, gwasz, choć tworzy również w technice olejnej. Należy do Związku Polskich Artystów Plastyków. Swe prace wystawia w kraju i za granicą.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/jacek-kwiatkowski/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/jacek-kwiatkowski/"]
+    },
+    {
+      "name": "Jadwiga Maria Jarosiewicz",
+      "slug": "jadwiga-maria-jarosiewicz",
+      "biography": "Artystka urodziła się w Przemyślu. Ukończyła studia na Wydziale Malarstwa Akademii Sztuk Pięknych w Krakowie w pracowni prof. Czesława Rzepińskiego oraz Podyplomowe Studium Scenografii pod kierunkiem prof. Andrzeja Kreutza Majewskiego.\nJako scenograf zadebiutowała już w czasie studiów projektując scenografię i kostiumy do opery „Wolny Strzelec” C. M. Webera w Operze Krakowskiej w reżyserii Małgorzaty Dziewulskiej. Od tamtego czasu zrealizowała ponad 80 premier głównie w teatrach operowych w Polsce i za granicą. Wiele projektów przygotowała dla Teatru Wielkiego – Opery Narodowej w Warszawie m/in. do „Halki”, „Śpiewnika domowego” Stanisława Moniuszki w reżyserii Marii Fołtyn a także baletu „Bajadera” w choreografii Natalii Makarovej.\nIntensywne związki z teatrem nigdy nie przeszkodziły artystce uczestniczyć w życiu plastycznym. Wiodącym tematem jej malarstwa jest człowiek a szczególnie portret. Swoje prace malarskie i scenograficzne prezentowała na około 50 wystawach indywidualnych i w wielu zbiorowych.\nUczestniczy także w ważnych aukcjach o charakterze charytatywnym jak „Bliźniemu swemu” na rzecz Towarzystwa im. Św. Brata Alberta, aukcji „Pro Bono”, „Aukcji Wielkiego Serca” czy Rotary Clubu w Krakowie.\nPrace artystki znajdują się w licznych kolekcjach w Polsce i na świecie.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/jadwiga-maria-jarosiewicz/",
+      "hasBiography": true,
+      "sourceUrls": [
+        "https://galeria-witryna.pl/kategoria-produktu/malastwo/jadwiga-maria-jarosiewicz/"
+      ]
+    },
+    {
+      "name": "Janusz Rybczyński",
+      "slug": "janusz-rybczynski",
+      "biography": "Artysta prezentowany w Galerii Witryna.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/janusz-rybczynski/",
+      "hasBiography": false,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/janusz-rybczynski/"]
+    },
+    {
+      "name": "Jarosław Filipek",
+      "slug": "jaroslaw-filipek",
+      "biography": "Studiował architekturę na Politechnice Warszawskiej i na University of Detroit w USA oraz uzyskał tytuł magistra sztuki na Warszawskiej Akademii Sztuk Pięknych. Malarstwo studiował w pracowniach Franciszka Maśluszczaka, Andrzeja Bieńkowskiego oraz Jacka Sempolińskiego.\nUprawia malarstwo akwarelowe oraz sztalugowe. Prace realizuje cyklami. Fascynacja architekturą i pejzażem szczególnie widoczna jest w seriach akwareli.\nPrace eksponował na kilkudziesięciu wystawach w Polsce, Francji, Hiszpanii, Belgii, Luksemburgu. Brał udział w salonach sztuki w Paryżu, Antwerpii, Luksemburgu, Tuluzie.\nJest wyznawcą radości życia we wszystkich jego przejawach. Wielbiciel podróży, win i regionalnej kuchni. Mieszka i tworzy w Izabelinie w Puszczy Kampinoskiej oraz w andaluzyjskim Jerez de la Frontera. Oba miejsca są jego codziennym, podsycającym kreatywność, natchnieniem.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/jaroslaw-filipek/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/jaroslaw-filipek/"]
+    },
+    {
+      "name": "Jerzy Tyburski",
+      "slug": "jerzy-tyburski",
+      "biography": "Urodzony w 1964 roku w Lubaczowie. Absolwent Państwowego Liceum Sztuk Plastycznych w Zamościu. Studia na Wydziale Historii Sztuki Katolickiego Uniwersytetu Lubelskiego. Dyplom w 1989 r. W latach 1986-89 uczęszczał na zajęcia w pracowni malarstwa prof. Mariana Stelmasika i adiunkta Jacka Wojciechowskiego w Instytucie Wychowania Artystycznego na Uniwersytecie Marii Curie-Skłodowskiej w Lublinie.\nDwukrotny stypendysta Ministerstwa Kultury i Sztuki. Członek Związku Polskich Artystów Plastyków.\nOd 2000 roku dyrektor BWA – Galerii Zamojskiej.\n\nZwiązany z „zamojskim środowiskiem plastycznym”, skupiającym około 50 – mniej lub bardziej zaangażowanych twórczo osób z terenu Zamościa i Zamojszczyzny.\nTwóczość w dziedzinie malarstwa i grafiki.\n\nWspółpraca: Dom Aukcyjny AgraArt, Warszawa, Galeria Jackiewicz, Gdańsk\n\nPrace w zbiorach: BWA-Galeria Zamojska, Galeria ZPAP w Lublinie, Muzeum Miasta Wrocław, Muzeum Kresów w Lubaczowie oraz w kolekcjach prywatnych w kraju i za granicą.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/jerzy-tyburski/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/jerzy-tyburski/"]
+    },
+    {
+      "name": "Jerzy Wojciech Bielecki",
+      "slug": "jerzy-wojciech-bielecki",
+      "biography": "Urodzony w 1955 roku w Sejnach, studia w l.1974-79 na Wydziale Sztuk Pięknych UMK w Toruniu. Specjalizacja – grafika warsztatowa w Pracowni prof. Edmunda Piotrowicza. Uprawia malarstwo, grafikę, rysunek i ilustrację. Zrealizował ponad 50 wystaw indywidualnych i brał udział w około 70 prezentacjach zbiorowych.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/jerzy-wojciech-bielecki/",
+      "hasBiography": true,
+      "sourceUrls": [
+        "https://galeria-witryna.pl/kategoria-produktu/malastwo/jerzy-wojciech-bielecki/"
+      ]
+    },
+    {
+      "name": "Joanna Barczyk",
+      "slug": "joanna-barczyk",
+      "biography": "Joanna Barczyk (ur. w 1953 r. w Zabrzu) studiowała na Wydziale Grafiki w Katowicach i na Wydziale Malarstwa Akademii Sztuk Pięknych w Krakowie, dyplom zrealizowała w 1978 r. pod kierunkiem prof. Jerzego Nowosielskiego.\n\nOd 1977 r. działała w opozycji antykomunistycznej. W 2007 r. otrzymała Krzyż Kawalerski Orderu Odrodzenia Polski. Od 2002 r. pełni różne funkcje w komisjach przy Zarządzie OL ZPAP. W 2016 r. zdobyła Medal Prezydenta Miasta Lublina w uznaniu za zasługi na rzecz lubelskiej kultury oraz wkład i zaangażowanie w upowszechnianie sztuk plastycznych, z podziękowaniem za działalność artystyczną służącą promocji miasta Lublin.\n\nW swoich pracach Joanna Barczyk wykorzystuje uwspółcześnioną technikę malarstwa ikonowego. Charakterystyczne dla jej twórczości jest zastosowanie abstrakcyjnych form geometrycznych i archetypowe traktowanie postaci figuralnych. Szczególną rolę w przekazywaniu treści w obrazach pełnią symbole – zarówno te już istniejące, jak i tworzone przez artystkę. Symboliczne znaczenie ma także kolor i wykorzystanie metali szlachetnych. Prace często tworzą cykle lub tryptyki, np. Słowo, Rzucanie Ognia, Zwiastowanie, Chusta Weroniki.\n\nW ciągu 40. lat sposób malowania Joanny Barczyk uległ transformacji – od wygładzenia i precyzji do szorstkich faktur, krakelur i spontanicznej przypadkowości. W ostatnim dziesięcioleciu artystka rozszerzyła swój warsztat o fotografię i grafikę cyfrową.\n\nPrace Joanny Barczyk znajdują się w zbiorach prywatnych w Polsce, Niemczech, Szwecji, Norwegii, Wielkiej Brytanii, Belgii, Watykanie, Kanadzie, RPA, USA, a także w kościołach: NMP w Raczkach k. Suwałk (1987), Miłosierdzia Bożego w Puławach (1991), kościele parafialnym w Klementowicach k. Nałęczowa (1994), kościele parafialnym w Bystrzycy Starej k. Lublina (1998).\n\nArtystka zrealizowała osiem wystaw indywidualnych, wzięła udział w kilkunastu wystawach zbiorowych.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/joanna-barczyk/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/joanna-barczyk/"]
+    },
+    {
+      "name": "Joanna Hazuka",
+      "slug": "joanna-hazuka",
+      "biography": "Urodziła się we Wrocławiu w 1968.W 1991 ukończyła Studium Nauczycielskie we Wrocławiu, uzyskując przygotowanie do zawodu nauczyciela plastyki.W latach 1991-1998 studiowała na Akademii Sztuk Pięknych we Wrocławiu na wydziale Ceramiki i Szkła Unikatowego.Dyplom z zakresu Ceramiki uzyskała z wyróżnieniem w 1998 roku, w pracowni prof. Ireny Lipskiej – Zworskiej. Jej zasadniczym sposobem wypowiedzi są prace w glinie. Wykonuje ceramiczne rzeźby unikatowe ale specjalizuje się w temacie ikona w mozaice ceramicznej. Temat ikony realizuje również w malarstwie tablicowym (na desce).Oprócz działań twórczych prowadzi warsztaty artystyczne dla dzieci i dorosłych.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/joanna-hazuka/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/joanna-hazuka/"]
+    },
+    {
+      "name": "Jolanta Caban",
+      "slug": "jolanta-caban",
+      "biography": "Jolanta Caban – urodziła się w 1962 r. studia w PWSSP w Łodzi na Wydziale Grafiki w latach 1984-1986 oraz na Wydziale Malarstwa warszawskiej ASP w latach 1986-1989. dyplom z wyróżnieniem w pracowni malarstwa prof.. Rajmunda Ziemskiego, w pracowni grafiki prof. Romana Artymowskiego. Stypendystka MkiS. W 1992 r otrzymała stypendium rządu Francji, odbyła staż w Szkole Sztuk Pięknych w Montpellier. Wystawy indywidualne w Polsce i we Francji, udział w wystawach zbiorowych w Polsce, USA, Argentynie. W 1993 zdobyła II Nagrodę na konkursie malarstwa Montfort I`Amaury.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/jolanta-caban/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/jolanta-caban/"]
+    },
+    {
+      "name": "Jolanta Jastrzębska-Jakiel",
+      "slug": "jolanta-jastrzebska-jakiel",
+      "biography": "Urodzona w Radomiu. W 1983 roku ukończyła Instytut Wychowania Artystycznego, Uniwersytetu im. Marii Curie Skłodowskiej w Lublinie. Dyplom z malarstwa w pracowni prof. Mieczysława Hermana uzyskała w 1985 roku. Należy do Związku Polskich Artystów Plastyków /od 1992roku/oraz Stowarzyszenia Pastelistów Polskich. Zrealizowała 27 wystaw indywidualnych w kraju i za granicą. Brała udział w ponad 55 wystawach zbiorowych /Polska, USA, Kanada, Niemcy/",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/jolanta-jastrzebska-jakiel/",
+      "hasBiography": true,
+      "sourceUrls": [
+        "https://galeria-witryna.pl/kategoria-produktu/malastwo/jolanta-jastrzebska-jakiel/"
+      ]
+    },
+    {
+      "name": "Karina Sławińska",
+      "slug": "karina-slawinska",
+      "biography": "Karina Sławińska jest absolwentką Akademii Sztuk Pięknych w Łodzi, na Wydziale Grafiki i Malarstwa. W 2007 roku uzyskała dyplom z wyróżnieniem w pracowniach prof. A. Hałata i prof. J. Trelińskiego. Od lat współpracuje z galeriami w całej Polsce. Cechą charakterystyczną jej malarstwa jest czerpanie inspiracji i motywów ze świata przyrody: „Od początku mojej przygody z malarstwem świat roślin miał dla mnie szczególne znaczenie. Ale wszystkie moje prace, które powstają współcześnie mają swoją historię osadzoną w dzieciństwie – w czasach , kiedy bajkowa rzeczywistość taka, w której wszystko jest możliwe była dla mnie nadrzędna. Dlatego płótna moich obrazów zasiedlają formy życia będące elementami mikrokosmosów łąk i pól.” (Karina Sławińska).",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/karina-slawinska/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/karina-slawinska/"]
+    },
+    {
+      "name": "Kazimierz Kraczoń",
+      "slug": "kazimierz-kraczon",
+      "biography": "Kazimierz Kraczoń – urodzony w 1973 roku w Lublinie, architekt, rysownik i akwarelista. Ukończył studia na Wydziale Architektury Politechniki Krakowskiej. Po studiach wrócił do Lublina, gdzie od wielu lat prowadzi własną pracownię architektury.\n\nRównolegle do zainteresowań architektonicznych zawsze towarzyszyło mu zamiłowanie do rysowania i malowania. To zaowocowało otwarciem autorskiej szkoły rysunku i malarstwa, w której od lat przygotowuje młodzież na studia architektoniczne, a także prowadzi warsztaty i plenery rysunkowe i akwarelowe dla różnych grup wiekowych.\n\nOd wielu lat współpracuje z wieloma galeriami, swoje prace prezentował też na kilku wystawach indywidualnych i zbiorowych.\n\nW swoich akwarelach najchętniej ukazuje piękno rodzinnego miasta oraz innych miast Polski, a także wyjątkowość pejzażu i architektury polskiego pogranicza.\n\nJest członkiem Izby Architektów RP, Stowarzyszenia Architektów Polskich oraz Stowarzyszenia Akwarelistów Polskich.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/kazimierz-kraczon/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/kazimierz-kraczon/"]
+    },
+    {
+      "name": "Kornel Wilczek",
+      "slug": "kornel-wilczek",
+      "biography": "Artysta prezentowany w Galerii Witryna.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/kornel-wilczek/",
+      "hasBiography": false,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/kornel-wilczek/"]
+    },
+    {
+      "name": "Krystyna Rudzka-Przychoda",
+      "slug": "krystyna-rudzka-przychoda",
+      "biography": "Krystyna Rudzka Przychoda (KRUP) .Członek ZPAP. Studia na UMCS w Lublinie. Stypendium Ministra Kultury i Sztuki 1990/1991.Praca w Zarządzie ZPAP. Uczestniczka i organizatorka plenerów malarskich w kraju i za granicą. W dorobku artystycznym ma kilkadziesiąt wystaw indywidualnych w kraju i za granicą m.in.: Instytut Kultury Polskiej w Lipsku (Niemcy), Konsulat Generalny w Nowym Jorku, Munster (Niemcy). Brała udział w ponad 100 wystawach zbiorowych , pokonkursowych w kraju i za granicą m.in.: USA, Niemcy, Francja, Bułgaria, Węgry, Australia, Austria, Litwa.\nLaureatka wielu nagród i wyróżnień. Prace w zbiorach państwowych, muzealnych i prywatnych.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/krystyna-rudzka-przychoda/",
+      "hasBiography": true,
+      "sourceUrls": [
+        "https://galeria-witryna.pl/kategoria-produktu/malastwo/krystyna-rudzka-przychoda/"
+      ]
+    },
+    {
+      "name": "Krzysztof Grajczak",
+      "slug": "krzysztof-grajczak",
+      "biography": "Urodził sie 23.10.1969 r w Elblągu. W latach 1988-1993 studia na Wydziale Artystycznym UMCS w Lublinie, gdzie w 1993 r uzyskał dyplom z malarstwa w pracowni prof. M. Hermana pod kierunkiem adi. W. Wróblewskiego. Od 1998 r należy do Związku Polskich Artystów Plastyków. Uprawia malarstwo, grafikę i rysunek. Zajmuje się również scenografią i projektowaniem strojów teatralnych.\n\nUczestniczył w ponad 30-stu wystawach indywidualnych i zbiorowych oraz imprezach artystycznych w kraju: m. in- Lublin, Puławy, Dębica, Przeworsk, Chorzów, Elbląg, Gdańsk, Olsztyn, Zamość, Kraków, Olkusz, Koszalin, Osieki, Ustronie Morskie itd. A także za granicą: Szwecja, Francja, Tunezja, Czechy, Łotwa, Ukraina, Włochy. Obrazy znajdują się w zbiorach prywatnych, muzeach i galeriach w kraju i za granicą.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/krzysztof-grajczak/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/krzysztof-grajczak/"]
+    },
+    {
+      "name": "Krzysztof Jankowski",
+      "slug": "krzysztof-jankowski",
+      "biography": "Ukończył Wydział Filozofii i Socjologii UMCS z tytułem magistra filozofii kultury i nauki o kulturze. Zajmuje się rzeźbą od 2004 roku.\n\nPoczątki mojej twórczości to rysowanie. Wraz z upływem czasu, pojawiło się także zainteresowanie pracą w wosku, czego naturalną konsekwencją jest tworzenie rzeczy przestrzennych. Prace wykonywane są metodą na wosk tracony, dzięki czemu mogę łączyć brąz z kamieniem, drewnem czy innymi materiałami.\n\nMoje inspiracje to otaczający świat, Salvador Dali, Alberto Giacometti. Mistrz, nauczyciel, przyjaciel Dariusz Zieliński. Rzeźby są próbą pokazania subiektywnej rzeczywistości, która jest we mnie. Mam nadzieję, że odbiorca odnajdzie w moich pracach coś bliskiego, że będą pomostem do innego świata, fascynującego, zastanawiającego, czasem i niepokojącego.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/rzezba/krzysztof-jankowski/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/rzezba/krzysztof-jankowski/"]
+    },
+    {
+      "name": "Krzysztof Michalski",
+      "slug": "krzysztof-michalski",
+      "biography": "Krzysztof Michalski ukończył Państwowe Liceum Sztuk Plastycznych w Zamościu w klasie ze specjalizacją w dziedzinie konserwacji rzeźby i detalu architektonicznego. Następnie studiował na Wydziale Artystycznym Uniwersytetu Marii Curie-Skłodowskiej w Lublinie, gdzie uzyskał dyplom magistra z rzeźby w pracowni prof. Bogumiła Zagajewskiego. W roku 1999 na podstawie prac i dorobku artystycznego, został przyjęty do Związku Polskich Artystów Malarzy i Grafików. Należy również do Kazimierskiej. Konfraterni Sztuki.\n\nGłównymi tematami jego twórczości jest weduta, martwa natura oraz pejzaż. Uprawia głównie malarstwo sztalugowe w technice olejnej, akrylowej i akwarelowej. Swój dorobek prezentował na licznych wystawach indywidualnych i zbiorowych]. Prace w zbiorach prywatnych w kraju i za granicą oraz w muzeum w Hortobagy na Węgrzech",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/krzysztof-michalski/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/krzysztof-michalski/"]
+    },
+    {
+      "name": "Leszek Harasimowicz",
+      "slug": "leszek-harasimowicz",
+      "biography": "Leszek Harasimowicz – urodzony w 1959 w Wałczu. Absolwent Wydziału Sztuk Pięknych Uniwersytetu Mikołaja Kopernika w Toruniu, gdzie studiował w latach 1980 – 85. Dyplom otrzymał w pracowni malarstwa prof. J. Kaczmarskiego. Aktualnie mieszka i pracuje twórczo w Poznaniu. Jego prace znajdują się w kolekcjach prywatnych min. w Niemczech, Wielkiej Brytanii, Japonii, Stanach Zjednoczonych, Kanadzie i w Polsce.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/leszek-harasimowicz/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/leszek-harasimowicz/"]
+    },
+    {
+      "name": "Leszek Niewiadomski",
+      "slug": "leszek-niewiadomski",
+      "biography": "Leszek W. Niewiadomski urodził się 10 listopada 1953 roku w Lublinie. Absolwent Instytutu Wychowania Artystycznego UMCS w Lublinie. Dyplom z wyróżnieniem uzyskał w pracowni malarstwa prof. Ryszarda Lisa w 1985 r. Studia podyplomowe w Instytucie Wychowania Artystycznego UMCS w pracowni grafiki prof. Danuty Kołwzan – Nowickiej w 1989 r.\n\nCzłonek Związku Polskich Artystów Plastyków , Stowarzyszenia Pastelistów Polskich, Kazimierskiej Konfraterni Sztuki w Kazimierzu Dolnym nad Wisłą. Współzałożyciel Polskiego Stowarzyszenia Nauczycieli Plastyków z siedzibą w Lublinie – wiceprezes, oraz grupy artystycznej „Kontrast.”",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/leszek-niewiadomski/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/leszek-niewiadomski/"]
+    },
+    {
+      "name": "Ludwik Mitulski",
+      "slug": "ludwik-mitulski",
+      "biography": "Ludwik Ignacy Mitulski – ur. w 1958 roku.Studiował w Państwowej Wyższej Szkole Sztuk Plastycznych w Łodzi na Wydziale Grafiki Warsztatowej. Dyplom uzyskał w 1986 r. w Pracowni profesora Leszka Rózgi. Uprawia grafikę warsztatową, prace w wielu kolekcjach w kraju i zagranicą. Artysta grafik, posługuje się techniką akwaforty, czyli wytrawianiem metalowej płytki kwasem. Jest to proces bardzo złożony. Pierwsze akwaforty wykonał Szwajcar Urs Graf w 1513 roku. Do dzisiaj jest to technika graficzna wklęsłodrukowa, do której należy również akwatinta i miedzioryt. W technice tej farba graficzna wypełnia wytrawione lub wyryte rowki. Tak można w ogromnym skrócie przedstawić bardzo żmudną pracę grafika. Ilość kresek, ich zróżnicowanie pod względem grubości i koloru proces ten odpowiednio wydłużają.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/grafika/ludwik-mitulski/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/grafika/ludwik-mitulski/"]
+    },
+    {
+      "name": "Maciej Urbaniak",
+      "slug": "maciej-urbaniak",
+      "biography": "Maciej Urbaniak:\nUrodził się w Krakowie. Zamienił wielkomiejski zgiełk na spokój wiejskiego ogrodu i mieszka w Modlnicy koło Krakowa. Ukończył Krakowską Akademię Sztuk Pięknych. Właśnie nazwa Alma Mater stała się mottem jego malarstwa. Obrazy Macieja Urbaniaka są pełne koloru i dekoracyjne, malowane w systemie mozaikowego rygoru. Swoim magicznym urokiem i migotliwym ornamentem , wzbudzają zaciekawienie, ale podskórna ekspresja tych obrazów utwierdza w przekonaniu o głęboko osadzonej i intrygującej prowokacji. Artysta brał udział w wielu wystawach indywidualnych i zbiorowych. Stale pracuje z renomowanymi galeriami w kraju i za granicą. Jego obrazy znajdują się w wielu kolekcjach prywatnych.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/maciej-urbaniak/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/maciej-urbaniak/"]
+    },
+    {
+      "name": "Magdalena Brennenstuhl",
+      "slug": "magdalena-brennenstuhl",
+      "biography": "Wychowała się w Bełchatowie, małym górniczym miasteczku. Absolwentka Wydziału Artystycznego UMCS w Lublinie na kierunku grafika, dyplom z grafiki warsztatowej w pracowni prof. Artura Popka obroniła w 2007. W 2005 ukończyła studia licencjackie w Kolegium Sztuk Pięknych w Kazimierzu Dolnym. Obecnie pracuje jako grafik komputerowy, zajmuje się malarstwem sztalugowym, ilustracją oraz wzornictwem tekstyliów. Przynależy do: Związek Polskich Artystów Plastyków, Kazimierska",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/magdalena-brennenstuhl/",
+      "hasBiography": true,
+      "sourceUrls": [
+        "https://galeria-witryna.pl/kategoria-produktu/malastwo/magdalena-brennenstuhl/"
+      ]
+    },
+    {
+      "name": "Magdalena Słomska",
+      "slug": "magdalena-slomska",
+      "biography": "Magda Słomska jest lublinianką, w latach 1984-89 studiowała historię sztuki na Katolickim Uniwersytecie Lubelskim.\nJest żoną i matką bliźniaczek.\nSwoje miejsce w jej domu mają też zwierzęta i, jak sama stwierdziła, „odkąd wiele lat temu, całą rodzinę wzięła pod opiekę kotka Teresa jest zwolenniczką monarchii absolutnej z elementami tyranii”. Obrazy maluje na papierze i kartonie farbami akwarelowymi i temperami.\nWspółpracuje z Wydawnictwem Mimochodem, ilustrując kolejne książki Joanny Klary Teske i opracowując szatę graficzną pozostałych publikacji.\nNa stronie magdalenaslomska.art.pl prezentowany jest niemal pełny przegląd twórczości artystki. Świadomość, że ktoś wiesza jej obraz na ścianie swojego domu, napełnia ją wielką radością.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/magdalena-slomska/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/magdalena-slomska/"]
+    },
+    {
+      "name": "Małgorzata Grzybowska",
+      "slug": "malgorzata-grzybowska",
+      "biography": "Absolwentka Akademii Sztuk Pięknych im. Wł. Strzemińskiego w Łodzi.\nDyplom z wyróżnieniem w Pracowni Tkaniny Eksperymentalnej dr hab. Lidii Choczaj, prof. ASP oraz w Pracowni Rysunku i Malarstwa III prof. Jarosława Chrabąszcza.\n\nNagrody i wyróżnienia:\nASP Rocznik 2011, wyróżnienie za pracę dyplomową „Dzienniki intymne – kolekcja tkanin unikatowych i żakardowych”,\nI Nagroda w konkursie ARCO „Zaprojektowanie produktu lub serii produktów przeznaczonych do dekoracji wnętrza przy użyciu techniki druku cyfrowego na filcu o grubości 2mm”.\n\nWażniejsze wystawy:\n2014 – Campus Heimtextil, Targi Heimtextil, Frankfurt nad Menem; prezentacja autorskiej tkaniny/obiektu,\n2012 – ASP Rocznik 2011, zbiorowa wystawa najlepszych dyplomów Akademii Sztuk Pięknych im. Wł. Strzemińskiego w Łodzi, Centralne Muzeum Włókiennictwa, Łódź; tkanina, malarstwo\n2011 – IV Konkurs Malarski Zadra, pokonkursowa wystawa zbiorowa, Galeria Zadra, Warszawa; malarstwo,\n2011 – Łódź Design, wystawa zbiorowa w ramach Przeglądu Szkół; tkanina,\n2011 – 30-lecie Ogniska Pracy Pozaszkolnej w Ostrowcu Św., jubileuszowa wystawa zbiorowa, BWA, Ostrowiec Św.,\n2011 – Pracownia Malarstwa i Rysunku prof. Jarosława Chrabąszcza, wystawa zbiorowa, Galeria Pod Napięciem, Łódź; malarstwo,\n2011 – Prezentacja tkaniny jako scenografii w studio TVP Łódź,\n2010 – „Nowy ornament” – wystawa zbiorowa towarzysząca 13 Międzynarodowemu Triennale Tkaniny, Galeria 86 Na piętrze, Łódź; prezentacja tkaniny unikatowej,\n2010 – „Górska – uczniowie” – wystawa zbiorowa towarzysząca 13 Międzynarodowemu Triennale Tkaniny, Galeria Kobro, ASP Łódź,\n2010 – Young Contract Creations Award 2010: Upholstery – pokonkursowa wystawa zbiorowa, Targi Heimtextil, Frankfurt nad Menem; prezentacja siedziska do przestrzeni publicznej,\n2009 – Wystawa zbiorowa, Klub Technika, Ostrowiec Św.; malarstwo,\n2009 – „Nowy ornament” – wystawa zbiorowa, Technicka Univerzita, Liberec; prezentacja tkaniny żakardowej,\n2009 – „Nowy ornament” – wystawa zbiorowa, Dizajn Studio ULUV, Bratysława; prezentacja tkaniny żakardowej,\n2006 – Rysunek i malarstwo, wystawa indywidualna, Galeria Uwaga Schody MCK, Ostrowiec Św..",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/malgorzata-grzybowska/",
+      "hasBiography": true,
+      "sourceUrls": [
+        "https://galeria-witryna.pl/kategoria-produktu/malastwo/malgorzata-grzybowska/"
+      ]
+    },
+    {
+      "name": "Małgorzata Stępniak",
+      "slug": "malgorzata-stepniak",
+      "biography": "Małgorzata Stępniak jest absolwentką Akademii Sztuk Pięknych w Krakowie. Dyplom z malarstwa w pracowni prof. Włodzimierza Kunza uzyskała w 1998 r.\n\nJest laureatką Nagrody Ministra Kultury i Sztuki na IX Ogólnopolskim Przeglądzie Malarstwa Młodych w Legnicy w 1999 r. W 2002 r. otrzymała Stypendium Artystyczne Prezydenta Miasta Częstochowy.\n\nBrała udział w kilkudziesięciu wystawach zbiorowych w kraju i za granicą oraz ponad dwudziestu wystawach indywidualnych.\n\nWspółpracuje z kilkoma znaczącymi Galeriami w Polsce. Jej prace znajdują się w wielu prywatnych kolekcjach w kraju i za granicą.\nPomysłodawca i kurator wszystkich edycji wystawy „8 KOBIET”.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/malgorzata-stepniak/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/malgorzata-stepniak/"]
+    },
+    {
+      "name": "Marek Andała",
+      "slug": "marek-andala",
+      "biography": "Marek Andała. Urodzony w 1957 w Ostrowi Mazowieckiej. Absolwent PLSP w Supraślu (1977). Studiował w Instytucie Wychowania Artystycznego UMCS w Lublinie: malarstwo w pracowniach profesorów Andrzeja Kołodziejka, Jana Popka i Ryszarda Winiarskiego oraz grafikę w pracowni prof. Maksymiliana Snocha. Dyplom z malarstwa uzyskał w pracowni prof. Ryszarda Lisa w 1984r. Marek Andała jest Członkiem ZPAP, współzałożycielem Stowarzyszenia Pastelistów Polskich z siedzibą w Nowym Sączu oraz Kazimierskiej Konfraterni Sztuki w Kazimierzu Dolnym nad Wisłą.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/marek-andala/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/marek-andala/"]
+    },
+    {
+      "name": "Marek Szmidel",
+      "slug": "marek-szmidel",
+      "biography": "Urodzony w 1952r. Studia w latach 1976-1981 na wydziale malarstwa ASP w Gdańsku w pracowni profesora Kazimierza Ostrowskiego. Dyplom w roku 1981\nUprawia: malarstwo, rzeźbę, rysunek, grafikę, fotografię oraz projektowanie wnętrz.\nTwórczość nie jest odosobniona. Łączy w sobie inne dziedziny sztuki; muzykę czy literaturę, scala współczesne wynalazki, wzbogacona wpływem przeżyć i doznań. W moich treściach znaczną role odgrywa intuicja; są to impresje na temat tego co wiem i co sobie wyobrażam.\nObecnie próbuję malować, posługując się swoim nowym sposobem widzenia, nowymi umiejętnościami, wiedzą i miłością, pozostając jednak wierny sobie i przedmiotowi. To co najcenniejsze w twórczości, w podejściu do niej przez samego twórcę, to moralność artysty.\nW sztuce nie można oszukać.\nW sztuce są pewne elementy kompozycji, struktury farby, pociągnięcia pędzlem, które sprawiają, że kawałek płótna wydaje się czarodziejski jak okno na inny świat.\nI to właśnie mnie pociąga, odkrywanie innych światów. Ma to związek z jedną chwilą w czasie, jednym miejscem, widzianym przez jednego człowieka, przeze mnie.\nJest to jednak coś więcej jak okno wychodzące na miejsce wyobraźni, piękna, podniecenia. Staram się sprawić, by to złudzenie światła i przestrzeni stało się prawdą. Po skończeniu obrazu, porównuję go z poprzednim. Dostrzegam różnicę, zmianę. Nie potrafię jednak stwierdzić, na ile rzeczywistość się zmieniła a na ile zmiana dokonała się we mnie.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/marek-szmidel/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/marek-szmidel/"]
+    },
+    {
+      "name": "Marek Wiącek",
+      "slug": "marek-wiacek",
+      "biography": "Artysta malarz urodzony w 1958 roku w Lublinie. Absolwent malarstwa Warszawskiej Akademii sztuk Pięknych w pracowni Jana Kowalskiego.\n\nOd wielu lat zajmujący się tematyką związaną z miastem Lublin, oraz Kazimierzem Dolnym nad Wisłą.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/marek-wiacek/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/marek-wiacek/"]
+    },
+    {
+      "name": "Maria Radomska-Grobelska",
+      "slug": "maria-radomska-grobelska",
+      "biography": "Artysta prezentowany w Galerii Witryna.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/maria-radomska-grobelska/",
+      "hasBiography": false,
+      "sourceUrls": [
+        "https://galeria-witryna.pl/kategoria-produktu/malastwo/maria-radomska-grobelska/"
+      ]
+    },
+    {
+      "name": "Maria Wolska",
+      "slug": "maria-wolska",
+      "biography": "MARIA WOLSKA – ur. w 1956 roku. Artysta malarz. Absolwentka Historii Sztuki na Uniwersytecie Warszawskim. Uprawia malarstwo olejne, oraz zajmuje się konserwacją dzieł sztuki.Specjalizuje się w malarstwie religijnym, portretowym, a ulubionym tematem jest również martwa natura, interpretowana w sposób hiperrealistyczny.Szczególne miejsce zajmują w jej twórczości obrazy z przedstawieniem kobiety w rozmaitych wnętrzach, często w towarzystwie ulubionych kotów.Malarstwo Marii Wolskiej zachwyca niezwykłą precyzją techniczną ,wysmnakowanym klimatem i dbałością o każdy szczegół i detal.Obrazy artystki znajdują się w licznych kolekcjach prywatnych w kraju i zagranicą.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/maria-wolska/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/maria-wolska/"]
+    },
+    {
+      "name": "Marian Bocianowski",
+      "slug": "marian-bocianowski",
+      "biography": "Marian Paweł Bocianowski studiował w latach 1976-1981 w Państwowej Wyższej Szkole Sztuk Plastycznych w Łodzi (obecnie ASP). W 1983 uzyskał dyplom w Katedrze Grafiki Warsztatowej. Zajmuje się grafiką warsztatową, głównie w technikach metalowych barwnych, a także malarstwem i ilustracją książkową. Precyzyjne, drobiazgowe opracowanie płyt, stosowanie barw, linearyzm, a nawet kaligraficzność jego prac zbliża go do kręgu artystów rozwijających środki charakterystyczne dla nestora „łódzkiej szkoły graficznej”, Leszka Rózgi (którego Bocianowski jest uczniem). Od 1984 prezentował liczne wystawy indywidualne w kraju, a także w Niemczech i Japonii. Uczestniczył w licznych zbiorowych przeglądach miniatury graficznej, ekslibrisu, a także grafiki warsztatowej w kraju i za granicą.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/grafika/marian-bocianowski/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/grafika/marian-bocianowski/"]
+    },
+    {
+      "name": "Michał Baca",
+      "slug": "michal-baca",
+      "biography": "Studiował na Wydziale Malarstwa ASP w Krakowie. Dyplom zrealizował w pracowni prof. J. Joniaka w 1983 r. Stypendysta MKiS. Autor 38. wystaw indywidualnych m.in. Akwizgran, Frankfurt, Norymberga, Wiedeń, Thorn (Holandia). Uczestniczył w kilkudziesięciu wystawach zbiorowych w kraju i zagranicą, m.in. Francja, Włochy, Anglia, Szwecja, Dania, Niemcy, Japonia i USA. Laureat nagród i wyróżnień w ogólnopolskich konkursach malarskich.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/michal-baca/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/michal-baca/"]
+    },
+    {
+      "name": "Michał Makara",
+      "slug": "michal-makara",
+      "biography": "Jest wieloletnim uczniem Stanisława Tworzydło – założyciela Ośrodka Sztuki Dekoracyjnej i Użytkowej. Uprawia kilka dyscyplin: chińskie malarstwo tradycyjne, a w tym zakresie głównie malarstwo zapisanej idei „Xie Yi”, jak też w mniejszym stopniu malarstwo precyzyjne „Gong Bi”, a także grafikę, w tym estampaż i chiński drzeworyt wodny. Rzeźbi też pieczęcie, wszystko według prawideł chińskich.\nLubi obserwować przyrodę i to ona stanowi dla niego natchnienie. Upatruje piękna w prostocie.\nW marcu 2015 roku został przyjęty do Związku Plastyków Sztuki Użytkowej w Warszawie.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/michal-makara/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/michal-makara/"]
+    },
+    {
+      "name": "Michał Otulski",
+      "slug": "michal-otulski",
+      "biography": "Artysta prezentowany w Galerii Witryna.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/michal-otulski/",
+      "hasBiography": false,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/michal-otulski/"]
+    },
+    {
+      "name": "Michał Smółka",
+      "slug": "michal-smolka",
+      "biography": "Michał Smółka urodzony w 1957r. Studia – Akademia Sztuk Pięknych Kraków, Wydział Grafiki Katowice. Uczeń Jerzego Dudy Gracza, Romana Nowotarskiego, Bronisława Chromego. Dyplom 1983r.\nUprawia malarstwo sztalugowe, pastelowe i akwarelowe.\nW Kazimierzu Dolnym prowadzi Galerię DWA ŚWIATY, jest jednym z założycieli „Kazimierskiej Konfraterni Sztuki”. Jest członkiem założycielem Stowarzyszenia Akwarelistów Polskich. Organizował kilka ogólnopolskich plenerów malarskich. W jego twórczości bardzo ważne są podróże artystyczne między innymi do Włoch, Egiptu, na Krym, Madagaskar i Zanzibar.\nBierze udział w wystawach krajowych i zagranicznych, uczestniczy w wielu plenerach malarskich. Jego prace znajdują się w zbiorach muzealnych, prywatnych w Polsce, Wielkiej Brytanii, Włoszech, Szwajcarii, Niemczech, USA i Watykanie.\nOd wielu lat artysta wspiera obrazami aukcje charytatywne na przykład\n„Bliźniemu Swemu” Towarzystwa Pomocy im. św. Brata Alberta i „Wielką Aukcję\nWspółczesnej Sztuki Polskiej” w Nowym Jorku.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/michal-smolka/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/michal-smolka/"]
+    },
+    {
+      "name": "Michał Stahl",
+      "slug": "michal-stahl",
+      "biography": "Urodzony w 1954 r. w Łodzi.\nStudia w Państwowej Wyższej Szkole Sztuk Plastycznych, obecnie Akademii Sztuk Pięknych w Łodzi na Wydziale Malarstwa i Grafiki.\nDyplom z grafiki w 1984 r. w Katedrze Grafiki Warsztatowej u prof. Leszka Rózgi oraz z malarstwa u prof. Zdzisława Głowackiego.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/michal-stahl/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/michal-stahl/"]
+    },
+    {
+      "name": "Mira Skoczek-Wojnicka",
+      "slug": "mira-skoczek-wojnicka",
+      "biography": "Urodzona w Krakowie w 1959 r. Studia na ASP w Krakowie, Wydział Grafiki. Dyplom w 1984 r. w pracowni wklęsłodruku ( pod kierunkiem Prof. Andrzeja Pietscha) i litografii ( pod kierunkiem Prof. Włodzimierza Kunza). Uprawia malarstwo, rysunek i grafikę.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/mira-skoczek-wojnicka/",
+      "hasBiography": true,
+      "sourceUrls": [
+        "https://galeria-witryna.pl/kategoria-produktu/malastwo/mira-skoczek-wojnicka/"
+      ]
+    },
+    {
+      "name": "Mirosława Smerek-Bielecka",
+      "slug": "miroslawa-smerek-bielecka",
+      "biography": "Urodzona w Giżycku na Mazurach, studiowała malarstwo na Wydziale Sztuk Pięknych Uniwersytetu Mikołaja Kopernika w Toruniu. Dyplom uzyskała w 1979 roku w pracowni prof. Mieczysława Wiśniewskiego.Była stypendystką Ministra Kultury i Sztuki w 1984 roku. Odbyła wraz z mężem podróże artystyczne do USA i Bretanii na zaproszenie władz i galerii. Autorka ponad 20 wystaw indywidualnych, uczestniczka kilkudziesięsiu zbiorowych. Prace w muzeach polskich, kolekcjach zagranicznych.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/miroslawa-smerek-bielecka/",
+      "hasBiography": true,
+      "sourceUrls": [
+        "https://galeria-witryna.pl/kategoria-produktu/malastwo/miroslawa-smerek-bielecka/"
+      ]
+    },
+    {
+      "name": "Natalia Prokopiak",
+      "slug": "natalia-prokopiak",
+      "biography": "Artysta prezentowany w Galerii Witryna.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/natalia-prokopiak/",
+      "hasBiography": false,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/natalia-prokopiak/"]
+    },
+    {
+      "name": "Piotr Fąfrowicz",
+      "slug": "piotr-fafrowicz",
+      "biography": "Studiował historię sztuki w Katolickim Uniwersytecie Lubelskim. Zajmuje się malarstwem i projektowaniem graficznymi. Laureat licznych nagród za ilustracje, m.in. 2001 – II Nagroda na Biennale Ilustracji w Aki Town, Japonia 2003 – Wyróżnienie IBA w konkursie Książka Roku 2003 2003 – Wyróżnienie na Biennale Ilustracji w Aki Town, Japonia, 2003 – Nagroda w konkursie PTWK Najpiękniejsza Książka Roku 2003 2004 – Wyróżnienie PS IBBY w Konkursie Książka Roku 2005 – Wpis na listę Białych Kruków – Internationale Jugendbibliothek, Monachium 2005 – Nagroda w Konkursie PTWK Najpiękniejsza Książka Roku 2005 W 2008 został wpisany na Honorową Listę IBBA w kategorii ilustrator.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/piotr-fafrowicz-malastwo/",
+      "hasBiography": true,
+      "sourceUrls": [
+        "https://galeria-witryna.pl/kategoria-produktu/malastwo/piotr-fafrowicz-malastwo/"
+      ]
+    },
+    {
+      "name": "Rafał Olbiński",
+      "slug": "rafal-olbinski",
+      "biography": "Urodzony w Kielcach, w 1969 roku ukończył studia na Wydziale Architektury Politechniki Warszawskiej. W roku 1981 wyemigrował do Stanów Zjednoczonych. Szybko zaistniał w tamtejszym środowisku i dał się poznać jako znakomity ilustrator i malarz.\n\nOd 1985 roku jest wykładowcą School of Visual Arts w Nowym Jorku. Zajmuje się również ilustracją, malarstwem, projektowaniem plakatów oraz scenografią. Zdobył ogromne uznanie na całym świecie a jego plakaty i ilustracje ukazują się regularnie na łamach takich czasopism jak Newsweek, Time, Business Week, New York Times, New Yorker. Jest twórcą bardzo pracowitym z ogromnym dorobkiem. Na swoim koncie ma już liczne plakaty dla amerykańskich oper (New York City Opera, Utah Opera, Pacific Opera San Francisco, Philadelphia Opera), scenografię operową do przedstawienia Don Giovanniego w Filadelfii.\n\nJego prace prezentowane były na wielu wystawach w Stanach Zjednoczonych, Japonii, Francji, Niemczech i w Polsce.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/rafal-olbinski/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/rafal-olbinski/"]
+    },
+    {
+      "name": "Roman Gruszecki",
+      "slug": "roman-gruszecki",
+      "biography": "Roman Gruszecki ur. w 1973 r. we Włodawie. Absolwent Wydziału Artystycznego Uniwersytetu Marii Curie­Skłodowskiej w Lublinie. W roku 1999 r. dyplom w pracowni rzeźby u prof. Sławomira Mieleszki. W latach 2013-­2015 studia podyplomowe na Wydziale Malarstwa w Akademii Sztuk Pięknych w Krakowie, zakończone dyplomem w pracowni prof. Andrzeja Bednarczyka.\n\nPo dyplomie w 1999 r. rozpoczyna samodzielną pracę twórczą w zakresie rysunku, malarstwa i rzeźby. Uprawia malarstwo sztalugowe olejne, akwarelę, pastel. Powstają liczne portrety, obrazy inspirowane Kazimierzem Dolnym oraz wieloma pięknymi miejscami szczególnie południa Europy: Francji , Grecji, Chorwacji, Włoch a także Holandii. Bierze udział w wielu wystawach indywidualnych i zbiorowych.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/roman-gruszecki/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/roman-gruszecki/"]
+    },
+    {
+      "name": "Ryszard Lizut",
+      "slug": "ryszard-lizut",
+      "biography": "Urodził sie w 1948 r. w kol. Jasin k. Lublina. Z wykształcenia jest technikiem elektroenergetykiem. Od 1977 r. należy do WTPSP\nw Lublinie. Swoje umiejętności doskonalił pod okiem\nmgr M. Bijasa, mgr W. Figla i mgr T. Świerbutowicza. W 1988 r. otrzymał uprawnienia MK i S do wykonywania zawodu artysty plastyka w dyscyplinie malarstwa sztalugowego. Od 1990 r.\njest członkiem Związku Artystów Plastyków – Polska Sztuka Użytkowa. Uczestniczył w licznych wystawach zbiorowych WTPSP zarówno w kraju, jak i za granicą (Debreczyn – Węgry, Brześć – Białoruś).",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/ryszard-lizut/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/ryszard-lizut/"]
+    },
+    {
+      "name": "Sława Radow",
+      "slug": "slawa-radow",
+      "biography": "SLAWA RADOW – Urodzony w 1964 roku na Białorusi. W okresie letnim mieszka i tworzy w Kazimierzu Dolnym. Absolwent ASP w Mińsku, od 2000 roku członek SPAP. Jego prace znajdują się w licznych kolekcjach prywatnych w kraju i za granicą.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/slawa-radow/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/slawa-radow/"]
+    },
+    {
+      "name": "Stasys Eidrigevičius",
+      "slug": "stasys-eidrigevicius",
+      "biography": "Stasys Eidrigevičius (ur. 24 lipca 1949 w Mediniškiai na Litwie) – grafik pochodzenia litewskiego, od 1980 roku mieszkający w Polsce. Jest czynny w wielu dziedzinach sztuki: projektuje plakaty, ilustruje książki, maluje obrazy, tworzy scenografię, fotografuje, urządza performance, jest współpracownikiem tygodnika „Polityka”.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/grafika/stasys-eidrigevicius/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/grafika/stasys-eidrigevicius/"]
+    },
+    {
+      "name": "Tadeusz Kuduk",
+      "slug": "tadeusz-kuduk",
+      "biography": "Artysta prezentowany w Galerii Witryna.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/malarstwo/",
+      "hasBiography": false,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/tadeusz-kuduk/"]
+    },
+    {
+      "name": "Tatiana Majewska",
+      "slug": "tatiana-majewska",
+      "biography": "Tatiana Majewska – urodziła się w 1961 r. w Rosji w Joszkar – Olińskiej Republice Autonomicznej Marij – Eł (Powołże). Jest absolwentką Akademickiej Szkoły Artystycznej w Joszkar – Ole (1997 – 1981) oraz Omskiego Instytutu Sztuki w Omsku na Syberii (1982 – 1987), gdzie otrzymała dyplom magistra sztuk. Od 20 lat mieszka w Polsce, gdzie tworzy w technice olejnej i akwarelowej. Maluje portrety, akty, sceny rodzajowe, pejzaże, kwiaty, martwą naturę. Uczestniczy w wystawach indywidualnych i zbiorowych w kraju i za granicą. Zajmowała się konserwacją zabytków. Pracowała m. in. w zespole konserwatorów zajmujących się renowacją w: Archikatedrze w Lublinie, Bazylice w Krakowie, Klasztorze na Jasnej Górze oraz wielu innych. Jej obrazy doceniane są przez kolekcjonerów na całym świecie, m. in. w USA, Rosji, Niemczech i Polsce. Artystka należy do Związku Polskich Artystów Plastyków Okręgu Warszawskiego oraz Stowarzyszenia Akwarelistów Polskich.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/tatiana-majewska/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/tatiana-majewska/"]
+    },
+    {
+      "name": "Theseus",
+      "slug": "theseus",
+      "biography": "THESEUS – kolektyw artystyczny powołany przez Aleksandrę Cupiał i Szymona Parafiniaka w roku 2016.\nW swoich realizacjach artyści koncentrują się przede wszystkim na poszukiwaniu energii, światła i ruchu.\nArtyści zajmują się malarstwem, grafiką, rzeźbą i wideo. Motywem przewodnim w pracach kolektywu THESEUS jest znak labiryntu. Od roku 2019 artyści realizują cykl zatytułowany ELEMENTA – inspirowany starogrecką koncepcją żywiołów Empedoklesa oraz wielościanami foremnymi Platona.\n„Obecne w sztuce Theseusa elementy nasuwają pytania dotyczące naszych możliwości poznawczych podobnie jak światło nie przenika obszaru cienia, tak poznanie i zrozumienie (gnoza) zdają się bezradne wobec ukrytych przed nami treści i prawd. Dlatego trzeba mieć świadomość, że nie mówimy tu o wartościach absolutnych tak jak w przypadku jasności lub ciemności, lecz o ich reprezentacji symboliczno-znakowej. Dzięki artefaktom Theseusa okazuje się jak bardzo pojemny jest znak labiryntu, wiedzie on ku meandrom dociekań i naszej drogi, obrazuje jednocześnie zagubienie i podejmowanie prób wyjścia.” – Piotr Głowacki\n\nUdział w wystawach:\n1. HOMO VIATOR – WĘDROWIEC, 2017, Nowy Świat 2.0, Warszawa\n2. NIEPODLEGŁOŚĆ SZTUKI – WOLNOŚĆ ARTYSTY, 2018, Galeria Konduktorownia, Częstochowa\n3. ARS AURO PRIOR, 2019, Warsaw Home, Warszawa\n4. ELEMENTA, 2019, Galeria Konduktorownia, Częstochowa\n5. ŻYCIE, 2020, Galeria Miejska we Wrocławiu, Płocka Galeria Sztuki, wystawa w przestrzeni wirtualnej\n6. LABORATORIUM RZEŹBY, 2021, Galeria ToTuart, Centrum Praskie Koneser, Warszawa",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/theseus/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/theseus/"]
+    },
+    {
+      "name": "Tomasz Bachanek",
+      "slug": "tomasz-bachanek",
+      "biography": "Tomasz Bachanek uznany polski malarz urodził się w 1962 roku w Puławach. Jest absolwentem Państwowej Wyższej Szkoły Sztuk Plastycznych w Gdańsku, dyplom obronił w pracowni Kazimierza Ostrowskiego w 1988. Uprawia malarstwo olejne, rysunek, od czasu do czasu malarstwo ścienne. Prace Tomasza Bachanka znajdują się prywatnych kolekcjach na całym świecie. Prezentowane były między innymi na licznych wystawach indywidualnych i zbiorowych.\n\nWażniejsze wystawy indywidualne:\n\n1993 – Europe Des Beaux, Arts Gallery, Antibes, Francja\n\n1994 – Femmes, Femmes, Mougins, Francja\n\n1995 – Galeria Katarzyny Napiórkowskiej, Warszawa\n\n1996 – Clearwater, USA\n\n1997 – Grand Bachanalia, Delray Beach, USA\n\n1998 – Bachanalia na zamku, Kętrzyn\n\n2002 – Galeria Ars Nova, Łódź\n\n2004 – Galeria Wirydarz, Lublin\n\n2005 – Salon du Nord, Minneapolis\n\n2006 – Gdańskie Bachanalia, Opera Bałtycka, Gdańsk\n\n2007 – Art Warsaw Gallery, Warszawa\n\n2008 – Galeria Szalom, Kraków\n\n2008 – Galeria BP, Warszawa\n\n2010 – Galeria Wirydarz, Lublin\n\n2011 – Teatr Śląski im. Stanisława Wyspiańskiego, Katowice\n\n2012 – Galeria Cechmanowicz, Poznań\n\n2014 – Galeria Ewy Hernik, Warszawa\n\n2015 – Ośrodek Kultury, Staszów\n\n2015 –Galeria Kolor, Kazimierz nad Wisłą\n\n2016 –Bachanalia w Kozienicach czyli pełna afirmacja, Kozienice\n\n2016 –Wilanów, Warszawa\n\n2016-2017 – Filharmonia Podkarpacka, Rzeszów\n\n2018 –Wilanów, Warszawa\n\n2018 – Bachanalia w Nałęczowie, Nałęczów\n\n2019 – Noc Kultury, Próba Cafe, Lublin\n\n2019 – Bachanalia na Zamku, Szczecinek\n\n2019 –Bachanalia czyli pełna afirmacja, Głogów, Galeria na Grodzkiej – Saint Tropez",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/tomasz-bachanek/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/tomasz-bachanek/"]
+    },
+    {
+      "name": "Tomasz Klimczyk",
+      "slug": "tomasz-klimczyk",
+      "biography": "Urodzony w 1967 roku w Krakowie. W latach 1989-1994 studia na Wydziale Grafiki Akademii Sztuk Pięknych w Krakowie. Malarstwo w pracowni prof. Zbysława Maciejewskiego. Dyplom w 1994 roku. 1994 – wyróżnienie w Ogólnopolskim Konkursie Malarskim „Pejzaż w malarstwie współczesnym”.\n2003, 2009 – wyróżnienie honorowe w ogólnopolskim konkursie „Triennale z martwą naturą”.\nBrał udział w ponad 70 wystawach zbiorowych w Polsce, USA,Chorwacji, Czechach, Francji, Holandii, Słowacji, Niemczech, Anglii, Japonii.\nAutor ponad dwudziestu wystaw indywidualnych wkraju i za granicą (m.in. w Chorwacji, Niemczech, Francji).",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/tomasz-klimczyk/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/tomasz-klimczyk/"]
+    },
+    {
+      "name": "Tomek Wojtysek",
+      "slug": "tomek-wojtysek",
+      "biography": "Urodził się w 1983 r. w Częstochowie. Studiował na Akademii im. Jana Długosza w Częstochowie (2002-2007). Dyplom z wyróżnieniem otrzymał w pracowni malarstwa prof. Wernera Lubosa. Należy do ZPAP Okręgu Częstochowskiego. W latach 2008, 2011 i 2012 otrzymał stypendium artystyczne Prezydenta Miasta Częstochowy w dziedzinie plastyki. Zajmuje się malarstwem, rysunkiem. Jego prace znajdują się w zbiorach prywatnych w kraju i za granicą. Brał udział w kilkudziesięciu wystawach zbiorowych, autor wystaw indywidualnych.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/tomek-wojtysek/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/tomek-wojtysek/"]
+    },
+    {
+      "name": "Wacław Onak",
+      "slug": "waclaw-onak",
+      "biography": "Urodził się 1958 roku w Tarnowie. Ukończył Akademię Sztuk Pięknych w Krakowie. Dyplom na Wydziale Malarstwa w pracowni prof. Juliusza Joniaka. Uprawia malarstwo sztalugowe. Swoje prace prezentował na wystawach indywidualnych i zbiorowych w kraju i za granicą. Jego obrazy znajdują się w zbiorach prywatnych w Belgii, Niemczech, Francji, Hiszpanii, Japonii, Anglii, Szwecji, USA, Brazylii, Australii i w Polsce.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/waclaw-onak/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/waclaw-onak/"]
+    },
+    {
+      "name": "Walenty Wróblewski",
+      "slug": "walenty-wroblewski",
+      "biography": "Urodzony w 1954 roku w Bielsku Podlaskim. W roku 1974 ukończył Państwowe Liceum Sztuk Plastycznych w Supraślu. Studia w Instytucie Wychowania Artystycznego UMCS w Lublinie. Dyplom z malarstwa uzyskał w roku 1978 w pracowni wykładowcy Andrzeja Kołodziejka.\nW roku 1983 został zatrudniony na Wydziale Artystycznym UMCS w Lublinie, gdzie pracuje do dzisiaj w Instytucie Sztuk Pięknych na stanowisku profesora. Od roku 2012 pełni funkcje kierownika Zakładu Malarstwa I.\nUprawia przede wszystkim malarstwo. W swojej aktywności wychodzi poza praktyczne, typowo twórcze doświadczenie. Angażuje się również społecznie w środowisku artystycznym Lublina. W latach 1993 1996 pełnił funkcje Wiceprezesa Okręgu Lubelskiego Związku Artystów Plastyków oraz był parokrotnie kuratorem Wschodniego Salonu Sztuki.\nLaureat kilkunastu nagród i wyróżnień, stypendysta Ministra Kultury i Sztuki w latach 1986-87, 1990-91 oraz Rektora UMCS. Zorganizował 50 wystaw indywidualnych oraz uczestniczył w ponad 150 wystawach zbiorowych w kraju i za granica.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/walenty-wroblewski/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/walenty-wroblewski/"]
+    },
+    {
+      "name": "Wilga Badowska",
+      "slug": "wilga-badowska",
+      "biography": "Urodziła się w Olsztynie. W 1981 r. podjęła studia w Państwowej Wyższej Szkole Sztuk Plastycznych w Gdańsku na Wydziale Malarstwa i Grafiki. Początkowo studiowała w pracowni prof. Włodzimierza Łajminga. Następnie u prof. Kazimierza Ostrowskiego, u którego uzyskała dyplom w 1986 r. Po ukończeniu studiów zamieszkała w Sopocie. Jak sama twierdzi, połową duszy zawsze była w Olsztynie.\n\nUprawia malarstwo stosując różne techniki, od tradycyjnych – tempera, pastel, olej, eksperymentując na różnego rodzaju podłożach, po oryginalną – batikowo-pastelową, na jedwabiu. Tworzy także akwaforty, grafiki, rysunek (m. in. prasowy). Jest ilustratorką książek. Jej twórczość określana jest jako pełna magicznej symboliki, czerpiąca z poetyki groteski, tajemnicza, uwodzicielska. W ornamentacyjnych formach, płynnych, miękkich liniach i niezwykłych kształtach kryją się alegoryczne historie mające swoje źródła w baśniach, mitach, czy wróżbach, np. z kart Tarota.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/wilga-badowska/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/wilga-badowska/"]
+    },
+    {
+      "name": "Witold Pazera",
+      "slug": "witold-pazera",
+      "biography": "Absolwent Akademii Sztuk Pięknych w Krakowie.\n\nUczeń prof. Jerzego Nowosielskiego. Dyplom w 1980 roku. Malarz, rysownik, satyryk, fotograf. Dwukrotny stypendysta Ministerstwa Kultury i Sztuki.\n\nOd 1992 roku prowadzi Autorską Pracownię Plastyczną skupiając się na pracy z młodzieżą przygotowującą się do studiów na uczelniach artystycznych. Autor rysunków satyrycznych , felietonów i recenzji z wydarzeń artystycznych do wielu gazet ( , stały współpracownik Galicyjskiego Tygodnika Informacyjnego „Temi”). Realizator projektów scenograficznych , graficznych : plakatów , programów teatralnych, ilustracji książkowej.\n\nW dorobku posiada ponad 40 wystaw indywidualnych ( cykle:”Światy Pazery”, „Pazera Nuovo”, „Komedia Ludzka”, „Królestwo Wyobrażni”, „Czarne na Białym”, „Z kobietą w Tytule”, które prezentował m. in. w : Krakowie, Rzeszowie, Sopocie, Tarnowie, Bydgoszczy , Przemyślu , Gagny, Sevran – Boudotte (Francja ), Paryżu , Calgary . Bissendorf (Niemcy) Warszawie – Konstancinie.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/witold-pazera/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/witold-pazera/"]
+    },
+    {
+      "name": "Wojciech Górecki",
+      "slug": "wojciech-gorecki",
+      "biography": "Wojciech Górecki urodził się 23 kwietnia 1959 roku. Ukończył gdańską Akademię Sztuk Pięknych, na Wydziale Malarstwa i Grafiki. Uprawia przede wszystkim malarstwo plenerowe, rysunek i grafikę warsztatową. Za swoją twórczość w 2009 i 2011 roku otrzymał prestiżowe, honorowe wyróżnienie przyznane przez The Art Renewal Center w USA.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/wojciech-gorecki/",
+      "hasBiography": true,
+      "sourceUrls": [
+        "https://galeria-witryna.pl/kategoria-produktu/grafika/wojciech-gorecki-grafika/",
+        "https://galeria-witryna.pl/kategoria-produktu/malastwo/wojciech-gorecki/"
+      ]
+    },
+    {
+      "name": "Zbigniew Nowosadzki",
+      "slug": "zbigniew-nowosadzki",
+      "biography": "Zbigniew Nowosadzki urodził się w roku 1957 w Zamościu. Ukończył zamojskie Liceum Plastyczne. Studia – Instytut Artystyczny UMCS w Lublinie. Dyplom z malarstwa uzyskał w roku 1983. Mieszka i pracuje w Warszawie.\n\nW swoim dorobku ma 40. wystaw indywidualnych, m.in.: 1986 – Klub MPiK „Mokotów”, Warszawa, 1991 – Galeria „Na Pięknej”, Warszawa, 1993 – Muzeum Archidiecezji Warszawskiej Galeria „Veraikon”, 1998 – Centrum Polskie, Bruksela, 2000 – Galeria „Forma & Colour”, Warszawa, 2003 – „Stara Kordegarda”, Warszawa, 2009 – Galeria Mazowiecka, Warszawa, 2010 – Instytut Polski Wiedeń 2011 – Galeria „Bellotto”, Warszawa, 2014 – Galeria „Neuf”, Nancy, 2018 – Muzeum Ziemi, Warszawa.\n\nUczestniczył w ponad 100. wystawach zbiorowych m.in.: 1994 – Muzeum Narodowe, Gdańsk; 1995-2001 – cykl wystaw w Muzeum Plakatu w Wilanowie; 2002 – Open Cycle Europa Gallery, Nowy Jork; 2002 – Museo Metropolitano, Buenos Aires; 2004 – Konsulat Generalny RP, Nowy Jork; 2008 – Centrum Kultury Polskiej, Daugavpils, Łotwa; 2008 – Muzeum im. K. Pułaskiego, Warka; 2009 – Dom Kultury Polskiej, Wilno; 2009 – ASTO Museum of Art, Los Angeles;2011 – Ratusz, Stuttgart; 2012 – Galerie Roi Dore, Paryż; 2016 – „Lublin -Warszawa-Nancy. Parantele”, Muzeum Lubelskie.\n\nAutor herbu dzielnicy Wilanów. Współautor oprawy plastycznej premiery filmu „Ogniem i Mieczem” oraz „Pan Tadeusz” w Teatrze Wielkim. Członek grup artystycznych „Via Varsovia” i „Emocjonaliści”.\n\nPrace malarskie Zbigniewa Nowosadzkiego znajdują się w zbiorach publicznych i prywatnych w kraju oraz w Austrii, Anglii, Argentynie, Belgii, Chinach, na Cyprze, we Francji, Holandii, Niemczech, Szwecji i USA.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/zbigniew-nowosadzki/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/zbigniew-nowosadzki/"]
+    },
+    {
+      "name": "Zbigniew Pieczyński",
+      "slug": "zbigniew-pieczynski",
+      "biography": "Zbigniew Pieczyński – urodzony 11 stycznia 1970 r. w Mogilnie. Absolwent Wydziału Artystycznego UMCS w Lublinie. W 2000 r. uzyskał dyplom z malarstwa w pracowni prof. Walentego Wróblewskiego, wyróżniony nagrodą. Od 1995 r. należy do Towarzystwa Przyjaciół Sztuk Pięknych w Lublinie, a od 2001 r. jest członkiem Związku Polskich Artystów Plastyków. Brał udział w sześciu wystawach indywidualnych i blisko trzydziestu zbiorowych.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/zbigniew-pieczynski/",
+      "hasBiography": true,
+      "sourceUrls": ["https://galeria-witryna.pl/kategoria-produktu/malastwo/zbigniew-pieczynski/"]
+    },
+    {
+      "name": "Zofia Mosiądz-Sammarro",
+      "slug": "zofia-mosiadz-sammarro",
+      "biography": "Pani Zofia specjalizuje się w malarstwie sztalugowym, rysunku i grafice. Tematem wiodącym w jej twórczości są głównie kobiety oraz martwa natura.\nPrace malarki brały udział w wielu wystawach zbiorowych oraz indywidualnych w kraju i na świecie, gdzie zdobywały prestiżowe nagrody i wyróżnienia.\nObrazy Zofii Grażyny Sammarro-Mosiądz znajdują się na ekspozycji stałej Musée d’art. Moderne de la Ville de Paris oraz w kolekcjach prywatnych,\nmiędzy innymi w zbiorach rodzin królewskich Norwegii oraz Arabii Saudyjskiej.",
+      "status": "published",
+      "source_url": "https://galeria-witryna.pl/kategoria-produktu/malastwo/zofia-mosiadz-sammarro/",
+      "hasBiography": true,
+      "sourceUrls": [
+        "https://galeria-witryna.pl/kategoria-produktu/malastwo/zofia-mosiadz-sammarro/"
+      ]
+    }
+  ]
+}

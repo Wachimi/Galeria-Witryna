@@ -21,7 +21,7 @@ Po konfiguracji sprawdzimy: logowanie i wylogowanie, odmowę dostępu osobom bez
 
 ## Etap 3 — pełny katalog i wygodniejsza redakcja
 
-Przeniesiemy pozostałych artystów, biografie, zdjęcia i wystawy. Dostęp do kopii WordPressa lub eksportu przyspieszy pracę i pozwoli uniknąć pobierania każdego wpisu osobno. Zweryfikujemy oryginały zdjęć i przypisanie ich do prac.
+7 października 2026 przeniesiono 95 profili artystów oraz dostępne biografie. Roberta Żyburę pozostawiono do ręcznego dodania na próbę; dane do formularza są w `docs/05-import-artystow.md`. W jedenastu profilach źródło nie zawiera biografii, więc zapisano jedynie potwierdzoną informację o prezentowaniu artysty w galerii. Kolejny etap to prace i ich zdjęcia. Archiwum siedmiu wystaw i czternastu zdjęć ze starej podstrony „Wystawy” zostało przeniesione 5 października 2026. Zweryfikujemy oryginały zdjęć i przypisanie ich do prac.
 
 Możliwe kolejne rozszerzenia po ustaleniu zakresu: panel wystaw i treści strony, wiele zdjęć jednej pracy, automatyczny slug, podgląd przed publikacją, odzyskiwanie hasła, zaproszenia do zespołu z poziomu panelu i historia zmian. Obecnie wystawy oraz treści informacyjne edytujemy w kodzie; panel obsługuje artystów i prace.
 

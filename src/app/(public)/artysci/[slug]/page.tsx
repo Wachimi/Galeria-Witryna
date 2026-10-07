@@ -5,6 +5,8 @@ import { PageHeading } from "@/components/page-heading";
 import { ArtworkCard } from "@/components/artwork-card";
 import { getCatalog } from "@/lib/catalog";
 import { formatPolishText } from "@/lib/typography";
+import { artistPortraitUrl } from "@/lib/images";
+import { ArtistAvatar } from "@/components/artist-avatar";
 
 type Props = { params: Promise<{ slug: string }> };
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -21,6 +23,7 @@ export default async function ArtistPage({ params }: Props) {
   const artist = artists.find((item) => item.slug === slug);
   if (!artist) notFound();
   const selected = artworks.filter((artwork) => artwork.artist_id === artist.id);
+  const portrait = artistPortraitUrl(artist.portrait_path);
   return (
     <div className="container page-section">
       <nav className="breadcrumb" aria-label="Ścieżka nawigacji">
@@ -29,7 +32,12 @@ export default async function ArtistPage({ params }: Props) {
         <span>{formatPolishText(artist.name)}</span>
       </nav>
       <PageHeading eyebrow="ARTYSTA GALERII WITRYNA" title={artist.name} />
-      <p className="artist-biography">{formatPolishText(artist.biography)}</p>
+      <div className="artist-profile-biography">
+        {portrait && (
+          <ArtistAvatar src={portrait} name={artist.name} className="artist-avatar-profile" />
+        )}
+        <p className="artist-biography">{formatPolishText(artist.biography)}</p>
+      </div>
       <div className="section-heading">
         <h2>Prace w&nbsp;galerii</h2>
       </div>

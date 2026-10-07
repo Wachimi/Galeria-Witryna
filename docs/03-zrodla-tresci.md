@@ -1,6 +1,6 @@
 # Źródła i treści do weryfikacji
 
-Materiały pobrano ze starej strony Galerii Witryna podczas przygotowania szkieletu. To wybrana próbka, bez pełnej migracji WordPressa. Treści opisowe nowej strony są skróconą adaptacją informacji galerii; krótkie wprowadzenia artystów nie zastępują ich pełnych biografii.
+Materiały pobrano ze starej strony Galerii Witryna. 7 października 2026 przeniesiono do Supabase 95 profili artystów wraz z dostępnymi biografiami; jeden profil pozostawiono do ręcznego dodania. Katalog prac nadal zawiera pięć pozycji startowych. 5 października 2026 przeniesiono wszystkie siedem wystaw widocznych na stronie archiwum wraz z czternastoma zdjęciami.
 
 ## Źródła
 
@@ -53,8 +53,33 @@ Zdjęcia pokazują miejsce i jego atmosferę. Nie przypisano widocznych na nich 
 - Dane kontaktowe potwierdzono w rozmowie z użytkownikiem. Kod pocztowy i godziny pochodzą od użytkownika: 20-026; poniedziałek–piątek 10:00–17:00, sobota 11:00–14:00, niedziela zamknięte.
 - Okres działalności: stare podstrony podają różną liczbę lat wcześniejszej pracy właścicieli. Użytkownik przekazał dokładny opis na landing page z określeniem „przez niemal 30 lat”; przyjęto jego tekst. Dotyczy on wcześniejszej pracy w Galerii Art, a nie wieku Galerii Witryna.
 - Wystawy: pokazujemy archiwum. Nie dopisano dat ani nie przedstawiono dawnych wydarzeń jako bieżących.
-- Pełne biografie, zdjęcia portretowe, grafika i rzeźba: wymagają dalszej migracji. Te filtry są przygotowane, ale startowa próbka zawiera tylko malarstwo.
+- Biografie dostępne w źródle zostały przeniesione. Zdjęcia portretowe i pełny katalog prac wymagają dalszej migracji. Filtry grafiki i rzeźby są przygotowane, ale startowa próbka prac zawiera tylko malarstwo.
 
 Paleta zachowuje granat `#000c30`, zieleń `#5fa031` i limonkowy akcent logo. Jasne tło i oszczędniejszy układ są propozycją nowej oprawy wizualnej.
 
 Fonty DM Sans i Playfair Display pochodzą z Google Fonts i są przechowywane lokalnie w `src/assets/fonts`. W tym folderze są też ich licencje SIL Open Font License. Ikony przeglądarki i Apple powstają z pliku `public/images/favicon-source.png` przekazanego i edytowanego przez użytkownika.
+
+## Archiwum wystaw — migracja 5 października 2026
+
+Źródło: [Wystawy](https://galeria-witryna.pl/wystawy/). Przeniesiono siedem pozycji w kolejności ze starej strony: Bartłomiej Michałowski, Zbigniew Pieczyński, Jolanta Jastrzębska-Jakiel, Sława Radow, Walenty Wróblewski, Jerzy Wojciech Bielecki i Bożena Lesiak. Zachowano nazwy wystaw i opis pięćdziesięciu miniatur akwarelowych Michałowskiego. Źródło nie podaje dłuższych opisów ani dat wydarzeń; daty w katalogach plików i ich nazwach nie zostały użyte jako daty wystaw.
+
+Literówkę „Jeży” poprawiono na „Jerzy” zgodnie z [profilem artysty](https://galeria-witryna.pl/kategoria-produktu/malastwo/jerzy-wojciech-bielecki/). Opisy alternatywne zdjęć przygotowano na podstawie ich zawartości; widoczne podpisy usunięto na prośbę użytkownika. Zdjęcia otwierają się w podglądzie na stronie z nawigacją, obsługą klawiatury i zamykaniem przez Esc lub kliknięcie w tło.
+
+Pobrano oryginały JPEG, również dwa zdjęcia Michałowskiego odnalezione przez publiczne API mediów WordPressa. Lokalne wersje WebP zachowują proporcje i nie zawierają metadanych EXIF. Łączny rozmiar: około 1,52 MB zamiast 3,19 MB. Dane są w pliku `src/data/exhibitions.ts`; wystawy nadal redagujemy w kodzie.
+
+| Plik w `public/images/exhibitions` | Oryginał                                                                                                                             |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| `michalowski-1.webp`               | [Zdjęcie źródłowe](https://galeria-witryna.pl/wp-content/uploads/2023/03/1.jpg)                                                      |
+| `michalowski-2.webp`               | [Zdjęcie źródłowe](https://galeria-witryna.pl/wp-content/uploads/2023/03/3.jpg)                                                      |
+| `pieczynski-1.webp`                | [Zdjęcie źródłowe](https://galeria-witryna.pl/wp-content/uploads/2020/01/Wernisaz_wystawy_Z.Pieczynskiego_w_galerii_Witryna_031.jpg) |
+| `pieczynski-2.webp`                | [Zdjęcie źródłowe](https://galeria-witryna.pl/wp-content/uploads/2020/01/Wystawa_Z.Pieczynskiego_009.jpg)                            |
+| `jastrzebska-jakiel-1.webp`        | [Zdjęcie źródłowe](https://galeria-witryna.pl/wp-content/uploads/2020/01/wernisaz_wystawy_Joli_Jakiel_044.jpg)                       |
+| `jastrzebska-jakiel-2.webp`        | [Zdjęcie źródłowe](https://galeria-witryna.pl/wp-content/uploads/2020/01/wernisaz_wystawy_Joli_Jakiel_031.jpg)                       |
+| `radow-1.webp`                     | [Zdjęcie źródłowe](https://galeria-witryna.pl/wp-content/uploads/2020/01/Wystawa_S_36.jpg)                                           |
+| `radow-2.webp`                     | [Zdjęcie źródłowe](https://galeria-witryna.pl/wp-content/uploads/2020/01/Wystawa_S_37.jpg)                                           |
+| `wroblewski-1.webp`                | [Zdjęcie źródłowe](https://galeria-witryna.pl/wp-content/uploads/2020/01/Wystawa_W.Wroblewskiego_X_2013r_010.jpg)                    |
+| `wroblewski-2.webp`                | [Zdjęcie źródłowe](https://galeria-witryna.pl/wp-content/uploads/2020/01/Wernisaz_W.Wroblewskiego_009.jpg)                           |
+| `bielecki-1.webp`                  | [Zdjęcie źródłowe](https://galeria-witryna.pl/wp-content/uploads/2020/01/2016-05-09_002_007.jpg)                                     |
+| `bielecki-2.webp`                  | [Zdjęcie źródłowe](https://galeria-witryna.pl/wp-content/uploads/2020/01/wystawa_J.W.Bieleckiego__1.jpg)                             |
+| `lesiak-1.webp`                    | [Zdjęcie źródłowe](https://galeria-witryna.pl/wp-content/uploads/2020/01/DSC09746.jpg)                                               |
+| `lesiak-2.webp`                    | [Zdjęcie źródłowe](https://galeria-witryna.pl/wp-content/uploads/2020/01/DSC09770.jpg)                                               |

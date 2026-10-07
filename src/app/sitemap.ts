@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getCatalog } from "@/lib/catalog";
 import { getSiteUrl } from "@/lib/env";
+import { exhibitions } from "@/data/exhibitions";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const { artists, artworks } = await getCatalog();
@@ -11,6 +12,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/o-galerii",
     "/wystawy",
     "/kontakt",
+    ...exhibitions.map((exhibition) => `/wystawy/${exhibition.slug}`),
     ...artists.map((artist) => `/artysci/${artist.slug}`),
     ...artworks.map((artwork) => `/kolekcja/${artwork.slug}`),
   ];

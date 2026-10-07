@@ -8,6 +8,7 @@ export interface Artist {
   slug: string;
   name: string;
   biography: string;
+  portrait_path: string | null;
   status: PublicationStatus;
   source_url: string | null;
 }

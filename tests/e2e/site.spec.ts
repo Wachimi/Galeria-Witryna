@@ -92,3 +92,39 @@ test("menu mobilne otwiera się i zamyka po przejściu", async ({ page }, testIn
     "false",
   );
 });
+
+test("menu mobilne zamyka się przez Escape i poza nagłówkiem oraz mieści się na niskim ekranie", async ({
+  page,
+}, testInfo) => {
+  test.skip(testInfo.project.name !== "mobile");
+  await page.goto("/");
+  const toggle = page.locator(".menu-toggle");
+  const menu = page.getByRole("navigation", { name: "Menu główne" });
+  await toggle.click();
+  await menu.getByRole("link", { name: "Artyści", exact: true }).focus();
+  await page.keyboard.press("Escape");
+  await expect(toggle).toHaveAttribute("aria-expanded", "false");
+  await expect(toggle).toBeFocused();
+
+  await toggle.click();
+  await page.mouse.click(5, page.viewportSize()!.height - 5);
+  await expect(toggle).toHaveAttribute("aria-expanded", "false");
+
+  await toggle.click();
+  await page.getByRole("link", { name: "Poznaj kolekcję", exact: true }).focus();
+  await expect(toggle).toHaveAttribute("aria-expanded", "false");
+
+  await page.setViewportSize({ width: 740, height: 300 });
+  await toggle.click();
+  const bounds = await menu.boundingBox();
+  expect(bounds!.y + bounds!.height).toBeLessThanOrEqual(301);
+  await menu.getByRole("link", { name: "Kontakt", exact: true }).click();
+  await expect(page).toHaveURL(/\/kontakt$/);
+  await expect(toggle).toHaveAttribute("aria-expanded", "false");
+
+  await toggle.click();
+  await page.setViewportSize({ width: 1024, height: 768 });
+  await expect(toggle).toHaveAttribute("aria-expanded", "false");
+  await page.setViewportSize({ width: 390, height: 844 });
+  await expect(menu).not.toBeVisible();
+});

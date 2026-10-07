@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowUpRight } from "lucide-react";
@@ -8,6 +7,7 @@ import { artworkImageUrl } from "@/lib/images";
 import { availabilityLabels, categoryLabels } from "@/types/catalog";
 import { site } from "@/data/site";
 import { formatPolishText } from "@/lib/typography";
+import { ArtworkImage } from "@/components/artwork-image";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -36,16 +36,13 @@ export default async function ArtworkPage({ params }: Props) {
         <span>{formatPolishText(artwork.title)}</span>
       </nav>
       <section className="artwork-detail">
-        <div className="artwork-detail-image">
-          <Image
-            src={src}
-            alt={artwork.image_alt}
-            fill
-            sizes="(max-width: 800px) 100vw, 55vw"
-            priority
-            unoptimized={!src.startsWith("/")}
-          />
-        </div>
+        <ArtworkImage
+          src={src}
+          alt={artwork.image_alt}
+          title={artwork.title}
+          artistName={artist?.name}
+          variant="detail"
+        />
         <div className="artwork-detail-copy">
           <p className="eyebrow">{formatPolishText(categoryLabels[artwork.category])}</p>
           <h1>{formatPolishText(artwork.title)}</h1>

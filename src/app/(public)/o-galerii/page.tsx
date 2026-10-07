@@ -13,38 +13,44 @@ export default function AboutPage() {
       <div className="about-page">
         <div className="prose">
           <p>
-            Galerię Witryna założyli i&nbsp;prowadzą Agnieszka i&nbsp;Artur Kuśnierzowie, historycy
-            sztuki z&nbsp;wieloletnim doświadczeniem w&nbsp;Galerii Art Związku Polskich Artystów
-            Plastyków w&nbsp;Lublinie.
+            GALERIA SZTUKI WITRYNA została założona i&nbsp;prowadzona jest przez historyków sztuki
+            Agnieszkę i&nbsp;Artura Kuśnierzów, którzy przez niemal 20 lat z&nbsp;pasją
+            i&nbsp;sukcesem kierowali promocją i&nbsp;sprzedażą dzieł sztuki w&nbsp;Galerii Art
+            Związku Polskich Artystów Plastyków w&nbsp;Lublinie, tworząc jej niepowtarzalny klimat
+            i&nbsp;jakość.
           </p>
           <p>
-            <em>
-              Przy ulicy Chopina 1 prezentujemy twórczość artystów z&nbsp;regionu i&nbsp;całej
-              Polski. Spotykają się tutaj różne pokolenia, techniki i&nbsp;sposoby patrzenia na
-              świat.
-            </em>
+            Galeria Witryna z&nbsp;siedzibą przy ulicy Chopina 1 podtrzymując i&nbsp;kontynuując
+            tradycję prezentuje, promuje i&nbsp;sprzedaje sztukę współczesną artystów lubelskich,
+            jak i&nbsp;z&nbsp;całej Polski.
           </p>
-          <h2>Przestrzeń do odkrywania.</h2>
           <p>
-            <em>
-              Od malarstwa i&nbsp;grafiki, przez rysunek i&nbsp;rzeźbę, po ceramikę, szkło
-              i&nbsp;biżuterię — pomagamy znaleźć prace bliskie Twojej wrażliwości. Dzielimy się
-              wiedzą o&nbsp;twórcach i&nbsp;ich dziełach, doradzamy i&nbsp;zapraszamy do rozmowy.
-            </em>
+            Prezentowane prace, zróżnicowane tematycznie i&nbsp;stylistycznie, łączy jedno - wysoki
+            poziom artystyczny i&nbsp;warsztatowy.
+          </p>
+          <p>
+            Artyści związani z&nbsp;Galerią Witryna reprezentują różne pokolenia twórców, oraz
+            różnorodne dziedziny sztuki, od malarstwa poprzez grafikę, rysunek i&nbsp;rzeźbę do
+            ceramiki, szkła, czy biżuterii.
           </p>
           <Link className="text-link" href="/kontakt">
             Odwiedź galerię <ArrowUpRight size={18} aria-hidden="true" />
           </Link>
         </div>
-        <div className="about-page-photo">
+        <figure className="about-page-photo">
           <Image
-            src="/images/gallery-sign-close.webp"
-            alt="Szyld i oznaczenie Galerii Witryna nad witryną przy ul. Chopina 1"
-            fill
+            src="/images/gallery-owners.webp"
+            alt="Właściciele galerii we wnętrzu Witryny, na tle prezentowanych obrazów"
+            width={1600}
+            height={1067}
             sizes="(max-width: 800px) 100vw, 50vw"
             loading="eager"
           />
-        </div>
+          <figcaption>
+            <span>Agnieszka i&nbsp;Artur Kuśnierzowie</span>
+            <span>Historycy sztuki, założyciele Galerii Witryna</span>
+          </figcaption>
+        </figure>
       </div>
     </div>
   );

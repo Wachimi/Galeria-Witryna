@@ -7,6 +7,7 @@ export const starterCatalog: Catalog = {
       id: "10000000-0000-4000-8000-000000000001",
       slug: "marek-andala",
       name: "Marek Andała",
+      portrait_path: null,
       biography:
         "Artysta prezentowany w Galerii Witryna. W katalogu galerii znajduje się jego pastelowy pejzaż „Tatary”.",
       status: "published",
@@ -16,6 +17,7 @@ export const starterCatalog: Catalog = {
       id: "10000000-0000-4000-8000-000000000002",
       slug: "piotr-fafrowicz",
       name: "Piotr Fąfrowicz",
+      portrait_path: null,
       biography:
         "Artysta związany z Galerią Witryna. Prezentowane prace obejmują malarstwo olejne i temperę na papierze.",
       status: "published",
@@ -26,6 +28,7 @@ export const starterCatalog: Catalog = {
       id: "10000000-0000-4000-8000-000000000003",
       slug: "jerzy-tyburski",
       name: "Jerzy Tyburski",
+      portrait_path: null,
       biography:
         "Artysta prezentowany w Galerii Witryna. Wśród jego prac w katalogu znajdują się obrazy olejne „Afternoon” i „Burza”.",
       status: "published",

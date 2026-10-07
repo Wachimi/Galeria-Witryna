@@ -1,47 +1,29 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { PageHeading } from "@/components/page-heading";
-import { formatPolishText } from "@/lib/typography";
+import { ExhibitionCard } from "@/components/exhibition-card";
+import { exhibitions } from "@/data/exhibitions";
 
-export const metadata: Metadata = { title: "Wystawy" };
-
-const archive = [
-  { artist: "Bartłomiej Michałowski", title: "WPADNIJ na 50-TKĘ — miniatury akwarelowe" },
-  { artist: "Jolanta Jastrzębska-Jakiel", title: "Malarstwo" },
-  { artist: "Sława Radow", title: "Wyspy" },
-  { artist: "Walenty Wróblewski", title: "Malarstwo" },
-  { artist: "Bożena Lesiak", title: "Malarstwo" },
-];
+export const metadata: Metadata = {
+  title: "Wystawy",
+  description:
+    "Archiwum wystaw Galerii Witryna. Poznaj artystów, ekspozycje i zdjęcia z wernisaży.",
+};
 
 export default function ExhibitionsPage() {
+  const [featured, ...archive] = exhibitions;
   return (
     <div className="container page-section">
       <PageHeading
         eyebrow="SPOTKANIA ZE SZTUKĄ"
         title="Wystawy w Witrynie."
-        description="Wystawy i spotkania z twórcami są częścią historii naszej galerii. Przypominamy wybrane ekspozycje z archiwum."
+        description="Sztuka, artyści i spotkania, które tworzą historię naszej galerii. Zapraszamy do obejrzenia archiwalnych wystaw i fotografii z wernisaży."
       />
-      <article className="exhibition-feature">
-        <div className="exhibition-photo">
-          <Image
-            src="/images/exhibition-pieczynski.jpg"
-            alt="Archiwalna ekspozycja malarstwa Zbigniewa Pieczyńskiego w Galerii Witryna"
-            fill
-            sizes="(max-width: 800px) 100vw, 50vw"
-          />
-        </div>
-        <div>
-          <p className="eyebrow">Z&nbsp;ARCHIWUM GALERII</p>
-          <h2>Pod niebem Południa</h2>
-          <p>Zbigniew Pieczyński · malarstwo</p>
-        </div>
-      </article>
-      <div className="exhibition-list">
+      <p className="exhibition-archive-count">ARCHIWUM · {exhibitions.length} WYSTAW</p>
+      <h2 className="exhibition-section-heading">Ostatnia wystawa</h2>
+      <ExhibitionCard exhibition={featured} featured />
+      <div className="exhibition-archive">
         {archive.map((exhibition) => (
-          <article className="exhibition-row" key={exhibition.artist}>
-            <h3>{formatPolishText(exhibition.artist)}</h3>
-            <span>{formatPolishText(exhibition.title)}</span>
-          </article>
+          <ExhibitionCard key={exhibition.slug} exhibition={exhibition} />
         ))}
       </div>
     </div>

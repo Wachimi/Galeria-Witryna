@@ -123,3 +123,7 @@ Testy E2E uruchamiaj bez konfiguracji Supabase — sprawdzają deterministyczny 
 Wyniki ostatniej kontroli i zakres sprawdzonych funkcji: [przegląd projektu](docs/04-przeglad-projektu.md).
 
 W produkcji: `npm run build`, następnie `npm start`. `NEXT_PUBLIC_SITE_URL` musi wskazywać prawdziwą domenę, aby mapa strony i adresy SEO były poprawne.
+
+## Portrety artystów
+
+Obsługa opcjonalnych zdjęć profilowych wymaga dodatkowej migracji w Supabase. Instrukcja konfiguracji i używania formularza: [Portrety artystów](docs/06-portrety-artystow.md).
