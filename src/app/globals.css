@@ -991,9 +991,15 @@ em {
   font-size: 17px;
   font-weight: 500;
 }
-.about-page-photo figcaption > span:last-child {
+.about-page-photo figcaption > span + span {
   color: var(--muted);
   font-size: 14px;
+  font-weight: 400;
+}
+.about-page-photo .photo-credit {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 13px;
   font-weight: 400;
 }
 .contact-grid {

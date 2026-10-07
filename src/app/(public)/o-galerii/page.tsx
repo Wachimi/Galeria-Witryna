@@ -49,6 +49,7 @@ export default function AboutPage() {
           <figcaption>
             <span>Agnieszka i&nbsp;Artur Kuśnierzowie</span>
             <span>Historycy sztuki, założyciele Galerii Witryna</span>
+            <small className="photo-credit">fot. Dominika Polonis</small>
           </figcaption>
         </figure>
       </div>
