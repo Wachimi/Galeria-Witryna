@@ -1,14 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
+import { connection } from "next/server";
 import { ArrowDown, ArrowUpRight, MapPin } from "lucide-react";
 import { ArtworkCard } from "@/components/artwork-card";
 import { getCatalog } from "@/lib/catalog";
 import { site } from "@/data/site";
 import { OpeningHours } from "@/components/opening-hours";
 import { formatPolishText } from "@/lib/typography";
+import { selectWeeklyArtworks } from "@/lib/weekly-artworks";
 
 export default async function HomePage() {
+  // Zestaw ustalamy przy wejściu na stronę, aby nie utrwalić go podczas kompilacji.
+  await connection();
   const { artists, artworks } = await getCatalog();
+  const selectedArtworks = selectWeeklyArtworks(artworks);
   return (
     <>
       <div className="hero-band">
@@ -60,26 +65,27 @@ export default async function HomePage() {
             </div>
             <div className="hero-image-caption">
               <span>GALERIA WITRYNA</span>
-              <span>
-                Rzeźba, malarstwo, spotkania <ArrowUpRight size={16} aria-hidden="true" />
-              </span>
             </div>
             <span className="hero-vertical">SZTUKA MA SWOJE MIEJSCE</span>
           </div>
         </section>
         <div className="container section-divider">
-          <span>SPOJRZENIE NA SZTUKĘ</span>
+          <span>ODKRYWAJ</span>
           <a href="#wybrane-prace" aria-label="Przejdź do wybranych prac">
             <ArrowDown size={18} />
           </a>
-          <span>ODKRYWAJ</span>
+          <span>SPOJRZENIE NA SZTUKĘ</span>
         </div>
       </div>
-      <section id="wybrane-prace" className="container section selected-works">
+      <section
+        id="wybrane-prace"
+        className="container section selected-works"
+        aria-labelledby="selected-works-heading"
+      >
         <div className="section-heading">
           <div>
             <p className="eyebrow">Z&nbsp;KOLEKCJI GALERII</p>
-            <h2>
+            <h2 id="selected-works-heading">
               Każda praca.
               <br />
               <em>Osobna opowieść.</em>
@@ -90,13 +96,10 @@ export default async function HomePage() {
               Odkryj różnorodność form, kolorów i&nbsp;wrażliwości artystów związanych
               z&nbsp;Witryną.
             </p>
-            <Link className="text-link" href="/kolekcja">
-              Zobacz całą kolekcję <ArrowUpRight size={18} aria-hidden="true" />
-            </Link>
           </div>
         </div>
         <div className="artwork-grid">
-          {artworks.slice(0, 3).map((artwork) => (
+          {selectedArtworks.map((artwork) => (
             <ArtworkCard
               key={artwork.id}
               artwork={artwork}
@@ -104,7 +107,15 @@ export default async function HomePage() {
             />
           ))}
         </div>
-        {!artworks.length && (
+        {selectedArtworks.length > 0 && (
+          <div className="selected-works-footer">
+            <p>Kliknij obraz, aby zobaczyć szczegóły pracy.</p>
+            <Link className="button button-dark" href="/kolekcja">
+              Zobacz całą kolekcję <ArrowUpRight size={18} aria-hidden="true" />
+            </Link>
+          </div>
+        )}
+        {!selectedArtworks.length && (
           <p className="empty-state">
             Przygotowujemy nową kolekcję. Zapraszamy do odwiedzenia galerii.
           </p>

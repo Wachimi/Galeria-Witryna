@@ -4,24 +4,22 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { X, ZoomIn } from "lucide-react";
 import { formatPolishText } from "@/lib/typography";
+import { ZoomablePreviewImage } from "@/components/zoomable-preview-image";
 
 export function ArtworkImage({
   src,
   alt,
   title,
   artistName,
-  variant = "card",
 }: {
   src: string;
   alt: string;
   title: string;
   artistName?: string;
-  variant?: "card" | "detail";
 }) {
   const [open, setOpen] = useState(false);
   const [size, setSize] = useState<{ width: number; height: number } | null>(null);
   const dialogRef = useRef<HTMLDialogElement>(null);
-  const closeRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     if (!open) return;
@@ -36,7 +34,7 @@ export function ArtworkImage({
     <>
       <button
         type="button"
-        className={`artwork-image-trigger artwork-${variant}-image`}
+        className="artwork-image-trigger artwork-detail-image"
         aria-label={formatPolishText(`Powiększ pracę: ${title}`)}
         aria-haspopup="dialog"
         onClick={() => {
@@ -49,12 +47,8 @@ export function ArtworkImage({
           src={src}
           alt={alt}
           fill
-          sizes={
-            variant === "detail"
-              ? "(max-width: 800px) 100vw, 55vw"
-              : "(max-width: 520px) 100vw, (max-width: 800px) 50vw, 33vw"
-          }
-          loading={variant === "detail" ? "eager" : "lazy"}
+          sizes="(max-width: 800px) 100vw, 55vw"
+          loading="eager"
           unoptimized={!src.startsWith("/")}
           onLoad={(event) => {
             const image = event.currentTarget;
@@ -74,10 +68,18 @@ export function ArtworkImage({
           if (event.target === event.currentTarget) dialogRef.current?.close();
         }}
         onKeyDown={(event) => {
-          // Podgląd ma jeden przycisk; Tab pozostaje wewnątrz okna.
           if (event.key === "Tab") {
-            event.preventDefault();
-            closeRef.current?.focus();
+            const buttons =
+              event.currentTarget.querySelectorAll<HTMLButtonElement>("button:not(:disabled)");
+            const first = buttons[0];
+            const last = buttons[buttons.length - 1];
+            if (event.shiftKey && document.activeElement === first) {
+              event.preventDefault();
+              last?.focus();
+            } else if (!event.shiftKey && document.activeElement === last) {
+              event.preventDefault();
+              first?.focus();
+            }
           }
         }}
       >
@@ -87,7 +89,6 @@ export function ArtworkImage({
             {artistName && <span>{formatPolishText(artistName)}</span>}
           </div>
           <button
-            ref={closeRef}
             type="button"
             className="photo-preview-button"
             aria-label="Zamknij podgląd"
@@ -97,24 +98,15 @@ export function ArtworkImage({
             <X size={26} aria-hidden="true" />
           </button>
         </div>
-        <div
-          className="photo-preview-stage"
-          onClick={(event) => {
-            if (event.target === event.currentTarget) dialogRef.current?.close();
-          }}
-        >
-          {open && (
-            <Image
-              src={src}
-              alt={alt}
-              width={size?.width ?? 1800}
-              height={size?.height ?? 1800}
-              className="photo-preview-image"
-              unoptimized
-              loading="eager"
-            />
-          )}
-        </div>
+        {open && (
+          <ZoomablePreviewImage
+            src={src}
+            alt={alt}
+            width={size?.width ?? 1800}
+            height={size?.height ?? 1800}
+            onBackdropClick={() => dialogRef.current?.close()}
+          />
+        )}
       </dialog>
     </>
   );

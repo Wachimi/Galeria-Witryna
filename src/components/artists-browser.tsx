@@ -1,9 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight, Search } from "lucide-react";
+import { Search } from "lucide-react";
 import { filterAndSortArtists, type ArtistSortOrder } from "@/lib/artist-search";
 import { formatPolishText } from "@/lib/typography";
 import { ArtistAvatar } from "@/components/artist-avatar";
@@ -13,7 +12,6 @@ type ArtistListItem = {
   slug: string;
   name: string;
   portrait: string | null;
-  image: { src: string; alt: string } | null;
 };
 
 export function ArtistsBrowser({ artists }: { artists: ArtistListItem[] }) {
@@ -54,32 +52,10 @@ export function ArtistsBrowser({ artists }: { artists: ArtistListItem[] }) {
           {filtered.map((artist) => (
             <article className="artist-card" key={artist.id}>
               <Link href={`/artysci/${artist.slug}`} className="artist-card-link">
-                {artist.image ? (
-                  <div className="artist-card-image">
-                    <Image
-                      src={artist.image.src}
-                      alt={artist.image.alt}
-                      fill
-                      sizes="(max-width: 800px) 50vw, (max-width: 1100px) 33vw, 25vw"
-                      unoptimized={!artist.image.src.startsWith("/")}
-                    />
-                  </div>
-                ) : (
-                  <div className="artist-card-initials" aria-hidden="true">
-                    {artist.name
-                      .split(" ")
-                      .map((part) => part[0])
-                      .slice(0, 2)
-                      .join("")}
-                  </div>
-                )}
                 <div className="artist-card-identity">
                   <ArtistAvatar src={artist.portrait} name={artist.name} decorative />
                   <h2>{formatPolishText(artist.name)}</h2>
                 </div>
-                <span className="text-link">
-                  Poznaj artystę <ArrowUpRight size={16} aria-hidden="true" />
-                </span>
               </Link>
             </article>
           ))}

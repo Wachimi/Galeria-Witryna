@@ -40,13 +40,14 @@ test("strona główna i podstrony publiczne działają", async ({ page }) => {
 
 test("kolekcja wyszukuje prace i pokazuje pusty wynik", async ({ page }) => {
   await page.goto("/kolekcja");
+  const initialCount = await page.locator(".artwork-card").count();
   await page.getByRole("searchbox", { name: "Szukaj pracy lub artysty" }).fill("Andała");
   await expect(page.getByText("Liczba prac: 1")).toBeVisible();
   await expect(page.getByRole("heading", { name: "Tatary", exact: true })).toBeVisible();
   await page.getByRole("button", { name: "Grafika", exact: true }).click();
   await expect(page.getByText("Brak prac pasujących do wybranych kryteriów.")).toBeVisible();
   await page.getByRole("button", { name: "Pokaż wszystkie prace" }).click();
-  await expect(page.getByText("Liczba prac: 5")).toBeVisible();
+  await expect(page.getByText(`Liczba prac: ${initialCount}`, { exact: true })).toBeVisible();
 });
 
 test("bez konfiguracji nie udaje zalogowania ani dostępu do danych", async ({ page }) => {
